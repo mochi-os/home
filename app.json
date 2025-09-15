@@ -1,11 +1,10 @@
 {
 	"name": "home",
 	"version": "1.0",
-	"privileges": [ "apps", "home", "user" ],
 
-	"engine": "starlark",
-	"protocol": 1,
+	"engine": {"architecture": "starlark", "version": "1"},
 	"files": [ "home.star" ],
+	"privileges": [ "apps", "user" ],
 
 	"paths": {
 		"": {
