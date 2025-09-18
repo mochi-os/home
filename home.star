@@ -6,8 +6,7 @@ def action_home(action, inputs):
 
 	a = inputs.get("action", "")
 	if a == "clear":
-			#TODO Test
-			mochi.app.call("notifications", "clear.all")
+			mochi.service.call("notifications", "clear.all")
 			mochi.action.redirect("/")
 			return
 
