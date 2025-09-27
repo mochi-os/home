@@ -6,12 +6,12 @@ def action_home(action, inputs):
 
 	a = inputs.get("action", "")
 	if a == "clear":
-			mochi.service.call("notifications", "clear.all")
-			mochi.action.redirect("/")
-			return
+		mochi.service.call("notifications", "clear.all")
+		#mochi.action.redirect("/")
+		return
 
 	elif a == "welcome":
-			welcome = True
+		welcome = True
 
 	mochi.action.write("home", action["format"], {
 		"user": mochi.user.get(),
