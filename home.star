@@ -7,7 +7,7 @@ def action_home(action, inputs):
 	a = inputs.get("action", "")
 	if a == "clear":
 		mochi.service.call("notifications", "clear.all")
-		#mochi.action.redirect("/")
+		mochi.action.redirect("/")
 		return
 
 	elif a == "welcome":
