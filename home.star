@@ -15,7 +15,7 @@ def action_home(action, inputs):
 
 	mochi.action.write("home", action["format"], {
 		"user": mochi.user.get(),
-		"icons": mochi.apps.icons(),
+		"icons": mochi.app.icons(),
 		"notifications": mochi.service.call("notifications", "list"),
 		"welcome": welcome
 	})
