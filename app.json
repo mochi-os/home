@@ -1,7 +1,6 @@
 {
-	"name": "home",
 	"version": "1.0",
-
+	"label": "app_name",
 	"engine": {"architecture": "starlark", "version": "1"},
 	"files": [ "home.star" ],
 
