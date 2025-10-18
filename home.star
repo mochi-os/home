@@ -14,7 +14,7 @@ def action_home(a):
 		welcome = True
 
 	a.template("home", {
-		"user": mochi.user.get(),
+		"user": a.user(),
 		"icons": mochi.app.icons(),
 		"notifications": mochi.service.call("notifications", "list"),
 		"welcome": welcome
