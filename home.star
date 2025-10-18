@@ -1,19 +1,19 @@
 # Mochi Home app
 # Copyright Alistair Cunningham 2024-2025
 
-def action_home(action, inputs):
+def action_home(a):
 	welcome = False
 
-	a = inputs.get("action", "")
-	if a == "clear":
+	action = a.input("action")
+	if action == "clear":
 		mochi.service.call("notifications", "clear.all")
-		mochi.action.redirect("/")
+		a.redirect("/")
 		return
 
-	elif a == "welcome":
+	elif action == "welcome":
 		welcome = True
 
-	mochi.action.write("home", action["format"], {
+	a.template("home", {
 		"user": mochi.user.get(),
 		"icons": mochi.app.icons(),
 		"notifications": mochi.service.call("notifications", "list"),
