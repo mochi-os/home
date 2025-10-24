@@ -4,14 +4,16 @@
 
 {{if .welcome}}<p>Welcome to Mochi, the open source social operating system. Why not create <a href="/feeds/new/">a feed</a>?</p>{{end}}
 
-{{if len .notifications}}<h2>Notifications:</h2>
-<p>{{range .notifications}}{{if len .link}}<a href="{{.link}}">{{.content}}</a>{{else}}{{.content}}{{end}}<br/>{{end}}</p>
-<p><a href="/?action=clear">Clear notifications</a></p>{{end}}
+{{if len .notifications}}
+<h2>Notifications:</h2>
+<ul>{{range .notifications}}<li>{{if len .link}}<a href="{{.link}}">{{.content}}</a>{{else}}{{.content}}{{end}}</li>{{end}}</ul>
+<a href="/?action=clear">Clear notifications</a>
+{{end}}
 
-{{if len .icons}}<h2>Apps:</h2>
-<p>{{end}}
-{{range .icons}}<a href="/{{.path}}">{{.name}}</a><br/>{{end}}
-{{if len .icons}}</p>{{end}}
+{{if len .icons}}
+<h2>Apps:</h2>
+<ul>{{range .icons}}<li><a href="/{{.path}}">{{.name}}</a></li>{{end}}</ul>
+{{end}}
 
 <a href="/logout">Log out</a></p>
 
