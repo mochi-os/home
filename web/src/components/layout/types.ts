@@ -21,6 +21,7 @@ type BaseNavItem = {
 type NavLink = BaseNavItem & {
   url: LinkProps['to'] | (string & {})
   items?: never
+  external?: boolean // For cross-app navigation
 }
 
 type NavCollapsible = BaseNavItem & {

@@ -9,6 +9,7 @@ import {
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { Search } from '@/components/search'
+import { NotificationsDropdown } from '@/components/notifications-dropdown'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { MessagesSquare, UserPlus } from 'lucide-react'
 
@@ -18,6 +19,7 @@ export function Home() {
       <Header>
         <Search />
         <div className='ms-auto flex items-center space-x-4'>
+          <NotificationsDropdown />
           <ThemeSwitch />
         </div>
       </Header>
@@ -26,9 +28,9 @@ export function Home() {
         <div className='mb-6 flex items-center justify-between space-y-2'>
           <div>
             <h1 className='text-2xl font-bold tracking-tight'>Welcome to Mochi</h1>
-            <p className='text-muted-foreground'>
+            {/* <p className='text-muted-foreground'>
               Your home for all Mochi apps and services
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -47,7 +49,7 @@ export function Home() {
               <Button
                 className='w-full'
                 onClick={() => {
-                  window.location.href = '/apps/chat'
+                  window.location.href = import.meta.env.VITE_APP_CHAT_URL
                 }}
               >
                 Open Chats
@@ -69,7 +71,7 @@ export function Home() {
               <Button
                 className='w-full'
                 onClick={() => {
-                  window.location.href = '/apps/friends'
+                  window.location.href = import.meta.env.VITE_APP_FRIENDS_URL
                 }}
               >
                 Open Friends

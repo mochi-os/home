@@ -1,12 +1,13 @@
 import {
-  LayoutDashboard,
   MessagesSquare,
   AudioWaveform,
   Command,
   GalleryVerticalEnd,
   UserPlus,
+  Home,
 } from 'lucide-react'
 import { type SidebarData } from '../types'
+import { APP_ROUTES } from '@/config/routes'
 
 export const sidebarData: SidebarData = {
   user: {
@@ -33,22 +34,25 @@ export const sidebarData: SidebarData = {
   ],
   navGroups: [
     {
-      title: 'General',
+      title: 'Apps',
       items: [
         {
           title: 'Home',
-          url: '/',
-          icon: LayoutDashboard,
+          url: "/",
+          icon: Home,
+          badge: '3',
         },
         {
-          title: 'Chats',
-          url: '/apps/chat',
+          title: 'Chat',
+          url: APP_ROUTES.CHAT.HOME,
           icon: MessagesSquare,
+          external: true, // Cross-app navigation
         },
         {
           title: 'Friends',
-          url: '/apps/friends',
+          url: APP_ROUTES.FRIENDS.HOME,
           icon: UserPlus,
+          external: true, // Cross-app navigation
         },
       ],
     },
