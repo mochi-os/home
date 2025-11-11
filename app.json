@@ -1,13 +1,25 @@
 {
 	"version": "1.0",
 	"label": "app_name",
-	"engine": {"architecture": "starlark", "version": 2},
-	"files": [ "home.star" ],
-
+	"engine": {
+		"architecture": "starlark",
+		"version": 2
+	},
+	"files": [
+		"home.star"
+	],
 	"paths": {
-		"": {
+		"home": {
 			"actions": {
-				"": {"function": "action_home"}
+				"": {
+					"file": "web/dist/index.html"
+				},
+				"assets": {
+					"files": "web/dist/assets"
+				},
+				"images": {
+					"files": "web/dist/images"
+				}
 			}
 		}
 	}
