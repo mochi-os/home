@@ -49,9 +49,7 @@ export function ResponsiveConfirmDialog(props: ResponsiveConfirmDialogProps) {
       <ResponsiveDialogContent className={cn(className)}>
         <ResponsiveDialogHeader className='text-start'>
           <ResponsiveDialogTitle>{title}</ResponsiveDialogTitle>
-          <ResponsiveDialogDescription asChild>
-            <div>{desc}</div>
-          </ResponsiveDialogDescription>
+          <ResponsiveDialogDescription>{desc}</ResponsiveDialogDescription>
         </ResponsiveDialogHeader>
         {children}
         <ResponsiveDialogFooter className='gap-2 sm:gap-0'>

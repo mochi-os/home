@@ -1,11 +1,9 @@
-import { Link } from '@tanstack/react-router'
 import {
   BadgeCheck,
   Bell,
   ChevronsUpDown,
   CreditCard,
   LogOut,
-  Sparkles,
 } from 'lucide-react'
 import { useAuthStore } from '@/stores/auth-store'
 import useDialogState from '@/hooks/use-dialog-state'
@@ -31,18 +29,16 @@ export function NavUser() {
   const { isMobile } = useSidebar()
   const [open, setOpen] = useDialogState()
 
-  // Get user from auth store
-  const user = useAuthStore((state) => state.user)
-
-  // Fallback values
-  const displayName = user?.name || 'User'
-  const displayEmail = user?.email || 'user@example.com'
-  const displayAvatar = user?.avatar || ''
+  // Use email from auth store (Home mirrors core auth cookie shape)
+  const email = useAuthStore((state) => state.email)
+  const displayName = email ? email.split('@')[0] : 'User'
+  const displayEmail = email || 'user@example.com'
+  const displayAvatar = ''
 
   // Generate initials from name
   const initials = displayName
     .split(' ')
-    .map((n) => n[0])
+    .map((n: string) => n[0] || '')
     .join('')
     .toUpperCase()
     .slice(0, 2)
@@ -101,23 +97,17 @@ export function NavUser() {
               </DropdownMenuGroup>
               <DropdownMenuSeparator /> */}
               <DropdownMenuGroup>
-                <DropdownMenuItem asChild>
-                  <Link to='/settings/account'>
-                    <BadgeCheck />
-                    Account
-                  </Link>
+                <DropdownMenuItem>
+                  <BadgeCheck />
+                  Account
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to='/settings'>
-                    <CreditCard />
-                    Billing
-                  </Link>
+                <DropdownMenuItem>
+                  <CreditCard />
+                  Billing
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to='/settings/notifications'>
-                    <Bell />
-                    Notifications
-                  </Link>
+                <DropdownMenuItem>
+                  <Bell />
+                  Notifications
                 </DropdownMenuItem>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
