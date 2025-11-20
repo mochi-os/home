@@ -6,6 +6,7 @@ import {
   GalleryVerticalEnd,
   Home,
   UserPlus,
+  Newspaper,
 } from 'lucide-react'
 import { type SidebarData } from '../types'
 import { APP_ROUTES } from '@/config/routes'
@@ -59,6 +60,11 @@ export const sidebarData: SidebarData = {
           url: APP_ROUTES.NOTIFICATIONS.HOME,
           icon: Bell,
           external: true,
+        },
+        {
+          title: 'Feeds',
+          url: APP_ROUTES.FEEDS.HOME,
+          icon: Newspaper,
         },
       ],
     },
