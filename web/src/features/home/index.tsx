@@ -10,9 +10,54 @@ import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { Search } from '@/components/search'
 import { NotificationsDropdown } from '@/components/notifications-dropdown'
-import { MessagesSquare, UserPlus } from 'lucide-react'
+import { APP_ROUTES } from '@/config/routes'
+import {
+  MessagesSquare,
+  MessageSquareMore,
+  Rss,
+  UserPlus,
+} from 'lucide-react'
 
 export function Home() {
+  const shortcuts = [
+    {
+      title: 'Chats',
+      description: 'Connect and chat with your friends',
+      icon: MessagesSquare,
+      action: () => {
+        window.location.href = import.meta.env.VITE_APP_CHAT_URL
+      },
+      buttonLabel: 'Open Chats',
+    },
+    {
+      title: 'Friends',
+      description: 'Manage your friends and invitations',
+      icon: UserPlus,
+      action: () => {
+        window.location.href = import.meta.env.VITE_APP_FRIENDS_URL
+      },
+      buttonLabel: 'Open Friends',
+    },
+    {
+      title: 'Feeds',
+      description: 'Track updates, posts, and team broadcasts',
+      icon: Rss,
+      action: () => {
+        window.location.href = APP_ROUTES.FEEDS.HOME
+      },
+      buttonLabel: 'Open Feeds',
+    },
+    {
+      title: 'Forums',
+      description: 'Ask questions and share deep-dive threads',
+      icon: MessageSquareMore,
+      action: () => {
+        window.location.href = APP_ROUTES.FORUMS.HOME
+      },
+      buttonLabel: 'Open Forums',
+    },
+  ]
+
   return (
     <>
       <Header>
@@ -32,50 +77,26 @@ export function Home() {
           </div>
         </div>
 
-        <div className='grid gap-6 md:grid-cols-2'>
-          <Card className='group hover:shadow-md transition-shadow cursor-pointer'>
-            <CardHeader>
-              <div className='flex items-center gap-2'>
-                <MessagesSquare className='h-5 w-5 text-primary' />
-                <CardTitle>Chats</CardTitle>
-              </div>
-              <CardDescription>
-                Connect and chat with your friends
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button
-                className='w-full'
-                onClick={() => {
-                  window.location.href = import.meta.env.VITE_APP_CHAT_URL
-                }}
-              >
-                Open Chats
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className='group hover:shadow-md transition-shadow cursor-pointer'>
-            <CardHeader>
-              <div className='flex items-center gap-2'>
-                <UserPlus className='h-5 w-5 text-primary' />
-                <CardTitle>Friends</CardTitle>
-              </div>
-              <CardDescription>
-                Manage your friends and invitations
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button
-                className='w-full'
-                onClick={() => {
-                  window.location.href = import.meta.env.VITE_APP_FRIENDS_URL
-                }}
-              >
-                Open Friends
-              </Button>
-            </CardContent>
-          </Card>
+        <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-4'>
+          {shortcuts.map((shortcut) => (
+            <Card
+              key={shortcut.title}
+              className='group cursor-pointer transition-shadow hover:shadow-md'
+            >
+              <CardHeader>
+                <div className='flex items-center gap-2'>
+                  <shortcut.icon className='h-5 w-5 text-primary' />
+                  <CardTitle>{shortcut.title}</CardTitle>
+                </div>
+                <CardDescription>{shortcut.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button className='w-full' onClick={shortcut.action}>
+                  {shortcut.buttonLabel}
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </Main>
     </>
