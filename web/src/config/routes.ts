@@ -30,7 +30,7 @@ export const APP_ROUTES = {
   },
   // Feeds app
   FEEDS: {
-    BASE: '/feeds',
+    BASE: '/feeds/',
     HOME: '/feeds/',
   },
   // Notifications app
