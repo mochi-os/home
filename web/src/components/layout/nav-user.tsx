@@ -1,16 +1,10 @@
 import { useEffect } from 'react'
-import {
-  ChevronsUpDown,
-  LogOut,
-  Moon,
-  Sun,
-  Check,
-  Monitor,
-} from 'lucide-react'
+import { ChevronsUpDown, LogOut, Moon, Sun, Check, Monitor } from 'lucide-react'
 import { useAuthStore } from '@/stores/auth-store'
-import useDialogState from '@/hooks/use-dialog-state'
-import { useTheme } from '@/context/theme-provider'
+import { readProfileCookie } from '@/lib/profile-cookie'
 import { cn } from '@/lib/utils'
+import { useTheme } from '@/context/theme-provider'
+import useDialogState from '@/hooks/use-dialog-state'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -35,16 +29,11 @@ export function NavUser() {
   const [open, setOpen] = useDialogState()
   const { theme, setTheme } = useTheme()
 
-  // Use email from auth store (Home mirrors core auth cookie shape)
+  // Use email from auth store (Template mirrors core auth cookie shape)
   const email = useAuthStore((state) => state.email)
-  // Derive name from email (part before "@") and capitalize first letter
-  const displayName = email
-    ? email
-        .split('@')[0]
-        .split(/[._-]/)
-        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-        .join(' ')
-    : 'User'
+  // Get name from mochi_me cookie
+  const profile = readProfileCookie()
+  const displayName = profile.name || 'User'
   const displayEmail = email || 'user@example.com'
 
   /* Update theme-color meta tag when theme is updated */
@@ -79,17 +68,14 @@ export function NavUser() {
             >
               <DropdownMenuLabel className='p-0 font-normal'>
                 <div className='grid px-1 py-1.5 text-start text-sm leading-tight'>
-                  <span className='truncate font-semibold'>
-                    {displayName}
-                  </span>
+                  <span className='truncate font-semibold'>{displayName}</span>
                   <span className='truncate text-xs'>{displayEmail}</span>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger>
-                <Sun /> {' '}
-                  Theme
+                  <Sun /> Theme
                 </DropdownMenuSubTrigger>
                 <DropdownMenuSubContent>
                   <DropdownMenuItem onClick={() => setTheme('light')}>
