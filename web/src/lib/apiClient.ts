@@ -92,6 +92,9 @@ apiClient.interceptors.response.use(
             error.config?.url?.includes('/verify')
 
           if (!isAuthEndpoint) {
+            if (import.meta.env.DEV) {
+              devConsole?.log?.('[API] 401 Unauthorized - redirecting to login')
+            }
             removeCookie('token')
             removeCookie('mochi_me')
 
