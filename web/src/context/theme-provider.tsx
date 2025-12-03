@@ -1,11 +1,11 @@
 import { createContext, useContext, useEffect, useState, useMemo } from 'react'
-import { getCookie, setCookie, removeCookie } from '@/lib/cookies'
+import { getCookie, removeCookie, setCookie } from '@/lib/cookies'
 
 type Theme = 'dark' | 'light' | 'system'
 type ResolvedTheme = Exclude<Theme, 'system'>
 
 const DEFAULT_THEME = 'light'
-const THEME_COOKIE_NAME = 'vite-ui-theme'
+const THEME_COOKIE_NAME = 'mochi-theme'
 const THEME_COOKIE_MAX_AGE = 60 * 60 * 24 * 365 // 1 year
 
 type ThemeProviderProps = {
@@ -76,8 +76,8 @@ export function ThemeProvider({
   }, [theme, resolvedTheme])
 
   const setTheme = (theme: Theme) => {
-    setCookie(storageKey, theme, THEME_COOKIE_MAX_AGE)
     _setTheme(theme)
+    setCookie(storageKey, theme, { maxAge: THEME_COOKIE_MAX_AGE })
   }
 
   const resetTheme = () => {
