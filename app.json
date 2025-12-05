@@ -3,6 +3,8 @@
 	"label": "app_name",
 	"paths": [""],
 
+	"architecture": {"engine": "starlark", "version": 2},
+
 	"actions": {
 		"": {"file": "web/dist/index.html"},
 		"assets": {"files": "web/dist/assets"},
