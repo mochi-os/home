@@ -1,7 +1,7 @@
 {
 	"version": "1.0",
 	"label": "app_name",
-	"paths": ["home"],
+	"paths": [""],
 
 	"architecture": {"engine": "starlark", "version": 2},
 	"execute": ["home.star"],
