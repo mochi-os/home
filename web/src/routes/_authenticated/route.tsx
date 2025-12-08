@@ -9,6 +9,12 @@ export const Route = createFileRoute('/_authenticated')({
 
     if (!store.isInitialized) {
       store.syncFromCookie()
+    } else {
+      // double-check cookie hasn't changed
+      const cookieToken = getCookie('token')
+      if (cookieToken && cookieToken !== store.token) {
+        store.syncFromCookie()
+      }
     }
 
     const token = getCookie('token') || store.token
@@ -20,6 +26,9 @@ export const Route = createFileRoute('/_authenticated')({
       window.location.href = redirectUrl
 
       return
+    }
+    if (!store.isInitialized) {
+      store.syncFromCookie()
     }
 
     return

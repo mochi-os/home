@@ -50,6 +50,7 @@ export function Home() {
                   window.location.href = import.meta.env.VITE_APP_CHAT_URL
                 }}
               >
+                <MessagesSquare className='mr-2 h-4 w-4' />
                 Open Chats
               </Button>
             </CardContent>
@@ -72,6 +73,7 @@ export function Home() {
                   window.location.href = import.meta.env.VITE_APP_FRIENDS_URL
                 }}
               >
+                <UserPlus className='mr-2 h-4 w-4' />
                 Open Friends
               </Button>
             </CardContent>
