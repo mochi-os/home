@@ -28,7 +28,7 @@ export function Home() {
 
       <Main>
         <div className='mb-6'>
-          <h1 className='text-2xl font-bold tracking-tight'>Welcome to Mochi</h1>
+          <h1 className='text-2xl font-bold tracking-tight'>Mochi</h1>
         </div>
 
         <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
