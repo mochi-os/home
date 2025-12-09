@@ -43,7 +43,7 @@ export function Home() {
                 alt={icon.name}
                 className='h-12 w-12'
               />
-              <span className='mt-2 text-sm font-medium'>{icon.name}</span>
+              <span className='mt-2 text-center text-sm font-medium'>{icon.name}</span>
             </a>
           ))}
         </div>
