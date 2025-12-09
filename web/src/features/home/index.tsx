@@ -1,18 +1,22 @@
-import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { useQuery } from '@tanstack/react-query'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { Search } from '@/components/search'
 import { NotificationsDropdown } from '@/components/notifications-dropdown'
-import { MessagesSquare, UserPlus } from 'lucide-react'
+import { requestHelpers } from '@/lib/request'
+
+interface AppIcon {
+  path: string
+  name: string
+  file: string
+}
 
 export function Home() {
+  const { data: icons } = useQuery({
+    queryKey: ['app-icons'],
+    queryFn: () => requestHelpers.get<AppIcon[]>('/icons'),
+  })
+
   return (
     <>
       <Header>
@@ -23,61 +27,25 @@ export function Home() {
       </Header>
 
       <Main>
-        <div className='mb-6 flex items-center justify-between space-y-2'>
-          <div>
-            <h1 className='text-2xl font-bold tracking-tight'>Welcome to Mochi</h1>
-            {/* <p className='text-muted-foreground'>
-              Your home for all Mochi apps and services
-            </p> */}
-          </div>
+        <div className='mb-6'>
+          <h1 className='text-2xl font-bold tracking-tight'>Welcome to Mochi</h1>
         </div>
 
-        <div className='grid gap-6 md:grid-cols-2'>
-          <Card className='group hover:shadow-md transition-shadow cursor-pointer'>
-            <CardHeader>
-              <div className='flex items-center gap-2'>
-                <MessagesSquare className='h-5 w-5 text-primary' />
-                <CardTitle>Chats</CardTitle>
-              </div>
-              <CardDescription>
-                Connect and chat with your friends
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button
-                className='w-full'
-                onClick={() => {
-                  window.location.href = import.meta.env.VITE_APP_CHAT_URL
-                }}
-              >
-                <MessagesSquare className='mr-2 h-4 w-4' />
-                Open Chats
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className='group hover:shadow-md transition-shadow cursor-pointer'>
-            <CardHeader>
-              <div className='flex items-center gap-2'>
-                <UserPlus className='h-5 w-5 text-primary' />
-                <CardTitle>Friends</CardTitle>
-              </div>
-              <CardDescription>
-                Manage your friends and invitations
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button
-                className='w-full'
-                onClick={() => {
-                  window.location.href = import.meta.env.VITE_APP_FRIENDS_URL
-                }}
-              >
-                <UserPlus className='mr-2 h-4 w-4' />
-                Open Friends
-              </Button>
-            </CardContent>
-          </Card>
+        <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
+          {icons?.map((icon) => (
+            <a
+              key={icon.path}
+              href={`/${icon.path}/`}
+              className='flex flex-col items-center rounded-lg p-4 transition-colors hover:bg-accent'
+            >
+              <img
+                src={`/${icon.path}/${icon.file}`}
+                alt={icon.name}
+                className='h-16 w-16'
+              />
+              <span className='mt-2 text-sm font-medium'>{icon.name}</span>
+            </a>
+          ))}
         </div>
       </Main>
     </>

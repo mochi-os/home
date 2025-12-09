@@ -7,10 +7,12 @@
 	"paths": [""],
 
 	"architecture": {"engine": "starlark", "version": 2},
+	"execute": ["home.star"],
 
 	"actions": {
 		"": {"file": "web/dist/index.html"},
 		"assets": {"files": "web/dist/assets"},
+		"icons": {"function": "action_icons"},
 		"images": {"files": "web/dist/images"}
 	}
 }
