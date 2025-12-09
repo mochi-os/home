@@ -20,15 +20,13 @@ export function Home() {
     <>
       <TopBar>
         <Search />
+        <h1 className='absolute left-1/2 -translate-x-1/2 text-2xl font-light tracking-tight' style={{ fontFamily: 'Nunito, sans-serif' }}>mochi</h1>
         <div className='ms-auto flex items-center space-x-4'>
           <NotificationsDropdown />
         </div>
       </TopBar>
 
       <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
-        <div className='mb-6'>
-          <h1 className='text-2xl font-bold tracking-tight'>Mochi</h1>
-        </div>
 
         <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
           {icons?.map((icon) => (
