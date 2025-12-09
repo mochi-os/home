@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { Header } from '@/components/layout/header'
-import { Main } from '@/components/layout/main'
+import { TopBar } from '@/components/layout/top-bar'
 import { Search } from '@/components/search'
 import { NotificationsDropdown } from '@/components/notifications-dropdown'
 import { requestHelpers } from '@/lib/request'
@@ -19,14 +18,14 @@ export function Home() {
 
   return (
     <>
-      <Header>
+      <TopBar>
         <Search />
         <div className='ms-auto flex items-center space-x-4'>
           <NotificationsDropdown />
         </div>
-      </Header>
+      </TopBar>
 
-      <Main>
+      <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
         <div className='mb-6'>
           <h1 className='text-2xl font-bold tracking-tight'>Mochi</h1>
         </div>
@@ -47,7 +46,7 @@ export function Home() {
             </a>
           ))}
         </div>
-      </Main>
+      </main>
     </>
   )
 }
