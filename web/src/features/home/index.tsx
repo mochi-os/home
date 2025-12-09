@@ -41,7 +41,7 @@ export function Home() {
               <img
                 src={`/${icon.path}/${icon.file}`}
                 alt={icon.name}
-                className='h-16 w-16'
+                className='h-12 w-12'
               />
               <span className='mt-2 text-sm font-medium'>{icon.name}</span>
             </a>
