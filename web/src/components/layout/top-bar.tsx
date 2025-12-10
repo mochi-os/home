@@ -16,11 +16,7 @@ import {
 import { SignOutDialog } from '@/components/sign-out-dialog'
 import { APP_ROUTES } from '@/config/app-routes'
 
-type TopBarProps = {
-  children?: React.ReactNode
-}
-
-export function TopBar({ children }: TopBarProps) {
+export function TopBar() {
   const [offset, setOffset] = useState(0)
   const [open, setOpen] = useDialogState()
   const { theme } = useTheme()
@@ -68,10 +64,7 @@ export function TopBar({ children }: TopBarProps) {
             />
           </a>
 
-          {/* Children (search, notifications, etc.) */}
-          <div className="flex flex-1 items-center gap-4">
-            {children}
-          </div>
+          <div className="flex-1" />
 
           {/* User Menu */}
           <DropdownMenu>

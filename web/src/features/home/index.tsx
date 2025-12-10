@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
 import { TopBar } from '@/components/layout/top-bar'
-import { NotificationsDropdown } from '@/components/notifications-dropdown'
 import { requestHelpers } from '@/lib/request'
 
 interface AppIcon {
@@ -17,26 +16,21 @@ export function Home() {
 
   return (
     <>
-      <TopBar>
-        <h1 className='absolute left-1/2 -translate-x-1/2 text-2xl font-light tracking-tight' style={{ fontFamily: 'Nunito, sans-serif' }}>mochi</h1>
-        <div className='ms-auto flex items-center space-x-4'>
-          <NotificationsDropdown />
-        </div>
-      </TopBar>
+      <TopBar />
 
       <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
 
-        <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
+        <div className='grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8'>
           {icons?.map((icon) => (
             <a
               key={icon.path}
               href={`/${icon.path}/`}
-              className='flex flex-col items-center rounded-lg p-4 transition-colors hover:bg-accent'
+              className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-[#FAF8F4]'
             >
               <img
                 src={`/${icon.path}/${icon.file}`}
                 alt={icon.name}
-                className='h-12 w-12'
+                className='h-10 w-10'
               />
               <span className='mt-2 text-center text-sm font-medium'>{icon.name}</span>
             </a>
