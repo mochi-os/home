@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { SignOutDialog } from '@/components/sign-out-dialog'
+import { NotificationsDropdown } from '@/components/notifications-dropdown'
 import { APP_ROUTES } from '@/config/app-routes'
 
 export function TopBar() {
@@ -64,7 +65,13 @@ export function TopBar() {
             />
           </a>
 
+          {/* Title */}
+          <h1 className="absolute left-1/2 -translate-x-1/2 text-xl font-light tracking-tight" style={{ fontFamily: 'Nunito, sans-serif' }}>mochi</h1>
+
           <div className="flex-1" />
+
+          {/* Notifications */}
+          <NotificationsDropdown />
 
           {/* User Menu */}
           <DropdownMenu>
