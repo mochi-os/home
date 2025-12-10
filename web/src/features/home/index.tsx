@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
 import { TopBar } from '@/components/layout/top-bar'
-import { Search } from '@/components/search'
 import { NotificationsDropdown } from '@/components/notifications-dropdown'
 import { requestHelpers } from '@/lib/request'
 
@@ -19,7 +18,6 @@ export function Home() {
   return (
     <>
       <TopBar>
-        <Search />
         <h1 className='absolute left-1/2 -translate-x-1/2 text-2xl font-light tracking-tight' style={{ fontFamily: 'Nunito, sans-serif' }}>mochi</h1>
         <div className='ms-auto flex items-center space-x-4'>
           <NotificationsDropdown />
