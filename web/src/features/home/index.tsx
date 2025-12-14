@@ -25,7 +25,7 @@ export function Home() {
             <a
               key={icon.path}
               href={`/${icon.path}/`}
-              className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-[#FAF8F4]'
+              className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-highlight'
             >
               <img
                 src={`/${icon.path}/${icon.file}`}
