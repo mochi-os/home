@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { TopBar } from '@/components/layout/top-bar'
+import { TopBar } from '@mochi/common'
 import { requestHelpers } from '@/lib/request'
 
 interface AppIcon {
@@ -16,7 +16,7 @@ export function Home() {
 
   return (
     <>
-      <TopBar />
+      <TopBar title="Home" />
 
       <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
 
