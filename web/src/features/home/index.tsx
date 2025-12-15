@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { TopBar } from '@mochi/common'
-import { requestHelpers } from '@/lib/request'
+import { requestHelpers } from '@mochi/common'
 
 interface AppIcon {
   path: string
