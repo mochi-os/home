@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
+import { Loader2 } from 'lucide-react'
 import { requestHelpers } from '@mochi/common'
 
 interface AppIcon {
@@ -8,10 +9,20 @@ interface AppIcon {
 }
 
 export function Home() {
-  const { data: icons } = useQuery({
+  const { data: icons, isLoading } = useQuery({
     queryKey: ['app-icons'],
     queryFn: () => requestHelpers.get<AppIcon[]>('/icons'),
   })
+
+  if (isLoading) {
+    return (
+      <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
+        <div className='flex justify-center py-12'>
+          <Loader2 className='size-6 animate-spin text-muted-foreground' />
+        </div>
+      </main>
+    )
+  }
 
   return (
     <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
@@ -34,5 +45,3 @@ export function Home() {
     </main>
   )
 }
-
-
