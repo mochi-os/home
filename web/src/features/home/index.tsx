@@ -53,7 +53,9 @@ export function Home() {
 
       {data?.development && data.development.length > 0 && (
         <>
-          <hr className='my-6 border-border' />
+          {data?.icons && data.icons.length > 0 && (
+            <hr className='my-6 border-border' />
+          )}
           <h2 className='mb-4 text-lg font-medium text-muted-foreground'>
             Development apps
           </h2>

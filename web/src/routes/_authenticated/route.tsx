@@ -31,5 +31,5 @@ export const Route = createFileRoute('/_authenticated')({
 
     return
   },
-  component: () => <AuthenticatedLayout title="mochi" />,
+  component: () => <AuthenticatedLayout />,
 })
