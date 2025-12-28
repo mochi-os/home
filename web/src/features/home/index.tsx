@@ -37,7 +37,7 @@ export function Home() {
           <a
             key={icon.path}
             href={`/${icon.path}/`}
-            className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-highlight'
+            className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-muted'
           >
             <img
               src={`/${icon.path}/${icon.file}`}
@@ -64,7 +64,7 @@ export function Home() {
               <a
                 key={icon.path}
                 href={`/${icon.path}/`}
-                className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-highlight'
+                className='flex flex-col items-center rounded-lg p-2 transition-colors hover:bg-muted'
               >
                 <img
                   src={`/${icon.path}/${icon.file}`}
