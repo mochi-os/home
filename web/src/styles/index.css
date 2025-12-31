@@ -1,3 +1,6 @@
+/* Nunito font for mochi branding */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import '../../../../../lib/common/src/styles/theme.css';

@@ -31,5 +31,16 @@ export const Route = createFileRoute('/_authenticated')({
 
     return
   },
-  component: () => <AuthenticatedLayout />,
+  component: () => (
+    <AuthenticatedLayout
+      mobileTitle={
+        <span
+          className="text-[20px] font-light tracking-[2px] text-[#4A4A4A]"
+          style={{ fontFamily: 'Nunito, system-ui, -apple-system, sans-serif' }}
+        >
+          mochi
+        </span>
+      }
+    />
+  ),
 })

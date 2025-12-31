@@ -32,6 +32,12 @@ export function Home() {
 
   return (
     <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6'>
+      <h1
+        className='mb-8 hidden text-center text-[28px] font-light tracking-[3px] text-[#4A4A4A] md:block'
+        style={{ fontFamily: 'Nunito, system-ui, -apple-system, sans-serif' }}
+      >
+        mochi
+      </h1>
       <div className='grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8'>
         {data?.icons?.map((icon) => (
           <a
