@@ -7,8 +7,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
-import { toast } from 'sonner'
-import { useAuthStore, ThemeProvider } from '@mochi/common'
+import { useAuthStore, ThemeProvider, toast } from '@mochi/common'
 // import { DirectionProvider } from '@mochi/common' // Commented for future use (RTL support)
 // import { FontProvider } from './context/font-provider' // Commented for future use (Font switching)
 // Generated Routes
