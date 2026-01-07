@@ -12,6 +12,7 @@
 	"actions": {
 		"": {"file": "web/dist/index.html"},
 		"assets": {"files": "web/dist/assets"},
+		"fonts": {"files": "web/dist/fonts"},
 		"icons": {"function": "action_icons"},
 		"images": {"files": "web/dist/images"}
 	}
