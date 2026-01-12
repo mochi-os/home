@@ -13,6 +13,11 @@
 
 @source "../../../../../lib/common/src/**/*.{ts,tsx}";
 
+@utility font-branding {
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+
 @custom-variant dark (&:is(.dark *));
 
 @layer base {
