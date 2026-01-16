@@ -54,11 +54,11 @@ export function Home() {
               style={{ boxShadow: 'var(--shadow-sm)' }}
             >
               {/* Icon Container with Gradient Background */}
-              <div className='flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-muted to-secondary/50 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/10 group-hover:to-primary/5'>
+              <div className='flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-muted/80 to-secondary/30 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 dark:from-muted/20 dark:to-secondary/10'>
                 <img
                   src={`/${icon.path}/${icon.file}`}
                   alt={icon.name}
-                  className='h-9 w-9 transition-transform duration-300 group-hover:scale-110'
+                  className='h-9 w-9 transition-transform duration-300 group-hover:scale-110 dark:invert'
                 />
               </div>
 
@@ -91,11 +91,11 @@ export function Home() {
                 style={{ boxShadow: 'var(--shadow-xs)' }}
               >
                 {/* Icon Container */}
-                <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-muted/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-primary/10'>
+                <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-muted/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-primary/10 dark:bg-muted/10'>
                   <img
                     src={`/${icon.path}/${icon.file}`}
                     alt={icon.name}
-                    className='h-7 w-7 opacity-75 transition-opacity group-hover:opacity-100'
+                    className='h-7 w-7 opacity-75 transition-opacity group-hover:opacity-100 dark:invert'
                   />
                 </div>
 
