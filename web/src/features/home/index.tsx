@@ -33,14 +33,11 @@ export function Home() {
       {/* Hero Section */}
       <div className='mb-12 text-center'>
         <h1
-          className='mb-2 bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-5xl font-light tracking-[0.3em] text-transparent sm:text-6xl'
+          className='bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-5xl font-light tracking-[0.3em] text-transparent sm:text-6xl'
           style={{ fontFamily: 'Nunito, system-ui, -apple-system, sans-serif' }}
         >
           mochi
         </h1>
-        <p className='text-sm text-muted-foreground'>
-          Your workspace, simplified
-        </p>
       </div>
 
       {/* Main Apps Grid */}
