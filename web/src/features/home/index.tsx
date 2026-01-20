@@ -29,11 +29,11 @@ export function Home() {
   }
 
   return (
-    <main className='mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8'>
+    <main className='mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8'>
       {/* Hero Section */}
-      <div className='mb-12 text-center'>
+      <div className='mb-8 text-center'>
         <h1
-          className='bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-5xl font-light tracking-[0.3em] text-transparent sm:text-6xl'
+          className='bg-gradient-to-br from-foreground to-muted-foreground/30 bg-clip-text text-[36px] font-light tracking-[3px] text-transparent'
           style={{ fontFamily: 'Nunito, system-ui, -apple-system, sans-serif' }}
         >
           mochi
