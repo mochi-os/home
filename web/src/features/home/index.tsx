@@ -42,20 +42,20 @@ export function Home() {
 
       {/* Main Apps Grid */}
       {data?.icons && data.icons.length > 0 && (
-        <div className='mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
+        <div className='mb-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
           {data.icons.map((icon) => (
             <a
               key={icon.path}
               href={`/${icon.path}/`}
-              className='group relative flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:bg-hover'
+              className='group relative flex flex-col items-center gap-2 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:bg-hover'
               style={{ boxShadow: 'var(--shadow-sm)' }}
             >
               {/* Icon Container with Gradient Background */}
-              <div className='flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-muted/80 to-secondary/30 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 dark:from-muted/20 dark:to-secondary/10'>
+              <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-muted/80 to-secondary/30 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 dark:from-muted/20 dark:to-secondary/10'>
                 <img
                   src={`/${icon.path}/${icon.file}`}
                   alt={icon.name}
-                  className='h-9 w-9 transition-transform duration-300 group-hover:scale-110 dark:invert'
+                  className='h-7 w-7 transition-transform duration-300 group-hover:scale-110 dark:invert'
                 />
               </div>
 
@@ -79,7 +79,7 @@ export function Home() {
             <div className='h-px flex-1 bg-border' />
           </div>
 
-          <div className='grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6'>
+          <div className='grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
             {data.development.map((icon) => (
               <a
                 key={icon.path}
