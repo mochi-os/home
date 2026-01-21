@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { Loader2 } from 'lucide-react'
-import { requestHelpers } from '@mochi/common'
+import { requestHelpers, EmptyState, Main } from '@mochi/common'
+import { AlertCircle } from 'lucide-react'
 
 interface AppIcon {
   id: string
@@ -22,14 +23,30 @@ export function Home() {
 
   if (isLoading) {
     return (
-      <main className='flex min-h-[60vh] items-center justify-center'>
-        <Loader2 className='size-8 animate-spin text-primary' />
-      </main>
+      <Main>
+        <EmptyState
+          icon={Loader2}
+          title="Loading apps..."
+          className="animate-pulse opacity-70"
+        />
+      </Main>
+    )
+  }
+
+  if (!data?.icons || data.icons.length === 0) {
+    return (
+      <Main>
+        <EmptyState
+          icon={AlertCircle}
+          title="No apps found"
+          description="We couldn't find any apps for you. this is unexpected."
+        />
+      </Main>
     )
   }
 
   return (
-    <main className='mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8'>
+    <Main className='mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8'>
       {/* Hero Section */}
       <div className='mb-12 text-center'>
         <h1
@@ -41,8 +58,7 @@ export function Home() {
       </div>
 
       {/* Main Apps Grid */}
-      {data?.icons && data.icons.length > 0 && (
-        <div className='mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
+      <div className='mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
           {data.icons.map((icon) => (
             <a
               key={icon.path}
@@ -66,7 +82,7 @@ export function Home() {
             </a>
           ))}
         </div>
-      )}
+
 
       {/* Development Apps Section */}
       {data?.development && data.development.length > 0 && (
@@ -110,6 +126,6 @@ export function Home() {
           </div>
         </div>
       )}
-    </main>
+    </Main>
   )
 }
