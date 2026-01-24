@@ -6,12 +6,12 @@ export const Route = createFileRoute('/_authenticated')({
     const store = useAuthStore.getState()
 
     if (!store.isInitialized) {
-      store.syncFromCookie()
+      store.initialize()
     } else {
       // double-check cookie hasn't changed
       const cookieToken = getCookie('token')
       if (cookieToken && cookieToken !== store.token) {
-        store.syncFromCookie()
+        store.initialize()
       }
     }
 
@@ -26,7 +26,7 @@ export const Route = createFileRoute('/_authenticated')({
       return
     }
     if (!store.isInitialized) {
-      store.syncFromCookie()
+      store.initialize()
     }
 
     return
