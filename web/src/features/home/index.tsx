@@ -1,5 +1,4 @@
-import { useQuery } from '@tanstack/react-query'
-import { requestHelpers, EmptyState, Main, Skeleton } from '@mochi/common'
+import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton } from '@mochi/common'
 import { AlertCircle } from 'lucide-react'
 
 interface AppIcon {
@@ -15,28 +14,28 @@ interface IconsResponse {
 }
 
 export function Home() {
-  const { data, isLoading } = useQuery({
+  const { data, isLoading, ErrorComponent } = useQueryWithError<IconsResponse, Error>({
     queryKey: ['app-icons'],
     queryFn: () => requestHelpers.get<IconsResponse>('/icons'),
   })
 
   if (isLoading) {
     return (
-      <Main className='mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8'>
+      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
         <div className='mb-8 text-center'>
             <Skeleton className='mx-auto h-12 w-32' />
         </div>
         <div className='mb-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-          {Array.from({ length: 14 }).map((_, i) => (
-            <div
-              key={i}
-              className='flex flex-col items-center gap-2 rounded-xl border border-border bg-card p-4'
-            >
-              <Skeleton className='h-12 w-12 rounded-lg' />
-              <Skeleton className='h-4 w-16' />
-            </div>
-          ))}
+           <CardSkeleton count={14} className="contents" />
         </div>
+      </Main>
+    )
+  }
+
+  if (ErrorComponent) {
+    return (
+      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+        {ErrorComponent}
       </Main>
     )
   }
@@ -54,7 +53,7 @@ export function Home() {
   }
 
   return (
-    <Main className='mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8'>
+    <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
       {/* Hero Section */}
       <div className='mb-8 text-center'>
         <h1
