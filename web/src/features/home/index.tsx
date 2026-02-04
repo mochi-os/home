@@ -26,7 +26,7 @@ export function Home() {
             <Skeleton className='mx-auto h-12 w-32' />
         </div>
         <div className='mb-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-           <CardSkeleton count={14} className="contents" />
+           <CardSkeleton count={12} className="contents" />
         </div>
       </Main>
     )
