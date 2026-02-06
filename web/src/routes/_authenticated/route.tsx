@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { AuthenticatedLayout, useAuthStore, getCookie } from '@mochi/common'
 
 export const Route = createFileRoute('/_authenticated')({
-  beforeLoad: ({ location }) => {
+  beforeLoad: async ({ location }) => {
     const store = useAuthStore.getState()
 
     if (!store.isInitialized) {
@@ -25,11 +25,9 @@ export const Route = createFileRoute('/_authenticated')({
 
       return
     }
-    if (!store.isInitialized) {
-      store.initialize()
-    }
-
-    return
+    
+    // Fetch identity if missing
+    await store.loadIdentity()
   },
   component: () => (
     <AuthenticatedLayout

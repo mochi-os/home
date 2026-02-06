@@ -38,6 +38,7 @@ declare module '@tanstack/react-router' {
 // Initialize auth state from cookie on app start
 useAuthStore.getState().initialize()
 
+
 // Render the app
 const rootElement = document.getElementById('root')!
 if (!rootElement.innerHTML) {
