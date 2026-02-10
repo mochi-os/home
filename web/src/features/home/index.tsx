@@ -58,7 +58,6 @@ export function Home() {
       <div className='mb-8 text-center'>
         <h1
           className='bg-gradient-to-br from-foreground to-muted-foreground/30 bg-clip-text text-[36px] font-light tracking-[3px] text-transparent'
-          style={{ fontFamily: 'Nunito, system-ui, -apple-system, sans-serif' }}
         >
           mochi
         </h1>
