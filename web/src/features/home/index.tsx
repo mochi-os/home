@@ -46,7 +46,7 @@ export function Home() {
         <EmptyState
           icon={AlertCircle}
           title="No apps found"
-          description="We couldn't find any apps for you. this is unexpected."
+          description="We couldn't find any apps for you. This is unexpected."
         />
       </Main>
     )
