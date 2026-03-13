@@ -64,7 +64,7 @@ export function Home() {
       </div>
 
       {/* Main Apps Grid */}
-      <div className='mb-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
+      <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
         {data.icons.map((icon) => (
           <a
             key={icon.path}
@@ -72,12 +72,22 @@ export function Home() {
             className='group relative flex flex-col items-center gap-2 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:bg-hover'
             style={{ boxShadow: 'var(--shadow-sm)' }}
           >
-            {/* Icon Container with Gradient Background */}
-            <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-muted/80 to-secondary/30 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 dark:from-muted/20 dark:to-secondary/10'>
-              <img
-                src={`/${icon.path}/${icon.file}`}
-                alt={icon.name}
-                className='h-7 w-7 transition-transform duration-300 group-hover:scale-110 dark:invert'
+            {/* Icon Container */}
+            <div className='flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-muted/80 to-secondary/30 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 dark:from-muted/20 dark:to-secondary/10'>
+              <div
+                className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary'
+                style={{
+                  maskImage: `url(/${icon.path}/${icon.file})`,
+                  maskSize: 'contain',
+                  maskRepeat: 'no-repeat',
+                  maskPosition: 'center',
+                  WebkitMaskImage: `url(/${icon.path}/${icon.file})`,
+                  WebkitMaskSize: 'contain',
+                  WebkitMaskRepeat: 'no-repeat',
+                  WebkitMaskPosition: 'center',
+                }}
+                role="img"
+                aria-label={icon.name}
               />
             </div>
 
@@ -100,7 +110,7 @@ export function Home() {
             <div className='h-px flex-1 bg-border' />
           </div>
 
-          <div className='grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
+          <div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
             {data.development.map((icon) => (
               <a
                 key={icon.path}
@@ -109,11 +119,21 @@ export function Home() {
                 style={{ boxShadow: 'var(--shadow-xs)' }}
               >
                 {/* Icon Container */}
-                <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-muted/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-primary/10 dark:bg-muted/10'>
-                  <img
-                    src={`/${icon.path}/${icon.file}`}
-                    alt={icon.name}
-                    className='h-7 w-7 opacity-75 transition-opacity group-hover:opacity-100 dark:invert'
+                <div className='flex h-14 w-14 items-center justify-center rounded-lg bg-muted/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-primary/10 dark:bg-muted/10'>
+                  <div
+                    className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:bg-primary'
+                    style={{
+                      maskImage: `url(/${icon.path}/${icon.file})`,
+                      maskSize: 'contain',
+                      maskRepeat: 'no-repeat',
+                      maskPosition: 'center',
+                      WebkitMaskImage: `url(/${icon.path}/${icon.file})`,
+                      WebkitMaskSize: 'contain',
+                      WebkitMaskRepeat: 'no-repeat',
+                      WebkitMaskPosition: 'center',
+                    }}
+                    role="img"
+                    aria-label={icon.name}
                   />
                 </div>
 
