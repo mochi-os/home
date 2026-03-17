@@ -1,4 +1,4 @@
-import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton } from '@mochi/common'
+import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton } from '@mochi/web'
 import { AlertCircle } from 'lucide-react'
 
 interface AppIcon {
