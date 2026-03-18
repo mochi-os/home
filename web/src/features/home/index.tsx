@@ -23,10 +23,10 @@ export function Home() {
     return (
       <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
         <div className='mb-8 text-center'>
-            <Skeleton className='mx-auto h-12 w-32' />
+          <Skeleton className='mx-auto h-12 w-32' />
         </div>
         <div className='mb-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-           <CardSkeleton count={12} className="contents" />
+          <CardSkeleton count={12} className="contents" />
         </div>
       </Main>
     )
@@ -54,15 +54,15 @@ export function Home() {
 
   return (
     <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+
       {/* Hero Section */}
-      <div className='mb-8 text-center'>
+      <div className='mb-8 text-center hidden sm:block'>
         <h1
           className='bg-gradient-to-br from-foreground to-muted-foreground/30 bg-clip-text text-[36px] font-light tracking-[3px] text-transparent'
         >
           mochi
         </h1>
       </div>
-
       {/* Main Apps Grid */}
       <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
         {data.icons.map((icon) => (

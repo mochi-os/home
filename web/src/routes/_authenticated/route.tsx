@@ -11,7 +11,7 @@ export const Route = createFileRoute('/_authenticated')({
   component: () => (
     <AuthenticatedLayout
       mobileTitle={
-        <span className="text-[20px] font-light tracking-[2px] text-muted-foreground">
+        <span className='min-w-0 whitespace-nowrap bg-gradient-to-br from-foreground to-muted-foreground/30 bg-clip-text text-[32px] font-light tracking-[3px] text-transparent'>
           mochi
         </span>
       }
