@@ -7,12 +7,17 @@ def is_entity_id(id):
 
 def action_icons(a):
     """Return list of app icons for the home screen"""
-    all_icons = mochi.app.icons()
+    result = mochi.app.icons()
     icons = []
     development = []
-    for icon in all_icons:
+    for icon in result["icons"]:
         if is_entity_id(icon["id"]):
             icons.append(icon)
         else:
             development.append(icon)
-    a.json({"icons": icons, "development": development})
+    response = {"icons": icons, "development": development}
+    if "icon_mask" in result:
+        response["icon_mask"] = result["icon_mask"]
+    if "icon_background" in result:
+        response["icon_background"] = result["icon_background"]
+    a.json(response)
