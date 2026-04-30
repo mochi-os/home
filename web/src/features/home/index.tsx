@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import { Trans, useLingui } from '@lingui/react/macro'
 import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton } from '@mochi/web'
 import { AlertCircle } from 'lucide-react'
 
@@ -47,6 +48,7 @@ interface IconsResponse {
 }
 
 export function Home() {
+  const { t } = useLingui()
   const { data, isLoading, ErrorComponent } = useQueryWithError<IconsResponse, Error>({
     queryKey: ['app-icons'],
     queryFn: () => requestHelpers.get<IconsResponse>('/-/icons'),
@@ -78,8 +80,8 @@ export function Home() {
       <Main>
         <EmptyState
           icon={AlertCircle}
-          title="No apps found"
-          description="We couldn't find any apps for you. This is unexpected."
+          title={t`No apps found`}
+          description={t`We couldn't find any apps for you. This is unexpected.`}
         />
       </Main>
     )
@@ -146,7 +148,7 @@ export function Home() {
           <div className='mb-6 flex items-center gap-3'>
             <div className='h-px flex-1 bg-border' />
             <h2 className='text-xs font-medium uppercase tracking-wider text-muted-foreground'>
-              Development
+              <Trans>Development</Trans>
             </h2>
             <div className='h-px flex-1 bg-border' />
           </div>

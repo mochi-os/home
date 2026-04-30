@@ -13,3 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/home/index.tsx:151
+msgid "Development"
+msgstr "Development"
+
+#: src/features/home/index.tsx:83
+msgid "No apps found"
+msgstr "No apps found"
+
+#: src/features/home/index.tsx:84
+msgid "We couldn't find any apps for you. This is unexpected."
+msgstr "We couldn't find any apps for you. This is unexpected."
