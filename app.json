@@ -3,7 +3,7 @@
 
 {
 	"version": "1.41",
-	"label": "app_name",
+	"label": "app.name",
 	"paths": [""],
 
 	"architecture": {"engine": "starlark", "version": 4},
