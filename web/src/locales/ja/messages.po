@@ -84,7 +84,7 @@ msgstr "既存の通知に追加"
 
 #: ../../../lib/web/src/components/view-tabs.tsx:57
 msgid "Add view"
-msgstr ""
+msgstr "ビューを追加"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:62
 msgid "Adjust the appearance and layout to suit your preferences."
@@ -154,7 +154,7 @@ msgstr "左から右、または右から左のサイト表示方向から選択
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "システム設定、ライトモード、ダークモードから選択します"
 
-#: ../../../lib/web/src/components/language-picker.tsx:121
+#: ../../../lib/web/src/components/language-picker.tsx:126
 msgid "Choose language"
 msgstr "言語を選択"
 
@@ -259,7 +259,9 @@ msgstr "降順"
 msgid "Details Panel"
 msgstr "詳細パネル"
 
-#: ../../../lib/web/src/components/language-picker.tsx:99
+#: ../../../lib/web/src/components/language-picker.tsx:104
+#: ../../../lib/web/src/components/timezone-select.tsx:43
+#: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:38
 #: ../../../lib/web/src/lib/preference-utils.ts:50
 #: ../../../lib/web/src/lib/preference-utils.ts:68
@@ -469,7 +471,7 @@ msgstr "接続されたアカウントがありません"
 msgid "No groups available"
 msgstr "利用可能なグループがありません"
 
-#: ../../../lib/web/src/components/language-picker.tsx:131
+#: ../../../lib/web/src/components/language-picker.tsx:136
 msgid "No matches."
 msgstr "一致するものがありません。"
 
@@ -486,7 +488,7 @@ msgstr "プロフィールがありません"
 msgid "No results found."
 msgstr "結果が見つかりません。"
 
-#: ../../../lib/web/src/components/timezone-select.tsx:63
+#: ../../../lib/web/src/components/timezone-select.tsx:64
 msgid "No time zone found."
 msgstr "タイムゾーンが見つかりません。"
 
@@ -618,7 +620,7 @@ msgstr "目的地を検索…"
 msgid "Search for origin..."
 msgstr "出発地を検索…"
 
-#: ../../../lib/web/src/components/timezone-select.tsx:61
+#: ../../../lib/web/src/components/timezone-select.tsx:62
 msgid "Search time zone..."
 msgstr "タイムゾーンを検索…"
 
@@ -628,9 +630,9 @@ msgstr "ユーザーを検索"
 
 #: ../../../lib/web/src/components/person-picker.tsx:312
 msgid "Search..."
-msgstr ""
+msgstr "検索…"
 
-#: ../../../lib/web/src/components/language-picker.tsx:129
+#: ../../../lib/web/src/components/language-picker.tsx:134
 msgid "Search…"
 msgstr "検索…"
 
