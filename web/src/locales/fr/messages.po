@@ -538,8 +538,7 @@ msgstr "Autre"
 
 #: ../../../lib/web/src/features/access/access-list.tsx:213
 msgid "Owner"
-msgstr "Propriétaire\"#. placeholder {0}: formatInterval(source.interval)"
-
+msgstr "Propriétaire"
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Image précédente"
