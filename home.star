@@ -8,9 +8,12 @@ def is_entity_id(id):
 def action_icons(a):
     """Return list of app icons for the home screen"""
     result = mochi.app.icons()
+    help_unvisited = bool(a.user) and a.user.preference.get("help.visited") != "true"
     icons = []
     development = []
     for icon in result["icons"]:
+        if help_unvisited and icon.get("link") == "help":
+            icon["highlight"] = True
         if is_entity_id(icon["id"]):
             icons.append(icon)
         else:

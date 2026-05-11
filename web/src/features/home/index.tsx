@@ -38,6 +38,7 @@ interface AppIcon {
   name: string
   file: string
   link: string
+  highlight?: boolean
 }
 
 interface IconsResponse {
@@ -102,11 +103,16 @@ export function Home() {
       <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
         {data.icons.map((icon) => {
           const style = iconStyle(icon, data.icon_mask, data.icon_background)
+          const highlight = icon.highlight
           return (
             <a
               key={icon.path}
               href={`/${icon.link}/`}
-              className='group relative flex flex-col items-center gap-2 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:bg-hover'
+              className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-hover ${
+                highlight
+                  ? 'border-primary animate-pulse hover:animate-none hover:border-primary'
+                  : 'border-border hover:border-primary/20'
+              }`}
               style={{ boxShadow: 'var(--shadow-sm)' }}
             >
               {/* Icon Container */}
