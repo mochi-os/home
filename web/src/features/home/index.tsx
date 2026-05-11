@@ -129,7 +129,7 @@ export function Home() {
                   />
                 </div>
               ) : (
-                <div className='flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-muted/80 to-secondary/30 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 dark:from-muted/20 dark:to-secondary/10'>
+                <div className='flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-110'>
                   <div
                     className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary'
                     style={style.foreground}
@@ -162,11 +162,16 @@ export function Home() {
           <div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
             {data.development.map((icon) => {
               const style = iconStyle(icon, data.icon_mask, data.icon_background)
+              const highlight = icon.highlight
               return (
                 <a
                   key={icon.path}
                   href={`/${icon.link}/`}
-                  className='group relative flex flex-col items-center gap-2 rounded-xl border border-dashed border-border bg-card/50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:bg-hover'
+                  className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card/50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:bg-hover ${
+                    highlight
+                      ? 'border-primary animate-pulse hover:animate-none hover:border-primary'
+                      : 'border-dashed border-border hover:border-primary/30'
+                  }`}
                   style={{ boxShadow: 'var(--shadow-xs)' }}
                 >
                   {/* Icon Container */}
@@ -183,7 +188,7 @@ export function Home() {
                       />
                     </div>
                   ) : (
-                    <div className='flex h-14 w-14 items-center justify-center rounded-lg bg-muted/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-primary/10 dark:bg-muted/10'>
+                    <div className='flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-105'>
                       <div
                         className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:bg-primary'
                         style={style.foreground}
