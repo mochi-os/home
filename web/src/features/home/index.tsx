@@ -110,11 +110,20 @@ export function Home() {
               href={`/${icon.link}/`}
               className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-hover ${
                 highlight
-                  ? 'border-primary animate-pulse hover:animate-none hover:border-primary'
+                  ? 'border-primary hover:border-primary'
                   : 'border-border hover:border-primary/20'
               }`}
               style={{ boxShadow: 'var(--shadow-sm)' }}
             >
+              {highlight && (
+                <span
+                  className='absolute -top-1 -right-1 flex h-3 w-3'
+                  aria-hidden='true'
+                >
+                  <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
+                  <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
+                </span>
+              )}
               {/* Icon Container */}
               {style.className === 'adaptive' ? (
                 <div
@@ -169,11 +178,20 @@ export function Home() {
                   href={`/${icon.link}/`}
                   className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card/50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:bg-hover ${
                     highlight
-                      ? 'border-primary animate-pulse hover:animate-none hover:border-primary'
+                      ? 'border-primary hover:border-primary'
                       : 'border-dashed border-border hover:border-primary/30'
                   }`}
                   style={{ boxShadow: 'var(--shadow-xs)' }}
                 >
+                  {highlight && (
+                    <span
+                      className='absolute -top-1 -right-1 flex h-3 w-3'
+                      aria-hidden='true'
+                    >
+                      <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
+                      <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
+                    </span>
+                  )}
                   {/* Icon Container */}
                   {style.className === 'adaptive' ? (
                     <div
