@@ -154,7 +154,7 @@ msgstr "Vælg mellem venstre-mod-højre eller højre-mod-venstre sideretning"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Vælg mellem systemindstilling, lys tilstand eller mørk tilstand"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Vælg sprog"
 
@@ -201,11 +201,16 @@ msgstr "Luk søgning"
 msgid "Collapse sidebar"
 msgstr "Skjul sidepanel"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Komfortabel"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Kommer snart!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Kompakt"
 
@@ -229,6 +234,10 @@ msgstr "Fortsæt"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Kopier"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Kunne ikke indlæse dette dokument. Prøv igen senere."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -259,7 +268,7 @@ msgstr "Faldende"
 msgid "Details Panel"
 msgstr "Detaljepanel"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -270,7 +279,7 @@ msgstr "Detaljepanel"
 msgid "Detect from web browser"
 msgstr "Registrer fra webbrowser"
 
-#: src/features/home/index.tsx:151
+#: src/features/home/index.tsx:166
 msgid "Development"
 msgstr "Udvikling"
 
@@ -286,9 +295,17 @@ msgstr "Viser mobil-sidebjælken."
 msgid "Download"
 msgstr "Download"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Ordblindevenlig"
+
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Udvid sidebjælke"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Ekstra stor"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:217
 msgid "Failed to add account"
@@ -317,6 +334,14 @@ msgstr "Fredag"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Fra"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Fra tema"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -379,6 +404,11 @@ msgstr "Interesser"
 msgid "Invalid verification code"
 msgstr "Ugyldig verifikationskode"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Stor"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Layout"
@@ -401,6 +431,7 @@ msgid "Load more"
 msgstr "Indlæs flere"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Indlæser…"
 
@@ -431,6 +462,10 @@ msgstr "Logger ud…"
 msgid "Mark all as read"
 msgstr "Markér alle som læst"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Mellem"
+
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
 msgstr "Menu"
@@ -455,7 +490,7 @@ msgstr "Næste billede"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Ingen adgangsregler konfigureret. Tilføj regler for at styre, hvem der har adgang til denne ressource."
 
-#: src/features/home/index.tsx:83
+#: src/features/home/index.tsx:84
 msgid "No apps found"
 msgstr "Ingen apps fundet"
 
@@ -466,10 +501,6 @@ msgstr "Ingen tilknyttede konti"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:238
 msgid "No groups available"
 msgstr "Ingen grupper tilgængelige"
-
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Ingen match."
 
 #: ../../../lib/web/src/components/place-picker.tsx:129
 msgid "No places found"
@@ -497,8 +528,14 @@ msgid "No users found"
 msgstr "Ingen brugere fundet"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Ingen"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Normal"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -539,6 +576,11 @@ msgstr "Ejer"
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Forrige billede"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Privatliv"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -628,10 +670,6 @@ msgstr "Søg efter brugere"
 msgid "Search..."
 msgstr "Søg..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Søg…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -670,6 +708,15 @@ msgstr "Vælg sideretning"
 msgid "Select theme preference"
 msgstr "Vælg temapræference"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Serif"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Serverregler"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Session udløbet"
@@ -702,6 +749,15 @@ msgstr "Logger ud..."
 msgid "Skip to Main"
 msgstr "Spring til hovedindhold"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Lille"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Rummeligt"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
 msgstr "Hold dig dog opdateret!"
@@ -716,6 +772,7 @@ msgstr "Søndag"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "System"
 
@@ -726,6 +783,11 @@ msgstr "Tag"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Teams/Apps"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Vilkår og betingelser"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -849,7 +911,7 @@ msgstr "Vis alle"
 msgid "View all notifications"
 msgstr "Vis alle notifikationer"
 
-#: src/features/home/index.tsx:84
+#: src/features/home/index.tsx:85
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Vi kunne ikke finde nogen apps til dig. Dette er uventet."
 

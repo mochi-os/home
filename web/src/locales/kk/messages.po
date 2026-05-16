@@ -154,7 +154,7 @@ msgstr "Солдан-оңға немесе оңнан-солға сайт бағ
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Жүйе қалауы, жарық режим немесе қараңғы режимді таңдаңыз"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Тілді таңдау"
 
@@ -201,11 +201,16 @@ msgstr "Іздеуді жабу"
 msgid "Collapse sidebar"
 msgstr "Бүйір тақтаны жинау"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Ыңғайлы"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Жақын арада!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Ықшам"
 
@@ -229,6 +234,10 @@ msgstr "Жалғастыру"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Көшіру"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Бұл құжатты жүктеу мүмкін болмады. Кейінірек қайталап көріңіз."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -259,7 +268,7 @@ msgstr "Кему ретімен"
 msgid "Details Panel"
 msgstr "Мәліметтер тақтасы"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -270,7 +279,7 @@ msgstr "Мәліметтер тақтасы"
 msgid "Detect from web browser"
 msgstr "Веб-браузерден анықтау"
 
-#: src/features/home/index.tsx:151
+#: src/features/home/index.tsx:166
 msgid "Development"
 msgstr "Әзірлеу"
 
@@ -286,9 +295,17 @@ msgstr "Мобильді бүйір тақтаны көрсетеді."
 msgid "Download"
 msgstr "Жүктеп алу"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Дислексияға бейімделген"
+
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Бүйір тақтаны кеңейту"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Өте үлкен"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:217
 msgid "Failed to add account"
@@ -317,6 +334,14 @@ msgstr "Жұма"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Кімнен"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Тақырыптан"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -379,6 +404,11 @@ msgstr "Қызығушылықтар"
 msgid "Invalid verification code"
 msgstr "Жарамсыз растау коды"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Үлкен"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Орналасу"
@@ -401,6 +431,7 @@ msgid "Load more"
 msgstr "Көбірек жүктеу"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Жүктелуде…"
 
@@ -431,6 +462,10 @@ msgstr "Шығу…"
 msgid "Mark all as read"
 msgstr "Барлығын оқылды деп белгілеу"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Орташа"
+
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
 msgstr "Мәзір"
@@ -455,7 +490,7 @@ msgstr "Келесі сурет"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Қатынау ережелері реттелмеген. Кімнің қатынай алатынын реттеу үшін ереже қосыңыз."
 
-#: src/features/home/index.tsx:83
+#: src/features/home/index.tsx:84
 msgid "No apps found"
 msgstr "Қолданбалар табылмады"
 
@@ -466,10 +501,6 @@ msgstr "Байланысқан тіркелгілер жоқ"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:238
 msgid "No groups available"
 msgstr "Топтар қолжетімсіз"
-
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Сәйкестіктер жоқ."
 
 #: ../../../lib/web/src/components/place-picker.tsx:129
 msgid "No places found"
@@ -497,8 +528,14 @@ msgid "No users found"
 msgstr "Қолданушылар табылмады"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Жоқ"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Қалыпты"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -539,6 +576,11 @@ msgstr "Иесі"
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Алдыңғы сурет"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Құпиялылық"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -628,10 +670,6 @@ msgstr "Қолданушыларды іздеу"
 msgid "Search..."
 msgstr "Іздеу..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Іздеу…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -670,6 +708,15 @@ msgstr "Сайт бағытын таңдау"
 msgid "Select theme preference"
 msgstr "Тақырып теңшелімін таңдау"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Серифті"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Сервер ережелері"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Сеанс мерзімі аяқталды"
@@ -702,6 +749,15 @@ msgstr "Шығу..."
 msgid "Skip to Main"
 msgstr "Негізгіге өту"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Кіші"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Кең"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
 msgstr "Хабарласып тұрыңыз!"
@@ -716,6 +772,7 @@ msgstr "Жексенбі"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "Жүйе"
 
@@ -726,6 +783,11 @@ msgstr "Тег"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Командалар/Қолданбалар"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Шарттар мен ережелер"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -849,7 +911,7 @@ msgstr "Барлығын көру"
 msgid "View all notifications"
 msgstr "Барлық хабарландыруларды көру"
 
-#: src/features/home/index.tsx:84
+#: src/features/home/index.tsx:85
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Сіз үшін ешбір қолданба таба алмадық. Бұл күтілмеген жағдай."
 
