@@ -25,7 +25,7 @@ msgstr "24 часа"
 msgid "Absolute (date and time)"
 msgstr "Абсолютно (дата и час)"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:12
+#: ../../../lib/web/src/features/errors/forbidden.tsx:13
 msgid "Access Forbidden"
 msgstr "Достъпът е забранен"
 
@@ -48,6 +48,10 @@ msgstr "Тип акаунт"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:234
 msgid "Account verified"
 msgstr "Акаунтът е потвърден"
+
+#: ../../../lib/web/src/features/accounts/account-add.tsx:193
+msgid "Add"
+msgstr "Добави"
 
 #: ../../../lib/web/src/features/accounts/account-add.tsx:117
 msgid "Add a new account"
@@ -110,11 +114,11 @@ msgstr "Възх."
 msgid "Back"
 msgstr "Назад"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:21
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:21
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:21
-msgid "Back to Home"
-msgstr "Обратно към началната страница"
+#: ../../../lib/web/src/features/errors/forbidden.tsx:23
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:23
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:23
+msgid "Back to home"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:160
 msgid "Boost interest"
@@ -190,8 +194,8 @@ msgid "Close navigation"
 msgstr "Затвори навигацията"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:254
-msgid "Close Panel"
-msgstr "Затвори панела"
+msgid "Close panel"
+msgstr ""
 
 #: ../../../lib/web/src/components/header-search.tsx:51
 msgid "Close search"
@@ -347,11 +351,11 @@ msgstr "От темата"
 msgid "Full layout"
 msgstr "Пълно оформление"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:19
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:19
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:19
-msgid "Go Back"
-msgstr "Назад"
+#: ../../../lib/web/src/features/errors/forbidden.tsx:21
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:21
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:21
+msgid "Go back"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/pagination.tsx:75
 msgid "Go to first page"
@@ -364,6 +368,10 @@ msgstr "Към последна страница"
 #: ../../../lib/web/src/components/data-table/pagination.tsx:112
 msgid "Go to next page"
 msgstr "Към следваща страница"
+
+#: ../../../lib/web/src/components/data-table/pagination.tsx:99
+msgid "Go to page {pageNumber}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/pagination.tsx:84
 msgid "Go to previous page"
@@ -543,7 +551,7 @@ msgstr "Нормален"
 msgid "Notifications"
 msgstr "Известия"
 
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:12
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:13
 msgid "Oops! Page Not Found!"
 msgstr "Опа! Страницата не е намерена!"
 
@@ -627,6 +635,7 @@ msgid "Remove interest"
 msgstr "Премахни интерес"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
+#: ../../../lib/web/src/components/data-table/toolbar.tsx:78
 msgid "Reset"
 msgstr "Нулирай"
 
@@ -707,6 +716,10 @@ msgstr "Избор на посока на сайта"
 #: ../../../lib/web/src/components/config-drawer.tsx:189
 msgid "Select theme preference"
 msgstr "Избор на предпочитание за тема"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:95
+msgid "Send again"
+msgstr ""
 
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
@@ -806,10 +819,13 @@ msgid "Toggle columns"
 msgstr "Превключи колоните"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:227
-msgid "Toggle Right Panel"
-msgstr "Превключи десния панел"
+msgid "Toggle right panel"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/sidebar.tsx:312
+msgid "Toggle sidebar"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:324
 #: ../../../lib/web/src/components/ui/sidebar.tsx:327
 msgid "Toggle Sidebar"
@@ -834,7 +850,7 @@ msgstr "Опитайте да коригирате термините си за 
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:125
 #: ../../../lib/web/src/features/errors/general-error.tsx:165
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "Try again"
 msgstr "Опитайте отново"
 
@@ -863,7 +879,7 @@ msgstr "Не може да се пренасочи към вход. Моля, о
 msgid "Unassigned"
 msgstr "Неприсвоено"
 
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:12
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:13
 msgid "Unauthorized Access"
 msgstr "Неоторизиран достъп"
 
@@ -892,6 +908,7 @@ msgid "Verification failed"
 msgstr "Потвърждението не успя"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
 msgstr "Потвърди"
 
@@ -915,11 +932,11 @@ msgstr "Виж всички известия"
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Не намерихме никакви приложения за вас. Това е неочаквано."
 
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:12
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "We'll be back online shortly."
 msgstr "Скоро ще се върнем онлайн."
 
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:9
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:10
 msgid "Website is under maintenance!"
 msgstr "Уебсайтът е в поддръжка!"
 

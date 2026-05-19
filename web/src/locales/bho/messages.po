@@ -25,7 +25,7 @@ msgstr "24 घंटा"
 msgid "Absolute (date and time)"
 msgstr "पूर्ण (तारीख आ समय)"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:12
+#: ../../../lib/web/src/features/errors/forbidden.tsx:13
 msgid "Access Forbidden"
 msgstr "पहुंच निषिद्ध"
 
@@ -48,6 +48,10 @@ msgstr "खाता प्रकार"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:234
 msgid "Account verified"
 msgstr "खाता सत्यापित कइल गइल"
+
+#: ../../../lib/web/src/features/accounts/account-add.tsx:193
+msgid "Add"
+msgstr "जोड़ीं"
 
 #: ../../../lib/web/src/features/accounts/account-add.tsx:117
 msgid "Add a new account"
@@ -110,11 +114,11 @@ msgstr "बढ़त"
 msgid "Back"
 msgstr "वापस"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:21
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:21
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:21
-msgid "Back to Home"
-msgstr "घर पर वापस"
+#: ../../../lib/web/src/features/errors/forbidden.tsx:23
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:23
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:23
+msgid "Back to home"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:160
 msgid "Boost interest"
@@ -190,8 +194,8 @@ msgid "Close navigation"
 msgstr "नेविगेशन बंद करीं"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:254
-msgid "Close Panel"
-msgstr "पैनल बंद करीं"
+msgid "Close panel"
+msgstr ""
 
 #: ../../../lib/web/src/components/header-search.tsx:51
 msgid "Close search"
@@ -347,11 +351,11 @@ msgstr "थीम से"
 msgid "Full layout"
 msgstr "पूरा लेआउट"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:19
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:19
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:19
-msgid "Go Back"
-msgstr "वापस जाईं"
+#: ../../../lib/web/src/features/errors/forbidden.tsx:21
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:21
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:21
+msgid "Go back"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/pagination.tsx:75
 msgid "Go to first page"
@@ -364,6 +368,10 @@ msgstr "आखिरी पन्ना पर जाईं"
 #: ../../../lib/web/src/components/data-table/pagination.tsx:112
 msgid "Go to next page"
 msgstr "अगिला पन्ना पर जाईं"
+
+#: ../../../lib/web/src/components/data-table/pagination.tsx:99
+msgid "Go to page {pageNumber}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/pagination.tsx:84
 msgid "Go to previous page"
@@ -543,7 +551,7 @@ msgstr "सामान्य"
 msgid "Notifications"
 msgstr "सूचना"
 
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:12
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:13
 msgid "Oops! Page Not Found!"
 msgstr "ओह! पन्ना ना मिलल!"
 
@@ -627,6 +635,7 @@ msgid "Remove interest"
 msgstr "रुचि हटाईं"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
+#: ../../../lib/web/src/components/data-table/toolbar.tsx:78
 msgid "Reset"
 msgstr "रीसेट करीं"
 
@@ -707,6 +716,10 @@ msgstr "साइट दिशा चुनीं"
 #: ../../../lib/web/src/components/config-drawer.tsx:189
 msgid "Select theme preference"
 msgstr "थीम वरीयता चुनीं"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:95
+msgid "Send again"
+msgstr ""
 
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
@@ -806,10 +819,13 @@ msgid "Toggle columns"
 msgstr "स्तंभ टॉगल करीं"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:227
-msgid "Toggle Right Panel"
-msgstr "दायाँ पैनल टॉगल करीं"
+msgid "Toggle right panel"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/sidebar.tsx:312
+msgid "Toggle sidebar"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:324
 #: ../../../lib/web/src/components/ui/sidebar.tsx:327
 msgid "Toggle Sidebar"
@@ -834,7 +850,7 @@ msgstr "अपना खोज शब्द समायोजित करे �
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:125
 #: ../../../lib/web/src/features/errors/general-error.tsx:165
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "Try again"
 msgstr "फेर से कोशिश करीं"
 
@@ -863,7 +879,7 @@ msgstr "लॉगिन पर रीडायरेक्ट ना हो स�
 msgid "Unassigned"
 msgstr "अनसौंपल"
 
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:12
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:13
 msgid "Unauthorized Access"
 msgstr "अनधिकृत पहुँच"
 
@@ -892,6 +908,7 @@ msgid "Verification failed"
 msgstr "सत्यापन विफल भइल"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
 msgstr "सत्यापित करीं"
 
@@ -915,11 +932,11 @@ msgstr "सब सूचना देखीं"
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "हमनी के आपके खातिर कवनो ऐप ना मिल सकल। ई अप्रत्याशित बा।"
 
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:12
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "We'll be back online shortly."
 msgstr "हमनी के जल्दिए ऑनलाइन वापस आइब जा।"
 
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:9
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:10
 msgid "Website is under maintenance!"
 msgstr "वेबसाइट रखरखाव में बा!"
 

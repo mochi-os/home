@@ -25,7 +25,7 @@ msgstr "24 stundas"
 msgid "Absolute (date and time)"
 msgstr "Absolūts (datums un laiks)"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:12
+#: ../../../lib/web/src/features/errors/forbidden.tsx:13
 msgid "Access Forbidden"
 msgstr "Piekļuve aizliegta"
 
@@ -48,6 +48,10 @@ msgstr "Konta veids"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:234
 msgid "Account verified"
 msgstr "Konts verificēts"
+
+#: ../../../lib/web/src/features/accounts/account-add.tsx:193
+msgid "Add"
+msgstr "Pievienot"
 
 #: ../../../lib/web/src/features/accounts/account-add.tsx:117
 msgid "Add a new account"
@@ -110,11 +114,11 @@ msgstr "Aug."
 msgid "Back"
 msgstr "Atpakaļ"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:21
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:21
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:21
-msgid "Back to Home"
-msgstr "Atpakaļ uz sākumu"
+#: ../../../lib/web/src/features/errors/forbidden.tsx:23
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:23
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:23
+msgid "Back to home"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:160
 msgid "Boost interest"
@@ -190,8 +194,8 @@ msgid "Close navigation"
 msgstr "Aizvērt navigāciju"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:254
-msgid "Close Panel"
-msgstr "Aizvērt paneli"
+msgid "Close panel"
+msgstr ""
 
 #: ../../../lib/web/src/components/header-search.tsx:51
 msgid "Close search"
@@ -347,11 +351,11 @@ msgstr "No motīva"
 msgid "Full layout"
 msgstr "Pilns izkārtojums"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:19
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:19
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:19
-msgid "Go Back"
-msgstr "Atpakaļ"
+#: ../../../lib/web/src/features/errors/forbidden.tsx:21
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:21
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:21
+msgid "Go back"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/pagination.tsx:75
 msgid "Go to first page"
@@ -364,6 +368,10 @@ msgstr "Iet uz pēdējo lapu"
 #: ../../../lib/web/src/components/data-table/pagination.tsx:112
 msgid "Go to next page"
 msgstr "Iet uz nākamo lapu"
+
+#: ../../../lib/web/src/components/data-table/pagination.tsx:99
+msgid "Go to page {pageNumber}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/pagination.tsx:84
 msgid "Go to previous page"
@@ -543,7 +551,7 @@ msgstr "Normāls"
 msgid "Notifications"
 msgstr "Paziņojumi"
 
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:12
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:13
 msgid "Oops! Page Not Found!"
 msgstr "Hops! Lapa nav atrasta!"
 
@@ -627,6 +635,7 @@ msgid "Remove interest"
 msgstr "Noņemt interesi"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
+#: ../../../lib/web/src/components/data-table/toolbar.tsx:78
 msgid "Reset"
 msgstr "Atiestatīt"
 
@@ -707,6 +716,10 @@ msgstr "Izvēlieties vietnes virzienu"
 #: ../../../lib/web/src/components/config-drawer.tsx:189
 msgid "Select theme preference"
 msgstr "Izvēlieties motīva preferenci"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:95
+msgid "Send again"
+msgstr ""
 
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
@@ -806,10 +819,13 @@ msgid "Toggle columns"
 msgstr "Pārslēgt kolonnas"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:227
-msgid "Toggle Right Panel"
-msgstr "Pārslēgt labo paneli"
+msgid "Toggle right panel"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/sidebar.tsx:312
+msgid "Toggle sidebar"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:324
 #: ../../../lib/web/src/components/ui/sidebar.tsx:327
 msgid "Toggle Sidebar"
@@ -834,7 +850,7 @@ msgstr "Mēģiniet pielāgot meklēšanas vārdus"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:125
 #: ../../../lib/web/src/features/errors/general-error.tsx:165
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "Try again"
 msgstr "Mēģināt vēlreiz"
 
@@ -863,7 +879,7 @@ msgstr "Nevar pāradresēt uz pieteikšanos. Lūdzu, mēģiniet vēlreiz."
 msgid "Unassigned"
 msgstr "Nepiešķirts"
 
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:12
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:13
 msgid "Unauthorized Access"
 msgstr "Nesankcionēta piekļuve"
 
@@ -892,6 +908,7 @@ msgid "Verification failed"
 msgstr "Verifikācija neizdevās"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
 msgstr "Verificēt"
 
@@ -915,11 +932,11 @@ msgstr "Skatīt visus paziņojumus"
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Mēs nevarējām atrast jums nevienu lietotni. Tas ir negaidīti."
 
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:12
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "We'll be back online shortly."
 msgstr "Mēs drīz būsim atpakaļ tiešsaistē."
 
-#: ../../../lib/web/src/features/errors/maintenance-error.tsx:9
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:10
 msgid "Website is under maintenance!"
 msgstr "Vietne tiek apkopta!"
 
