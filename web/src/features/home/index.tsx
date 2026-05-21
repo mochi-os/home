@@ -76,7 +76,10 @@ export function Home() {
     )
   }
 
-  if (!data?.icons || data.icons.length === 0) {
+  const icons = data?.icons ?? []
+  const development = data?.development ?? []
+
+  if (icons.length === 0 && development.length === 0) {
     return (
       <Main>
         <EmptyState
@@ -100,65 +103,67 @@ export function Home() {
         </h1>
       </div>
       {/* Main Apps Grid */}
-      <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-        {data.icons.map((icon) => {
-          const style = iconStyle(icon, data.icon_mask, data.icon_background)
-          const highlight = icon.highlight
-          return (
-            <a
-              key={icon.path}
-              href={`/${icon.link}/`}
-              className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-hover ${
-                highlight
-                  ? 'border-primary hover:border-primary'
-                  : 'border-border hover:border-primary/20'
-              }`}
-              style={{ boxShadow: 'var(--shadow-sm)' }}
-            >
-              {highlight && (
-                <span
-                  className='absolute -top-1 -right-1 flex h-3 w-3'
-                  aria-hidden='true'
-                >
-                  <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
-                  <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
-                </span>
-              )}
-              {/* Icon Container */}
-              {style.className === 'adaptive' ? (
-                <div
-                  className='flex h-14 w-14 items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-110'
-                  style={style.container}
-                >
+      {icons.length > 0 && (
+        <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
+          {icons.map((icon) => {
+            const style = iconStyle(icon, data?.icon_mask, data?.icon_background)
+            const highlight = icon.highlight
+            return (
+              <a
+                key={icon.path}
+                href={`/${icon.link}/`}
+                className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-hover ${
+                  highlight
+                    ? 'border-primary hover:border-primary'
+                    : 'border-border hover:border-primary/20'
+                }`}
+                style={{ boxShadow: 'var(--shadow-sm)' }}
+              >
+                {highlight && (
+                  <span
+                    className='absolute -top-1 -right-1 flex h-3 w-3'
+                    aria-hidden='true'
+                  >
+                    <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
+                    <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
+                  </span>
+                )}
+                {/* Icon Container */}
+                {style.className === 'adaptive' ? (
                   <div
-                    className='h-8 w-8'
-                    style={style.foreground}
-                    role="img"
-                    aria-label={icon.name}
-                  />
-                </div>
-              ) : (
-                <div className='flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-110'>
-                  <div
-                    className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary'
-                    style={style.foreground}
-                    role="img"
-                    aria-label={icon.name}
-                  />
-                </div>
-              )}
+                    className='flex h-14 w-14 items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-110'
+                    style={style.container}
+                  >
+                    <div
+                      className='h-8 w-8'
+                      style={style.foreground}
+                      role="img"
+                      aria-label={icon.name}
+                    />
+                  </div>
+                ) : (
+                  <div className='flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-110'>
+                    <div
+                      className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary'
+                      style={style.foreground}
+                      role="img"
+                      aria-label={icon.name}
+                    />
+                  </div>
+                )}
 
-              {/* App Name */}
-              <span className='text-center text-sm font-medium text-foreground transition-colors group-hover:text-primary'>
-                {icon.name}
-              </span>
-            </a>
-          )
-        })}
-      </div>
+                {/* App Name */}
+                <span className='text-center text-sm font-medium text-foreground transition-colors group-hover:text-primary'>
+                  {icon.name}
+                </span>
+              </a>
+            )
+          })}
+        </div>
+      )}
 
       {/* Development Apps Section */}
-      {data?.development && data.development.length > 0 && (
+      {development.length > 0 && (
         <div>
           <div className='mb-6 flex items-center gap-3'>
             <div className='h-px flex-1 bg-border' />
@@ -169,8 +174,8 @@ export function Home() {
           </div>
 
           <div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-            {data.development.map((icon) => {
-              const style = iconStyle(icon, data.icon_mask, data.icon_background)
+            {development.map((icon) => {
+              const style = iconStyle(icon, data?.icon_mask, data?.icon_background)
               const highlight = icon.highlight
               return (
                 <a
