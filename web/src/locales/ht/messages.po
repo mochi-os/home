@@ -134,11 +134,11 @@ msgstr "Ogmante enterè"
 msgid "Cancel"
 msgstr "Anile"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "Kategori pou notifikasyon sa a"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "Chanje kategori notifikasyon"
 
@@ -264,6 +264,10 @@ msgstr "Defo"
 msgid "Default AI account"
 msgstr "Kont AI defo"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:81
+msgid "Delete your account on the old server"
+msgstr "Efase kont ou sou ansyen sèvè a"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "Desann"
@@ -283,13 +287,17 @@ msgstr "Panèl Detay"
 msgid "Detect from web browser"
 msgstr "Detekte nan navigatè web"
 
-#: src/features/home/index.tsx:166
+#: src/features/home/index.tsx:173
 msgid "Development"
 msgstr "Devlopman"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:327
 msgid "Direction"
 msgstr "Direksyon"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:64
+msgid "Dismiss"
+msgstr "Rejte"
 
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
@@ -323,9 +331,13 @@ msgstr "Echwe pou retire kont"
 msgid "Failed to send verification code"
 msgstr "Echwe pou voye kòd verifikasyon"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "Echwe pou mete ajou kategori"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:70
+msgid "Finish moving your account"
+msgstr "Fini deplase kont ou"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -498,7 +510,7 @@ msgstr "Pwochen imaj"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Pa gen règ aksè konfigire. Ajoute règ pou kontwole kiyès ki ka jwenn aksè nan resous sa a."
 
-#: src/features/home/index.tsx:84
+#: src/features/home/index.tsx:87
 msgid "No apps found"
 msgstr "Pa gen aplikasyon ki jwenn"
 
@@ -527,7 +539,7 @@ msgstr "Pa gen rezilta ki jwenn."
 msgid "No time zone found."
 msgstr "Pa gen zòn lè ki jwenn."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "Poko gen anrejistreman sijè — eseye ankò apre pwochèn notifikasyon an."
 
@@ -594,6 +606,10 @@ msgstr "Konfidansyalite"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "Pwofil"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:89
+msgid "Re-link your accounts on this server"
+msgstr "Konekte kont ou yo ankò sou sèvè sa a"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -875,7 +891,7 @@ msgstr "Tape pou chèche..."
 msgid "Unable to redirect to login. Please try again."
 msgstr "Pa ka redireksyone pou login. Tanpri eseye ankò."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "Pa asiyen"
 
@@ -916,6 +932,10 @@ msgstr "Verifye"
 msgid "Verify email address"
 msgstr "Verifye adrès imèl"
 
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "Imaj videyo"
+
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
 msgstr "Wè"
@@ -928,7 +948,7 @@ msgstr "Wè tout"
 msgid "View all notifications"
 msgstr "Wè tout notifikasyon"
 
-#: src/features/home/index.tsx:85
+#: src/features/home/index.tsx:88
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Nou pa kapab jwenn okenn app pou ou. Sa pa atann."
 
@@ -943,3 +963,7 @@ msgstr "Sit la nan antretyen!"
 #: ../../../lib/web/src/lib/preference-utils.ts:58
 msgid "Wednesday"
 msgstr "Mèkredi"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "Kont ou te deplase isit la depi {source}. Jiskaske ou efase li la, mesaj ak notifikasyon yo ka rive sou de sèvè yo, yon pati nan kontni ou ap kontinye sèvi depi ansyen sèvè a, epi moun k ap swiv ou yo ka pran kèk minit pou jwenn ou isit la."

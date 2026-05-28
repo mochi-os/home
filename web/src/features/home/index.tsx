@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { Trans, useLingui } from '@lingui/react/macro'
-import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton } from '@mochi/web'
+import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton, RestoreBanner } from '@mochi/web'
 import { AlertCircle } from 'lucide-react'
 
 const maskBorderRadius: Record<string, string> = {
@@ -93,6 +93,8 @@ export function Home() {
 
   return (
     <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+
+      <RestoreBanner />
 
       {/* Hero Section */}
       <div className='mb-8 text-center hidden sm:block'>
