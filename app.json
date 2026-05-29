@@ -14,6 +14,7 @@
 		"assets": {"files": "web/dist/assets"},
 		"fonts": {"files": "web/dist/fonts"},
 		"-/icons": {"function": "action_icons"},
+		"-/restore/dismiss": {"function": "action_restore_dismiss"},
 		"images": {"files": "web/dist/images"}
 	}
 }

@@ -5,6 +5,11 @@
 def is_entity_id(id):
     return len(id) >= 50 and len(id) <= 51
 
+def action_restore_dismiss(a):
+    """Permanently hide the post-restore banner for this user."""
+    a.user.preference.set("restore.show", "false")
+    a.json({"ok": True})
+
 def action_icons(a):
     """Return list of app icons for the home screen"""
     result = mochi.app.icons()
