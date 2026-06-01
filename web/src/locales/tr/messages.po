@@ -110,6 +110,10 @@ msgstr "Çıkış yapmak istediğinizden emin misiniz? Hesabınıza erişmek iç
 msgid "Asc"
 msgstr "Artan"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Authenticator kodu"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Geri"
@@ -125,6 +129,7 @@ msgid "Boost interest"
 msgstr "İlgiyi artır"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -235,6 +240,10 @@ msgstr "Bağlamsal bilgi ve ayrıntılar."
 msgid "Continue"
 msgstr "Devam et"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "{label} ile devam et"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Kopyala"
@@ -242,6 +251,18 @@ msgstr "Kopyala"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Bu belge yüklenemedi. Lütfen daha sonra tekrar deneyin."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Kod gönderilemedi. Lütfen tekrar deneyin."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Yeniden kimlik doğrulama başlatılamadı. Lütfen tekrar deneyin."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Bu hesapla doğrulama yapılamadı. Lütfen tekrar deneyin."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -264,7 +285,7 @@ msgstr "Varsayılan"
 msgid "Default AI account"
 msgstr "Varsayılan AI hesabı"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:81
+#: ../../../lib/web/src/components/restore-banner.tsx:90
 msgid "Delete your account on the old server"
 msgstr "Eski sunucudaki hesabınızı silin"
 
@@ -295,7 +316,7 @@ msgstr "Geliştirme"
 msgid "Direction"
 msgstr "Yön"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:64
+#: ../../../lib/web/src/components/restore-banner.tsx:73
 msgid "Dismiss"
 msgstr "Kapat"
 
@@ -310,6 +331,18 @@ msgstr "İndir"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "Disleksi dostu"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "E-posta kodu"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "E-postanızdaki kodu girin"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Kimlik doğrulayıcı kodunuzu girin"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -335,7 +368,7 @@ msgstr "Doğrulama kodu gönderilemedi"
 msgid "Failed to update category"
 msgstr "Kategori güncellenemedi"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:70
+#: ../../../lib/web/src/components/restore-banner.tsx:79
 msgid "Finish moving your account"
 msgstr "Hesap taşımayı tamamlayın"
 
@@ -593,6 +626,18 @@ msgstr "Diğer"
 msgid "Owner"
 msgstr "Sahip"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr ""
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Geçiş anahtarı doğrulaması başarısız oldu. Lütfen tekrar deneyin."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Passkey'ler"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Önceki görsel"
@@ -607,9 +652,13 @@ msgstr "Gizlilik"
 msgid "Profile"
 msgstr "Profil"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:89
+#: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "Hesaplarınızı bu sunucuda yeniden bağlayın"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Bu sunucuda parola anahtarlarınızı yeniden kaydedin"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -649,6 +698,10 @@ msgstr "Erişim kaldırılsın mı?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "İlgiyi kaldır"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "E-postayı yeniden gönder"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -737,6 +790,10 @@ msgstr "Tema tercihi seç"
 msgid "Send again"
 msgstr "Tekrar gönder"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "E-posta gönder"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
 msgstr "Tırnaklı"
@@ -817,6 +874,10 @@ msgstr "Takımlar/Uygulamalar"
 #: ../../../lib/web/src/features/document/document-page.tsx:39
 msgid "Terms and conditions"
 msgstr "Şartlar ve koşullar"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Bu kod yanlış veya süresi dolmuş."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -907,6 +968,10 @@ msgstr "Amerika Birleşik Devletleri"
 msgid "Unverified"
 msgstr "Doğrulanmamış"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Geçiş anahtarınızı kullanın"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
 msgstr "Kullanıcı"
@@ -923,6 +988,7 @@ msgstr "Doğrulama kodu gönderildi"
 msgid "Verification failed"
 msgstr "Doğrulama başarısız"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -964,6 +1030,6 @@ msgstr "Web sitesi bakımda!"
 msgid "Wednesday"
 msgstr "Çarşamba"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:73
+#: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Hesabınız {source} adresinden buraya taşındı. Orada silene kadar mesajlar ve bildirimler her iki sunucuya da ulaşabilir, bazı içerikleriniz eski sunucudan sunulmaya devam eder ve takipçileriniz sizi burada bulmak için birkaç dakika bekleyebilir."

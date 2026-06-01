@@ -110,6 +110,10 @@ msgstr "શું તમે ખરેખર લૉગ આઉટ કરવા મ
 msgid "Asc"
 msgstr "ચડતા"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Authenticator કોડ"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "પાછળ"
@@ -125,6 +129,7 @@ msgid "Boost interest"
 msgstr "રુચિ વધારો"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -235,6 +240,10 @@ msgstr "સંદર્ભ માહિતી અને વિગતો."
 msgid "Continue"
 msgstr "ચાલુ રાખો"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "{label} વડે ચાલુ રાખો"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "કૉપિ કરો"
@@ -242,6 +251,18 @@ msgstr "કૉપિ કરો"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "આ દસ્તાવેજ લોડ કરી શક્યા નહીં. કૃપા કરીને પછીથી ફરી પ્રયાસ કરો."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "કોડ મોકલી શકાયો નહીં. કૃપા કરીને ફરી પ્રયાસ કરો."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "પુનઃપ્રમાણીકરણ શરૂ કરી શકાયું નહીં. કૃપા કરીને ફરી પ્રયાસ કરો."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "તે ખાતા વડે ચકાસણી કરી શકાઈ નહીં. કૃપા કરીને ફરી પ્રયાસ કરો."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -264,7 +285,7 @@ msgstr "ડિફૉલ્ટ"
 msgid "Default AI account"
 msgstr "ડિફૉલ્ટ AI ખાતું"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:81
+#: ../../../lib/web/src/components/restore-banner.tsx:90
 msgid "Delete your account on the old server"
 msgstr "જૂના સર્વર પર તમારું ખાતું કાઢી નાખો"
 
@@ -295,7 +316,7 @@ msgstr "Development"
 msgid "Direction"
 msgstr "દિશા"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:64
+#: ../../../lib/web/src/components/restore-banner.tsx:73
 msgid "Dismiss"
 msgstr "રદ કરો"
 
@@ -310,6 +331,18 @@ msgstr "ડાઉનલોડ કરો"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "ડિસ્લેક્સિયા-મૈત્રીપૂર્ણ"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "ઇમેઇલ કોડ"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "તમારા ઈમેલમાંથી કોડ દાખલ કરો"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "તમારો ઑથેન્ટિકેટર કોડ દાખલ કરો"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -335,7 +368,7 @@ msgstr "ચકાસણી કોડ મોકલવામાં નિષ્ફ
 msgid "Failed to update category"
 msgstr "કેટેગરી અપડેટ કરવામાં નિષ્ફળ"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:70
+#: ../../../lib/web/src/components/restore-banner.tsx:79
 msgid "Finish moving your account"
 msgstr "તમારું ખાતું ખસેડવાનું પૂર્ણ કરો"
 
@@ -593,6 +626,18 @@ msgstr "અન્ય"
 msgid "Owner"
 msgstr "માલિક"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr "પાસકી"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "પાસકી ચકાસણી નિષ્ફળ ગઈ. કૃપા કરીને ફરી પ્રયાસ કરો."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "પાસકીઝ"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "પાછળની છબી"
@@ -607,9 +652,13 @@ msgstr "ગોપનીયતા"
 msgid "Profile"
 msgstr "પ્રોફાઇલ"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:89
+#: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "આ સર્વર પર તમારા ખાતાઓ ફરીથી જોડો"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "આ સર્વર પર તમારી પાસકી ફરીથી નોંધણી કરો"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -649,6 +698,10 @@ msgstr "ઍક્સેસ દૂર કરો?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "રસ દૂર કરો"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "ઇમેઇલ ફરી મોકલો"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -737,6 +790,10 @@ msgstr "થીમ પસંદગી પસંદ કરો"
 msgid "Send again"
 msgstr "ફરી મોકલો"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "ઇમેઇલ મોકલો"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
 msgstr "સેરિફ"
@@ -817,6 +874,10 @@ msgstr "ટીમો/એપ્સ"
 #: ../../../lib/web/src/features/document/document-page.tsx:39
 msgid "Terms and conditions"
 msgstr "નિયમો અને શરતો"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "તે કોડ ખોટો છે અથવા સમયસમાપ્ત થઈ ગયો છે."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -907,6 +968,10 @@ msgstr "યુનાઇટેડ સ્ટેટ્સ"
 msgid "Unverified"
 msgstr "અપ્રમાણિત"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "તમારી પાસકીનો ઉપયોગ કરો"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
 msgstr "વપરાશકર્તા"
@@ -923,6 +988,7 @@ msgstr "ચકાસણી કોડ મોકલ્યો"
 msgid "Verification failed"
 msgstr "ચકાસણી નિષ્ફળ"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -964,6 +1030,6 @@ msgstr "વેબસાઇટ જાળવણી હેઠળ છે!"
 msgid "Wednesday"
 msgstr "બુધવાર"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:73
+#: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "તમારું ખાતું {source} પરથી અહીં ખસેડવામાં આવ્યું. જ્યાં સુધી તમે ત્યાં તેને કાઢી ન નાખો, સંદેશા અને સૂચનાઓ બંને સર્વર સુધી પહોંચી શકે, કેટલીક સામગ્રી જૂના સર્વરથી પ્રદાન કરાતી રહે, અને ફૉલોઅર્સ ને તમને અહીં શોધવામાં થોડી મિનિટ લાગી શકે."

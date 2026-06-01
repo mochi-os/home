@@ -110,6 +110,10 @@ msgstr "Jeste li sigurni da se želite odjaviti? Morat ćete se ponovno prijavit
 msgid "Asc"
 msgstr "Uzl."
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Kod autentifikatora"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Natrag"
@@ -125,6 +129,7 @@ msgid "Boost interest"
 msgstr "Pojačaj interes"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -235,6 +240,10 @@ msgstr "Kontekstualne informacije i detalji."
 msgid "Continue"
 msgstr "Nastavi"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "Nastavi s {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Kopiraj"
@@ -242,6 +251,18 @@ msgstr "Kopiraj"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Nije moguće učitati ovaj dokument. Pokušajte ponovno kasnije."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Slanje kôda nije uspjelo. Pokušajte ponovno."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Pokretanje ponovne autentifikacije nije uspjelo. Pokušajte ponovno."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Provjera s tim računom nije uspjela. Pokušajte ponovno."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -264,7 +285,7 @@ msgstr "Zadano"
 msgid "Default AI account"
 msgstr "Zadani AI račun"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:81
+#: ../../../lib/web/src/components/restore-banner.tsx:90
 msgid "Delete your account on the old server"
 msgstr "Izbrišite svoj račun na starom poslužitelju"
 
@@ -295,7 +316,7 @@ msgstr "Razvoj"
 msgid "Direction"
 msgstr "Smjer"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:64
+#: ../../../lib/web/src/components/restore-banner.tsx:73
 msgid "Dismiss"
 msgstr "Odbaci"
 
@@ -310,6 +331,18 @@ msgstr "Preuzmi"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "Prilagođeno disleksiji"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "Kod e-pošte"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "Unesite kôd iz svoje e-pošte"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Unesite kôd iz aplikacije za autentifikaciju"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -335,7 +368,7 @@ msgstr "Slanje verifikacijskog koda nije uspjelo"
 msgid "Failed to update category"
 msgstr "Ažuriranje kategorije nije uspjelo"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:70
+#: ../../../lib/web/src/components/restore-banner.tsx:79
 msgid "Finish moving your account"
 msgstr "Dovršite premještanje računa"
 
@@ -593,6 +626,18 @@ msgstr "Ostalo"
 msgid "Owner"
 msgstr "Vlasnik"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr ""
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Provjera pristupnog ključa nije uspjela. Pokušajte ponovno."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Passkeyevi"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Prethodna slika"
@@ -607,9 +652,13 @@ msgstr "Privatnost"
 msgid "Profile"
 msgstr "Profil"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:89
+#: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "Ponovno povežite svoje račune na ovom poslužitelju"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Ponovno registrirajte svoje pristupne ključeve na ovom poslužitelju"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -649,6 +698,10 @@ msgstr "Ukloniti pristup?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "Ukloni interes"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "Ponovno pošalji e-poštu"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -737,6 +790,10 @@ msgstr "Odaberi preferenciju teme"
 msgid "Send again"
 msgstr "Pošalji ponovno"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "Pošalji e-poštu"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
 msgstr "Serifno"
@@ -817,6 +874,10 @@ msgstr "Timovi/Aplikacije"
 #: ../../../lib/web/src/features/document/document-page.tsx:39
 msgid "Terms and conditions"
 msgstr "Uvjeti korištenja"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Taj kôd nije ispravan ili je istekao."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -907,6 +968,10 @@ msgstr "Sjedinjene Američke Države"
 msgid "Unverified"
 msgstr "Neprovjereno"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Upotrijebite svoj pristupni ključ"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
 msgstr "Korisnik"
@@ -923,6 +988,7 @@ msgstr "Verifikacijski kod poslan"
 msgid "Verification failed"
 msgstr "Provjera nije uspjela"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -964,6 +1030,6 @@ msgstr "Web stranica je u održavanju!"
 msgid "Wednesday"
 msgstr "Srijeda"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:73
+#: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Vaš račun je premješten ovdje s {source}. Dok ga tamo ne izbrišete, poruke i obavijesti mogu stizati na oba poslužitelja, dio vašeg sadržaja i dalje se poslužuje s starog poslužitelja, a pratiteljima može trebati nekoliko minuta da vas pronađu ovdje."

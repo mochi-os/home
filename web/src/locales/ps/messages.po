@@ -110,6 +110,10 @@ msgstr "ایا تاسو ډاډه یاست چې غواړئ وتل وکړئ؟ تا
 msgid "Asc"
 msgstr "صعودي"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "د Authenticator کوډ"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "شاته"
@@ -125,6 +129,7 @@ msgid "Boost interest"
 msgstr "دلچسپي ډیره کړه"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -235,6 +240,10 @@ msgstr "د شالید معلومات او توضیحات."
 msgid "Continue"
 msgstr "دوام ورکړئ"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "د {label} سره دوام ورکړئ"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "کاپي کړئ"
@@ -242,6 +251,18 @@ msgstr "کاپي کړئ"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "دا سند نشي پورته کیدلی. مهرباني وکړئ وروسته بیا هڅه وکړئ."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "کوډ نه شو لیږل کیدی. مهرباني وکړئ بیا هڅه وکړئ."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "بیا تصدیق پیلیدلی نشو. مهرباني وکړئ بیا هڅه وکړئ."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "د دغه حساب سره تصدیق ونشو. مهرباني وکړئ بیا هڅه وکړئ."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -264,7 +285,7 @@ msgstr "ډیفالټ"
 msgid "Default AI account"
 msgstr "د AI ډیفالټ حساب"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:81
+#: ../../../lib/web/src/components/restore-banner.tsx:90
 msgid "Delete your account on the old server"
 msgstr "د پخوانی سرور پر سر خپل حساب ړنګ کړئ"
 
@@ -295,7 +316,7 @@ msgstr "پراختیا"
 msgid "Direction"
 msgstr "لوری"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:64
+#: ../../../lib/web/src/components/restore-banner.tsx:73
 msgid "Dismiss"
 msgstr "وردکړه"
 
@@ -310,6 +331,18 @@ msgstr "ډاونلوډ"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "د لوستلو ستونزې سره مطابقت لري"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "د بریښنالیک کوډ"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "هغه کوډ دننه کړئ چې ستاسو په برېښنالیک کې راغلی"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "د خپل تصدیق کوونکي کوډ دننه کړئ"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -335,7 +368,7 @@ msgstr "د تصدیق کوډ لیږلو پاتې راغلل"
 msgid "Failed to update category"
 msgstr "د کټګورۍ تازه کولو پاتې راغلل"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:70
+#: ../../../lib/web/src/components/restore-banner.tsx:79
 msgid "Finish moving your account"
 msgstr "د خپل حساب لیږد پای ته ورسوئ"
 
@@ -593,6 +626,18 @@ msgstr "نور"
 msgid "Owner"
 msgstr "مالک"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr ""
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "د پاس کیلۍ تایید ناکام شو. مهرباني وکړئ بیا هڅه وکړئ."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "د لاسرسي کيلۍ"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "تېر انځور"
@@ -607,9 +652,13 @@ msgstr "محرمیت"
 msgid "Profile"
 msgstr "پروفایل"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:89
+#: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "پر دې سرور خپل حسابونه بیا وصل کړئ"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "خپل د لاسرسي کيلۍ پدې سرور کې بیا ثبت کړئ"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -649,6 +698,10 @@ msgstr "لاسرسی لرې کړو؟"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "علاقه لرې کړئ"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "بریښنالیک بیا واستوئ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -737,6 +790,10 @@ msgstr "د ښکارندوی غوره توب وټاکئ"
 msgid "Send again"
 msgstr "بیا ولیږئ"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "بریښنالیک ولېږئ"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
 msgstr "سيريف"
@@ -817,6 +874,10 @@ msgstr "ټیمونه/اپلیکیشنونه"
 #: ../../../lib/web/src/features/document/document-page.tsx:39
 msgid "Terms and conditions"
 msgstr "شرایط او مقررات"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "هغه کوډ غلط دی یا یې موده تېره ده."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -907,6 +968,10 @@ msgstr "متحده ایالات"
 msgid "Unverified"
 msgstr "تصدیق نه شوی"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "خپله پاس کیلۍ وکاروئ"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
 msgstr "کاروونکی"
@@ -923,6 +988,7 @@ msgstr "د تصدیق کوډ ولېږل شو"
 msgid "Verification failed"
 msgstr "تصدیق ناکام شو"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -964,6 +1030,6 @@ msgstr "ویب پاڼه د خدمت په حال کې ده!"
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:73
+#: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "ستاسو حساب له {source} دلته لیږدول شوی. تر هغه چې تاسو هلته یې ړنګ نه کړئ، پیغامونه او خبرتیاوې ممکن دواړه سرورونو ته ورسیږي، ستاسو د مینځپانګې یوه برخه لاهم له پخوانی سرور نه چمتو کیږي، او تعقیبونکي ممکن دلته ستاسو موندلو لپاره یو شیبه وخت ولري."

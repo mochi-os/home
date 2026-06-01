@@ -110,6 +110,10 @@ msgstr "Вы ўпэўнены, што хочаце выйсці? Вам трэб
 msgid "Asc"
 msgstr "Узрастанне"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Код аўтэнтыфікатара"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Назад"
@@ -125,6 +129,7 @@ msgid "Boost interest"
 msgstr "Узмацніць цікавасць"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -235,6 +240,10 @@ msgstr "Кантэкстная інфармацыя і дэталі."
 msgid "Continue"
 msgstr "Працягнуць"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "Працягнуць з {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Капіраваць"
@@ -242,6 +251,18 @@ msgstr "Капіраваць"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Не атрымалася загрузіць гэты дакумент. Калі ласка, паспрабуйце пазней."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Не ўдалося адправіць код. Калі ласка, паспрабуйце яшчэ раз."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Не ўдалося пачаць паўторную аўтэнтыфікацыю. Калі ласка, паспрабуйце яшчэ раз."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Не ўдалося пацвердзіць з гэтым уліковым запісам. Калі ласка, паспрабуйце яшчэ раз."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -264,7 +285,7 @@ msgstr "Па змаўчанні"
 msgid "Default AI account"
 msgstr "Уліковы запіс AI па змаўчанні"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:81
+#: ../../../lib/web/src/components/restore-banner.tsx:90
 msgid "Delete your account on the old server"
 msgstr "Выдаліце свой акаўнт на старым серверы"
 
@@ -295,7 +316,7 @@ msgstr "Распрацоўка"
 msgid "Direction"
 msgstr "Напрамак"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:64
+#: ../../../lib/web/src/components/restore-banner.tsx:73
 msgid "Dismiss"
 msgstr "Адхіліць"
 
@@ -310,6 +331,18 @@ msgstr "Спампаваць"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "Сябар дыслексіі"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "Код па эл. пошце"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "Увядзіце код з вашай электроннай пошты"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Увядзіце код з праграмы-аўтэнтыфікатара"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -335,7 +368,7 @@ msgstr "Не ўдалося адправіць код пацвярджэння"
 msgid "Failed to update category"
 msgstr "Не ўдалося абнавіць катэгорыю"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:70
+#: ../../../lib/web/src/components/restore-banner.tsx:79
 msgid "Finish moving your account"
 msgstr "Завяршыце перанос акаўнта"
 
@@ -593,6 +626,18 @@ msgstr "Іншае"
 msgid "Owner"
 msgstr "Уладальнік"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr ""
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Не ўдалося праверыць ключ доступу. Калі ласка, паспрабуйце яшчэ раз."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Ключы доступу"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Папярэдняя выява"
@@ -607,9 +652,13 @@ msgstr "Канфідэнцыяльнасць"
 msgid "Profile"
 msgstr "Профіль"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:89
+#: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "Паўторна прывяжыце свае акаўнты на гэтым серверы"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Зарэгіструйце ключы доступу на гэтым серверы зноў"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -649,6 +698,10 @@ msgstr "Выдаліць доступ?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "Выдаліць цікавасць"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "Адправіць ліст паўторна"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -737,6 +790,10 @@ msgstr "Выбраць перавагу тэмы"
 msgid "Send again"
 msgstr "Адправіць яшчэ раз"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "Адправіць эл. пошту"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Serif"
 msgstr "З засечкамі"
@@ -817,6 +874,10 @@ msgstr "Каманды/Праграмы"
 #: ../../../lib/web/src/features/document/document-page.tsx:39
 msgid "Terms and conditions"
 msgstr "Умовы і палажэнні"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Гэты код няправільны або састарэў."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
@@ -907,6 +968,10 @@ msgstr "Злучаныя Штаты"
 msgid "Unverified"
 msgstr "Не пацверджана"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Скарыстайцеся ключом доступу"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
 msgstr "Карыстальнік"
@@ -923,6 +988,7 @@ msgstr "Код праверкі адпраўлены"
 msgid "Verification failed"
 msgstr "Праверка не атрымалася"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -964,6 +1030,6 @@ msgstr "Сайт на тэхнічным абслугоўванні!"
 msgid "Wednesday"
 msgstr "Серада"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:73
+#: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ваш акаўнт быў перанесены сюды з {source}. Пакуль вы не выдаліце яго там, паведамленні і апавяшчэнні могуць паступаць на абодва серверы, частка вашага кантэнту па-ранейшаму будзе аддавацца са старога сервера, а падпісчыкам можа спатрэбіцца некалькі хвілін, каб знайсці вас тут."
