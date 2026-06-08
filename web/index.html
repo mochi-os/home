@@ -2,6 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Paint theme gradient immediately; avoids flash of legacy SVG background. -->
+    <style>
+      body {
+        background-color: var(--background, #fff);
+        background-image: radial-gradient(
+          ellipse at top,
+          color-mix(in oklch, oklch(0.488 var(--hue-chroma, 0.16) var(--hue, 250)) 12%, transparent),
+          transparent 70%
+        );
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 420px;
+        background-attachment: fixed;
+      }
+      html.dark body {
+        background-color: oklch(0.145 0 0);
+      }
+      @media (min-width: 640px) {
+        body {
+          background-size: 100% 560px;
+        }
+      }
+    </style>
     <script>
       (function() {
         var app = document.querySelector('meta[name="mochi:app"]')
