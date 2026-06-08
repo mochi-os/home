@@ -19,20 +19,6 @@
 @layer base {
   body {
     background-color: var(--background);
-    background-image: radial-gradient(
-      ellipse at top,
-      color-mix(in oklch, var(--primary) 12%, transparent),
-      transparent 70%
-    );
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% 420px;
-    background-attachment: fixed;
-  }
-
-  @media (min-width: 640px) {
-    body {
-      background-size: 100% 560px;
-    }
+    background-image: none;
   }
 }
