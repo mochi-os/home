@@ -171,7 +171,7 @@ msgstr "Vyberte mezi směrem stránek zleva doprava nebo zprava doleva"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Vyberte mezi systémovým nastavením, světlým nebo tmavým režimem"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Vyberte jazyk"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Zrušit výběr (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Zavřít"
@@ -305,7 +305,7 @@ msgstr "Sestupně"
 msgid "Details Panel"
 msgstr "Panel podrobností"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Panel podrobností"
 msgid "Detect from web browser"
 msgstr "Detekovat z webového prohlížeče"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Vývoj"
 
@@ -332,7 +332,7 @@ msgstr "Zavřít"
 msgid "Displays the mobile sidebar."
 msgstr "Zobrazí mobilní postranní panel."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Stáhnout"
 
@@ -547,7 +547,7 @@ msgstr "Chyba sítě"
 msgid "New"
 msgstr "Nové"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Další obrázek"
 
@@ -555,7 +555,7 @@ msgstr "Další obrázek"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Nejsou nakonfigurována žádná pravidla přístupu. Přidejte pravidla pro řízení přístupu k tomuto zdroji."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Žádné aplikace nenalezeny"
 
@@ -654,7 +654,7 @@ msgstr "Přístupové klíče"
 msgid "Please check your internet connection and try again."
 msgstr "Zkontrolujte připojení k internetu a zkuste to znovu."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Předchozí obrázek"
 
@@ -739,6 +739,10 @@ msgstr "Řádků na stránku"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Sobota"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Uložit"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Zobrazit vše"
 msgid "View all notifications"
 msgstr "Zobrazit všechna oznámení"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Nenašli jsme pro vás žádné aplikace. To je neočekávané."
 

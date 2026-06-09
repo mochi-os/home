@@ -171,7 +171,7 @@ msgstr "在从左到右或从右到左的站点方向之间选择"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "在跟随系统、浅色模式或深色模式之间选择"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "选择语言"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "清除选择(Esc)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "关闭"
@@ -305,7 +305,7 @@ msgstr "降序"
 msgid "Details Panel"
 msgstr "详情面板"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "详情面板"
 msgid "Detect from web browser"
 msgstr "从浏览器检测"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "开发"
 
@@ -332,7 +332,7 @@ msgstr "关闭"
 msgid "Displays the mobile sidebar."
 msgstr "显示移动端侧边栏。"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "下载"
 
@@ -547,7 +547,7 @@ msgstr "网络错误"
 msgid "New"
 msgstr "新建"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "下一张图片"
 
@@ -555,7 +555,7 @@ msgstr "下一张图片"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "尚未配置访问规则。添加规则以控制谁可以访问此资源。"
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "未找到应用"
 
@@ -654,7 +654,7 @@ msgstr "通行密钥"
 msgid "Please check your internet connection and try again."
 msgstr "请检查您的网络连接后重试。"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "上一张图片"
 
@@ -739,6 +739,10 @@ msgstr "每页行数"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "星期六"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "保存"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "查看全部"
 msgid "View all notifications"
 msgstr "查看所有通知"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "未能为您找到任何应用。这是意外情况。"
 

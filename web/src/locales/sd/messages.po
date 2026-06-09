@@ -171,7 +171,7 @@ msgstr "کاٻي کان ساڄي يا ساڄي کان کاٻي سائيٽ هدا
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "سسٽم ترجيح، روشن موڊ، يا اونداهي موڊ مان چونڊيو"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "ٻولي چونڊيو"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "انتخاب صاف ڪريو (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "بند ڪريو"
@@ -305,7 +305,7 @@ msgstr "گهٽبڙ"
 msgid "Details Panel"
 msgstr "تفصيل پينل"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "تفصيل پينل"
 msgid "Detect from web browser"
 msgstr "ويب براؤزر کان معلوم ڪريو"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "ڊيولپمنٽ"
 
@@ -332,7 +332,7 @@ msgstr "رد ڪريو"
 msgid "Displays the mobile sidebar."
 msgstr "موبائل سائڊبار ڏيکاري ٿو."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "ڊائون لوڊ"
 
@@ -547,7 +547,7 @@ msgstr "نيٽ ورڪ جي خرابي"
 msgid "New"
 msgstr "نئون"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "اڳيون تصوير"
 
@@ -555,7 +555,7 @@ msgstr "اڳيون تصوير"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "ڪي به رسائي قاعدا ترتيب نه ڏنا ويا. هن وسيلي تائين رسائي ڪنٽرول ڪرڻ لاءِ قاعدا شامل ڪريو."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "ڪا ايپ نه ملي"
 
@@ -654,7 +654,7 @@ msgstr "پاسي ڪيز"
 msgid "Please check your internet connection and try again."
 msgstr "مهرباني ڪري پنهنجو انٽرنيٽ ڪنيڪشن چيڪ ڪريو ۽ ٻيهر ڪوشش ڪريو."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "پوئيون تصوير"
 
@@ -739,6 +739,10 @@ msgstr "هر صفحي تي قطارون"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "ڇنڇر"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "محفوظ ڪريو"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "سڀ ڏسو"
 msgid "View all notifications"
 msgstr "سڀ اطلاع ڏسو"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "اسان توھان لاءِ ڪا ايپ ڳولي نه سگھيا. ھي اڻ توقع آھي."
 

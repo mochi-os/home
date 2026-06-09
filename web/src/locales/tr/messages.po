@@ -171,7 +171,7 @@ msgstr "Soldan sağa veya sağdan sola site yönü arasında seçim yapın"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Sistem tercihi, açık mod veya koyu mod arasında seçim yapın"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Dil seçin"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Seçimi temizle (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Kapat"
@@ -305,7 +305,7 @@ msgstr "Azalan"
 msgid "Details Panel"
 msgstr "Ayrıntılar paneli"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Ayrıntılar paneli"
 msgid "Detect from web browser"
 msgstr "Web tarayıcıdan algıla"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Geliştirme"
 
@@ -332,7 +332,7 @@ msgstr "Kapat"
 msgid "Displays the mobile sidebar."
 msgstr "Mobil kenar çubuğunu görüntüler."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "İndir"
 
@@ -547,7 +547,7 @@ msgstr "Ağ hatası"
 msgid "New"
 msgstr "Yeni"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Sonraki görsel"
 
@@ -555,7 +555,7 @@ msgstr "Sonraki görsel"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Erişim kuralı yapılandırılmamış. Bu kaynağa kimin erişebileceğini kontrol etmek için kural ekleyin."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Uygulama bulunamadı"
 
@@ -654,7 +654,7 @@ msgstr "Passkey'ler"
 msgid "Please check your internet connection and try again."
 msgstr "Lütfen internet bağlantınızı kontrol edip tekrar deneyin."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Önceki görsel"
 
@@ -739,6 +739,10 @@ msgstr "Sayfa başına satır"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Cumartesi"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Kaydet"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Tümünü görüntüle"
 msgid "View all notifications"
 msgstr "Tüm bildirimleri görüntüle"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Senin için uygulama bulamadık. Bu beklenmeyen bir durum."
 

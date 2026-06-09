@@ -171,7 +171,7 @@ msgstr "Izvēlies starp virzienu no kreisās uz labo vai no labās uz kreiso"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Izvēlies starp sistēmas iestatījumu, gaišo vai tumšo režīmu"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Izvēlies valodu"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Notīrīt atlasi (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Aizvērt"
@@ -305,7 +305,7 @@ msgstr "Dilst."
 msgid "Details Panel"
 msgstr "Detaļu panelis"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Detaļu panelis"
 msgid "Detect from web browser"
 msgstr "Noteikt no tīmekļa pārlūka"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Izstrāde"
 
@@ -332,7 +332,7 @@ msgstr "Aizvērt"
 msgid "Displays the mobile sidebar."
 msgstr "Parāda mobilo sānu joslu."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Lejupielādēt"
 
@@ -547,7 +547,7 @@ msgstr "Tīkla kļūda"
 msgid "New"
 msgstr "Jauns"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Nākamais attēls"
 
@@ -555,7 +555,7 @@ msgstr "Nākamais attēls"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Piekļuves noteikumi nav konfigurēti. Pievienojiet noteikumus, lai kontrolētu, kam ir piekļuve šim resursam."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Lietotnes nav atrastas"
 
@@ -654,7 +654,7 @@ msgstr "Piekļuves atslēgas"
 msgid "Please check your internet connection and try again."
 msgstr "Lūdzu, pārbaudiet interneta savienojumu un mēģiniet vēlreiz."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Iepriekšējais attēls"
 
@@ -739,6 +739,10 @@ msgstr "Rindu skaits lapā"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Sestdiena"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Saglabāt"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Skatīt visu"
 msgid "View all notifications"
 msgstr "Skatīt visus paziņojumus"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Mēs nevarējām atrast jums nevienu lietotni. Tas ir negaidīti."
 

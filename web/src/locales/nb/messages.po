@@ -171,7 +171,7 @@ msgstr "Velg mellom retning fra venstre til høyre eller høyre til venstre for 
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Velg mellom systeminnstilling, lyst eller mørkt utseende"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Velg språk"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Tøm utvalg (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Lukk"
@@ -305,7 +305,7 @@ msgstr "Synkende"
 msgid "Details Panel"
 msgstr "Detaljpanel"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Detaljpanel"
 msgid "Detect from web browser"
 msgstr "Oppdag fra nettleser"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Utvikling"
 
@@ -332,7 +332,7 @@ msgstr "Lukk"
 msgid "Displays the mobile sidebar."
 msgstr "Viser sidefeltet for mobil."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Last ned"
 
@@ -547,7 +547,7 @@ msgstr "Nettverksfeil"
 msgid "New"
 msgstr "Ny"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Neste bilde"
 
@@ -555,7 +555,7 @@ msgstr "Neste bilde"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Ingen tilgangsregler konfigurert. Legg til regler for å styre hvem som kan få tilgang til denne ressursen."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Ingen apper funnet"
 
@@ -654,7 +654,7 @@ msgstr "Passnøkler"
 msgid "Please check your internet connection and try again."
 msgstr "Sjekk internettforbindelsen din og prøv igjen."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Forrige bilde"
 
@@ -739,6 +739,10 @@ msgstr "Rader per side"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Lørdag"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Lagre"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Vis alle"
 msgid "View all notifications"
 msgstr "Vis alle varsler"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Vi fant ingen apper for deg. Dette var uventet."
 

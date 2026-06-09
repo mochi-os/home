@@ -171,7 +171,7 @@ msgstr "Di navbera arasteya malperê ya çep-bo-rast an rast-bo-çep de hilbijê
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Di navbera tercîha sîstemê, awayê ronî, an awayê tarî de hilbijêre"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Ziman hilbijêre"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Hilbijartinê paqij bike (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Bigire"
@@ -305,7 +305,7 @@ msgstr "Daketin"
 msgid "Details Panel"
 msgstr "Panela hûragahiyan"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Panela hûragahiyan"
 msgid "Detect from web browser"
 msgstr "Ji geroka webê tespît bike"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Pêşkeftin"
 
@@ -332,7 +332,7 @@ msgstr "Red bike"
 msgid "Displays the mobile sidebar."
 msgstr "Panela kêlekê ya mobîl nîşan dide."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Daxe"
 
@@ -547,7 +547,7 @@ msgstr "Çewtiya torê"
 msgid "New"
 msgstr "Nû"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Wêneya pêştir"
 
@@ -555,7 +555,7 @@ msgstr "Wêneya pêştir"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Tu rêzikên destpêkirinê nehatine mîhengkirin. Rêzikan zêde bike da ku kontrol bike kî dikare bigihîje vê çavkaniyê."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Tu app nehatin dîtin"
 
@@ -654,7 +654,7 @@ msgstr "Passkey"
 msgid "Please check your internet connection and try again."
 msgstr "Ji kerema xwe girêdana xwe ya înternetê kontrol bike û dîsa biceribîne."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Wêneya pêştir"
 
@@ -739,6 +739,10 @@ msgstr "Rêz li ser her rûpel"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Şemî"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Tomar bike"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Hemûyan bibîne"
 msgid "View all notifications"
 msgstr "Hemû agahdariyan bibîne"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Me ti sepan ji bo te nedît. Ev nediyar e."
 

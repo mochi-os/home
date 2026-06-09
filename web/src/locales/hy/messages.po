@@ -171,7 +171,7 @@ msgstr "Ընտրեք համակարգի նախընտրության, լուսավ
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Ընտրել լեզու"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Ընտրել հակառակորդ"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Կլոնավորել"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Փակել վահանակը"
@@ -305,7 +305,7 @@ msgstr "Նվազող"
 msgid "Details Panel"
 msgstr "Մանրամասների վահանակ"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Մանրամասների վահանակ"
 msgid "Detect from web browser"
 msgstr "Հայտնաբերել վեբ բրաուզերից"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Մշակում"
 
@@ -332,7 +332,7 @@ msgstr "Հեռացնել"
 msgid "Displays the mobile sidebar."
 msgstr "Ցուցադրում է բջջային կողագոտին։"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Ներբեռնել"
 
@@ -547,7 +547,7 @@ msgstr "Ցանցի սխալ"
 msgid "New"
 msgstr "Նոր"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Հաջորդ նկարը"
 
@@ -555,7 +555,7 @@ msgstr "Հաջորդ նկարը"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Մուտքի կանոններ կարգավորված չեն։ Ավելացրեք կանոններ՝ կառավարելու, թե ով կարող է մուտք գործել այս ռեսուրսը։"
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Հավելվածներ չեն գտնվել"
 
@@ -654,7 +654,7 @@ msgstr "Անցաբանալիներ"
 msgid "Please check your internet connection and try again."
 msgstr "Ստուգեք ձեր ինտերնետ կապը և կրկին փորձեք։"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Նախորդ նկարը"
 
@@ -739,6 +739,10 @@ msgstr "Տողեր մեկ էջում"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Շաբաթ"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Պահպանել"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Դիտել բոլորը"
 msgid "View all notifications"
 msgstr "Դիտել բոլոր ծանուցումները"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Մենք չկարողացանք գտնել ձեզ համար որևէ հավելված: Սա անսպասելի է:"
 

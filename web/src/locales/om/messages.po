@@ -171,7 +171,7 @@ msgstr "Kallatti weebsaayitii bitaa-irraa-mirgatti ykn mirgaa-irraa-bitaa gidduu
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Filannoo sirnaa, ifaan, ykn dukkanaan gidduu filadhu"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Afaan filadhu"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Filannoo cilliisi (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Cufi"
@@ -305,7 +305,7 @@ msgstr "Gadii"
 msgid "Details Panel"
 msgstr "Paanelii Bal'inaan"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Paanelii Bal'inaan"
 msgid "Detect from web browser"
 msgstr "Weeb biraawsarii irraa argi"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Misooma"
 
@@ -332,7 +332,7 @@ msgstr "Dhiisi"
 msgid "Displays the mobile sidebar."
 msgstr "Cinaa moobaayilaa mul'isa."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Buufadhu"
 
@@ -547,7 +547,7 @@ msgstr "Dogoggora networkii"
 msgid "New"
 msgstr "Haaraa"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Suuraa itti aanu"
 
@@ -555,7 +555,7 @@ msgstr "Suuraa itti aanu"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Seerri itti seenumsaa hin qindaa'amne. Eenyu qabeenya kana itti seenuu danda'u to'achuuf seerota dabali."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Aappiin hin argamne"
 
@@ -654,7 +654,7 @@ msgstr "Passkey-wwan"
 msgid "Please check your internet connection and try again."
 msgstr "Maaloo walqunnamtii intarneetii kee mirkaneeffadhuutii irra deebi'ii yaali."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Suuraa duraa"
 
@@ -739,6 +739,10 @@ msgstr "Fuula tokko keessa tarjaalee"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Sanbata"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Olkaa'i"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Hunda daawwadhu"
 msgid "View all notifications"
 msgstr "Beeksisa hunda daawwadhu"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Apps siif barbaachisan tokkollee hin arganne. Kun hin eegamne ture."
 

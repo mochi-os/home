@@ -171,7 +171,7 @@ msgstr "Eiporavo asu-akatúa térã akatúa-asu apytépe"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Eiporavo system preference, light mode, térã dark mode apytépe"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Eiporavo ñe'ẽ"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Embopotĩ ñemboheka (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Mboty"
@@ -305,7 +305,7 @@ msgstr "Desc"
 msgid "Details Panel"
 msgstr "Detalle Panel"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Detalle Panel"
 msgid "Detect from web browser"
 msgstr "Heka web browser-gui"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Hekombo'e"
 
@@ -332,7 +332,7 @@ msgstr "Mbohovái"
 msgid "Displays the mobile sidebar."
 msgstr "Ohechauka mobile sidebar."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Emboguejy"
 
@@ -547,7 +547,7 @@ msgstr "Jejavy ñanduti rehegua"
 msgid "New"
 msgstr "Pyahu"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Ta'anga oseguíva"
 
@@ -555,7 +555,7 @@ msgstr "Ta'anga oseguíva"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Ndaiporivéi reglas oñembosako'íva. Embojuaju reglas remohenondévo mávapa ikatúta oike ko mba'épe."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Ndojejuhúi apps"
 
@@ -654,7 +654,7 @@ msgstr "Passkeys"
 msgid "Please check your internet connection and try again."
 msgstr "Ehechami nde internet conexión ha eha'ã jey."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Ta'anga tenondete"
 
@@ -739,6 +739,10 @@ msgstr "Rows kuatiaroguépe"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Saturday"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Ñongatu"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Ehecha opa"
 msgid "View all notifications"
 msgstr "Ehecha opa marandu"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Ndorojuhúi mboapuréva tembiporu ndéve g̃uarã. Kóva ndoja'ekuaái."
 

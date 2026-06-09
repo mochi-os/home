@@ -171,7 +171,7 @@ msgstr "Escolle entre dirección do sitio de esquerda a dereita ou de dereita a 
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Escolle entre preferencia do sistema, modo claro ou modo escuro"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Escoller idioma"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Borrar selección (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Pechar"
@@ -305,7 +305,7 @@ msgstr "Desc"
 msgid "Details Panel"
 msgstr "Panel de detalles"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Panel de detalles"
 msgid "Detect from web browser"
 msgstr "Detectar do navegador web"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Desenvolvemento"
 
@@ -332,7 +332,7 @@ msgstr "Descartar"
 msgid "Displays the mobile sidebar."
 msgstr "Mostra a barra lateral móbil."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Descargar"
 
@@ -547,7 +547,7 @@ msgstr "Erro de rede"
 msgid "New"
 msgstr "Novo"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Imaxe seguinte"
 
@@ -555,7 +555,7 @@ msgstr "Imaxe seguinte"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Non hai regras de acceso configuradas. Engade regras para controlar quen pode acceder a este recurso."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Non se atoparon aplicacións"
 
@@ -654,7 +654,7 @@ msgstr "Chaves de acceso"
 msgid "Please check your internet connection and try again."
 msgstr "Comproba a túa conexión a internet e téntao de novo."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Imaxe anterior"
 
@@ -739,6 +739,10 @@ msgstr "Filas por páxina"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Sábado"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Gardar"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Ver todo"
 msgid "View all notifications"
 msgstr "Ver todas as notificacións"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Non puidemos atopar ningunha aplicación para ti. Isto é inesperado."
 

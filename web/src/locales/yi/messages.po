@@ -171,7 +171,7 @@ msgstr "קלײַבט צווישן לינקס-צו-רעכטס אָדער רעכט
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "קלײַבט צווישן סיסטעם פּרעפֿערענץ, ליכטיקע מאָדע, אָדער טונקלע מאָדע"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "קלײַבט שפּראַך"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "רייניקן אויסקלײַב (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "פֿאַרמאַכן"
@@ -305,7 +305,7 @@ msgstr "אַראָפּ"
 msgid "Details Panel"
 msgstr "פּרטים פּאַנעל"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "פּרטים פּאַנעל"
 msgid "Detect from web browser"
 msgstr "אויסקלײַבן פֿון וועב בראָוזער"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "אַנטוויקלונג"
 
@@ -332,7 +332,7 @@ msgstr "אַראָפּזאָגן"
 msgid "Displays the mobile sidebar."
 msgstr "ווײַזט די מאָבילע סײַדבאַר."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "אַראָפּלאָדן"
 
@@ -547,7 +547,7 @@ msgstr "נעץ פֿעלער"
 msgid "New"
 msgstr "נײַ"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "ווײַטערדיק בילד"
 
@@ -555,7 +555,7 @@ msgstr "ווײַטערדיק בילד"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "קיין צוטריט כּללים קאָנפֿיגורירט. צולייג כּללים צו קאָנטראָלירן ווער קען האָבן צוטריט צו דעם רעסורס."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "קיין אַפּס ניט געפֿונען"
 
@@ -654,7 +654,7 @@ msgstr "פּאַסקייס"
 msgid "Please check your internet connection and try again."
 msgstr "זײַט אַזוי גוט קאָנטראָלירט אײַער אינטערנעץ פֿאַרבינדונג און פּרוּווט נאָך אַ מאָל."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "פֿריִערדיק בילד"
 
@@ -739,6 +739,10 @@ msgstr "רייען פּער זײַטל"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "שבת"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "היט אויף"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "זע אַלץ"
 msgid "View all notifications"
 msgstr "זע אַלע נאָטיפֿיקאַציעס"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "מיר האָבן נישט געקאָנט געפֿינען קיין אַפּן פֿאַר אײַך. דאָס איז אומגעריכט."
 

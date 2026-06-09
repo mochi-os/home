@@ -171,7 +171,7 @@ msgstr "Zgjidh midis drejtimit majtas-djathtas ose djathtas-majtas të faqes"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Zgjidh midis preferencës së sistemit, modës së ndritshme ose modës së errët"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Zgjidh gjuhën"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Pastro përzgjedhjen (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Mbyll"
@@ -305,7 +305,7 @@ msgstr "Zbritës"
 msgid "Details Panel"
 msgstr "Paneli i detajeve"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Paneli i detajeve"
 msgid "Detect from web browser"
 msgstr "Zbulo nga shfletuesi i web-it"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Zhvillimi"
 
@@ -332,7 +332,7 @@ msgstr "Hidhe"
 msgid "Displays the mobile sidebar."
 msgstr "Shfaq anën mobile."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Shkarko"
 
@@ -547,7 +547,7 @@ msgstr "Gabim rrjeti"
 msgid "New"
 msgstr "I ri"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Imazhi tjetër"
 
@@ -555,7 +555,7 @@ msgstr "Imazhi tjetër"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Asnjë rregull qasjeje i konfiguruar. Shto rregulla për të kontrolluar kush mund të qaset në këtë burim."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "S'u gjet asnjë aplikacion"
 
@@ -654,7 +654,7 @@ msgstr "Kyçet"
 msgid "Please check your internet connection and try again."
 msgstr "Kontrolloni lidhjen tuaj me internetin dhe provoni përsëri."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Imazhi i mëparshëm"
 
@@ -739,6 +739,10 @@ msgstr "Rreshta për faqe"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "E shtunë"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Ruaj"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Shiko të gjitha"
 msgid "View all notifications"
 msgstr "Shiko të gjitha njoftimet"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Nuk mundëm të gjenim aplikacione për ty. Kjo është e papritur."
 

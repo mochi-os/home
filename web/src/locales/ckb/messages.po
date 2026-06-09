@@ -171,7 +171,7 @@ msgstr "هەڵبژێرە لەنێوان ئاراستەی چەپ بۆ ڕاست ی
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "هەڵبژێرە لەنێوان پێشنیاری سیستەم، دۆخی ڕووناک، یان دۆخی تاریک"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "زمان هەڵبژێرە"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "پاککردنەوەی هەڵبژاردە (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "داخستن"
@@ -305,7 +305,7 @@ msgstr "خوارەوە"
 msgid "Details Panel"
 msgstr "پانێلی وردەکاری"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "پانێلی وردەکاری"
 msgid "Detect from web browser"
 msgstr "دۆزینەوە لە وێبگەڕ"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "گەشەپێدان"
 
@@ -332,7 +332,7 @@ msgstr "لابردن"
 msgid "Displays the mobile sidebar."
 msgstr "لاتەنیشتی مۆبایل پیشان دەدات."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "داگرتن"
 
@@ -547,7 +547,7 @@ msgstr "هەڵەی تۆڕ"
 msgid "New"
 msgstr "نوێ"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "وێنەی دواتر"
 
@@ -555,7 +555,7 @@ msgstr "وێنەی دواتر"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "هیچ ڕێسایەکی دەستڕاگەیشتن ڕێکنەخراوە. ڕێسا زیاد بکە بۆ کۆنترۆڵکردنی ئەوەی کێ دەتوانێت دەستی بەم سەرچاوەیە بگات."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "هیچ ئەپێک نەدۆزرایەوە"
 
@@ -654,7 +654,7 @@ msgstr "پاسکییەکان"
 msgid "Please check your internet connection and try again."
 msgstr "تکایە پەیوەندی ئینتەرنێتەکەت بپشکنە و دووبارە هەوڵ بدەرەوە."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "وێنەی پێشوو"
 
@@ -739,6 +739,10 @@ msgstr "ڕیزەکان بۆ هەر پەڕەیەک"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "شەممە"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "پاشەکەوتکردن"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "هەمووی ببینە"
 msgid "View all notifications"
 msgstr "هەموو ئاگادارکردنەوەکان ببینە"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "هیچ ئەپێکمان بۆ تۆ نەدۆزییەوە. ئەمە چاوەڕوان نەکراوە."
 

@@ -171,7 +171,7 @@ msgstr "აირჩიეთ მარცხნიდან-მარჯვნ�
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "აირჩიეთ სისტემის უპირატესობას, ღია რეჟიმს ან ბნელ რეჟიმს შორის"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "აირჩიეთ ენა"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "არჩევის გასუფთავება (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "დახურვა"
@@ -305,7 +305,7 @@ msgstr "კლებადი"
 msgid "Details Panel"
 msgstr "დეტალების პანელი"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "დეტალების პანელი"
 msgid "Detect from web browser"
 msgstr "ვებ ბრაუზერიდან აღმოჩენა"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "შემუშავება"
 
@@ -332,7 +332,7 @@ msgstr "უარყოფა"
 msgid "Displays the mobile sidebar."
 msgstr "აჩვენებს მობილურის გვერდით პანელს."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "ჩამოტვირთვა"
 
@@ -547,7 +547,7 @@ msgstr "ქსელის შეცდომა"
 msgid "New"
 msgstr "ახალი"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "შემდეგი სურათი"
 
@@ -555,7 +555,7 @@ msgstr "შემდეგი სურათი"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "წვდომის წესები არ არის კონფიგურირებული. დაამატეთ წესები იმის მართვისთვის, თუ ვის აქვს წვდომა ამ რესურსზე."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "აპები ვერ მოიძებნა"
 
@@ -654,7 +654,7 @@ msgstr "Passkey-ები"
 msgid "Please check your internet connection and try again."
 msgstr "გთხოვთ, შეამოწმოთ ინტერნეტთან კავშირი და სცადოთ ხელახლა."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "წინა სურათი"
 
@@ -739,6 +739,10 @@ msgstr "სტრიქონები გვერდზე"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "შაბათი"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "შენახვა"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "ნახვა"
 msgid "View all notifications"
 msgstr "ყველას ნახვა"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "მხოლოდ ნანახი"
 

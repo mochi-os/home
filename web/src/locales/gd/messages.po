@@ -171,7 +171,7 @@ msgstr "Tagh eadar comhair làraich clì-gu-deas no deas-gu-clì"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Tagh eadar roghainn an t-siostaim, modh soilleir, no modh dorcha"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Tagh cànan"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Falamhaich an taghadh (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Dùin"
@@ -305,7 +305,7 @@ msgstr "Teàrnadh"
 msgid "Details Panel"
 msgstr "Pannal mion-fhiosrachaidh"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Pannal mion-fhiosrachaidh"
 msgid "Detect from web browser"
 msgstr "Lorg bhon bhrabhsair-lìn"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Leasachadh"
 
@@ -332,7 +332,7 @@ msgstr "Leig seachad"
 msgid "Displays the mobile sidebar."
 msgstr "Seallaidh am bàr-thaobh fòn-làimhe."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Luchdaich a-nuas"
 
@@ -547,7 +547,7 @@ msgstr "Mearachd lìonraidh"
 msgid "New"
 msgstr "Ùr"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "An ath dhealbh"
 
@@ -555,7 +555,7 @@ msgstr "An ath dhealbh"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Cha deach riaghailtean cothraim a chur air dòigh. Cuir riaghailtean ris airson smachd a chumail air cò aig a tha cothrom an goireas seo."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Cha deach aplacaidean a lorg"
 
@@ -654,7 +654,7 @@ msgstr "Pasgairean"
 msgid "Please check your internet connection and try again."
 msgstr "Thoir sùil air a' cheangal eadar-lìn agad agus feuch ris a-rithist."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "An dealbh roimhe"
 
@@ -739,6 +739,10 @@ msgstr "Sreathan gach duilleag"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Disathairne"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Sàbhail"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Seall a h-uile"
 msgid "View all notifications"
 msgstr "Seall a h-uile brath"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Cha b' urrainn dhuinn aplacaidean sam bith a lorg dhut. Tha seo neo-shùileach."
 

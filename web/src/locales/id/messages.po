@@ -171,7 +171,7 @@ msgstr "Pilih antara arah situs kiri-ke-kanan atau kanan-ke-kiri"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Pilih antara preferensi sistem, mode terang, atau mode gelap"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Pilih bahasa"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Bersihkan pilihan (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Tutup"
@@ -305,7 +305,7 @@ msgstr "Turun"
 msgid "Details Panel"
 msgstr "Panel Detail"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Panel Detail"
 msgid "Detect from web browser"
 msgstr "Deteksi dari web browser"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Pengembangan"
 
@@ -332,7 +332,7 @@ msgstr "Tutup"
 msgid "Displays the mobile sidebar."
 msgstr "Menampilkan sidebar seluler."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Unduh"
 
@@ -547,7 +547,7 @@ msgstr "Kesalahan jaringan"
 msgid "New"
 msgstr "Baru"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Gambar berikutnya"
 
@@ -555,7 +555,7 @@ msgstr "Gambar berikutnya"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Tidak ada aturan akses yang dikonfigurasi. Tambahkan aturan untuk mengontrol siapa yang dapat mengakses sumber daya ini."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Tidak ada aplikasi yang ditemukan"
 
@@ -654,7 +654,7 @@ msgstr "Passkey"
 msgid "Please check your internet connection and try again."
 msgstr "Periksa koneksi internet Anda dan coba lagi."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Gambar sebelumnya"
 
@@ -739,6 +739,10 @@ msgstr "Baris per halaman"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Sabtu"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Simpan"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Lihat semua"
 msgid "View all notifications"
 msgstr "Lihat semua notifikasi"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Kami tidak dapat menemukan aplikasi untuk Anda. Ini tidak terduga."
 

@@ -171,7 +171,7 @@ msgstr "Kies tussen links-naar-rechts of rechts-naar-links siterichting"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Kies tussen systeemvoorkeur, lichte modus of donkere modus"
 
-#: ../../../lib/web/src/components/language-picker.tsx:174
+#: ../../../lib/web/src/components/language-picker.tsx:294
 msgid "Choose language"
 msgstr "Kies taal"
 
@@ -197,7 +197,7 @@ msgid "Clear selection (Escape)"
 msgstr "Selectie wissen (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:75
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:318
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:321
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Sluiten"
@@ -305,7 +305,7 @@ msgstr "Aflopend"
 msgid "Details Panel"
 msgstr "Detailspaneel"
 
-#: ../../../lib/web/src/components/language-picker.tsx:152
+#: ../../../lib/web/src/components/language-picker.tsx:272
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -316,7 +316,7 @@ msgstr "Detailspaneel"
 msgid "Detect from web browser"
 msgstr "Detecteren via webbrowser"
 
-#: src/features/home/index.tsx:173
+#: src/features/home/index.tsx:180
 msgid "Development"
 msgstr "Ontwikkeling"
 
@@ -332,7 +332,7 @@ msgstr "Sluiten"
 msgid "Displays the mobile sidebar."
 msgstr "Toont de mobiele zijbalk."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:312
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:315
 msgid "Download"
 msgstr "Downloaden"
 
@@ -547,7 +547,7 @@ msgstr "Netwerkfout"
 msgid "New"
 msgstr "Nieuw"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:345
 msgid "Next image"
 msgstr "Volgende afbeelding"
 
@@ -555,7 +555,7 @@ msgstr "Volgende afbeelding"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Geen toegangsregels geconfigureerd. Voeg regels toe om te bepalen wie toegang heeft tot deze resource."
 
-#: src/features/home/index.tsx:87
+#: src/features/home/index.tsx:92
 msgid "No apps found"
 msgstr "Geen apps gevonden"
 
@@ -654,7 +654,7 @@ msgstr "Toegangssleutels"
 msgid "Please check your internet connection and try again."
 msgstr "Controleer je internetverbinding en probeer het opnieuw."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
 msgid "Previous image"
 msgstr "Vorige afbeelding"
 
@@ -739,6 +739,10 @@ msgstr "Rijen per pagina"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Saturday"
 msgstr "Zaterdag"
+
+#: ../../../lib/web/src/components/ui/secret-field.tsx:74
+msgid "Save"
+msgstr "Opslaan"
 
 #: ../../../lib/web/src/components/place-picker.tsx:82
 msgid "Search for a place"
@@ -1039,7 +1043,7 @@ msgstr "Alles bekijken"
 msgid "View all notifications"
 msgstr "Alle meldingen bekijken"
 
-#: src/features/home/index.tsx:88
+#: src/features/home/index.tsx:93
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "We konden geen apps voor je vinden. Dit is onverwacht."
 
