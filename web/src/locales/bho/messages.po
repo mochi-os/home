@@ -175,7 +175,8 @@ msgstr "सिस्टम वरीयता, हल्का मोड, भा
 msgid "Choose language"
 msgstr "भाषा चुनीं"
 
-#: ../../../lib/web/src/components/colour-picker.tsx:304
+#: ../../../lib/web/src/components/colour-picker.tsx:268
+#: ../../../lib/web/src/components/colour-picker.tsx:349
 msgid "Clear"
 msgstr "साफ करीं"
 
@@ -271,6 +272,10 @@ msgstr "फिर से प्रमाणीकरण शुरू ना ह�
 #: ../../../lib/web/src/components/step-up-dialog.tsx:218
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ओह खाता से सत्यापन ना हो सकल। कृपया फेर से कोसिस करीं।"
+
+#: ../../../lib/web/src/components/colour-picker.tsx:259
+msgid "Custom"
+msgstr "अनुकूलित"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
@@ -616,6 +621,10 @@ msgstr "ओह! पन्ना ना मिलल!"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:151
 msgid "Open account actions"
 msgstr "खाता क्रिया खोलीं"
+
+#: ../../../lib/web/src/components/layout/nav-group.tsx:134
+msgid "Open actions"
+msgstr "एक्शन खोलीं"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:57
 msgid "Open navigation"
