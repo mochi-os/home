@@ -126,7 +126,7 @@ export function Home() {
                     ? 'border-primary hover:border-primary'
                     : 'border-border hover:border-primary/20'
                 }`}
-                style={{ boxShadow: 'var(--shadow-sm)' }}
+                style={{ boxShadow: 'var(--card-shadow)' }}
               >
                 {highlight && (
                   <span
@@ -195,7 +195,7 @@ export function Home() {
                       ? 'border-primary hover:border-primary'
                       : 'border-dashed border-border hover:border-primary/30'
                   }`}
-                  style={{ boxShadow: 'var(--shadow-xs)' }}
+                  style={{ boxShadow: 'var(--card-shadow)' }}
                 >
                   {highlight && (
                     <span
