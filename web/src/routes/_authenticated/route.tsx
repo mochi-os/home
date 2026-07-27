@@ -17,6 +17,7 @@ export const Route = createFileRoute('/_authenticated')({
     <AuthenticatedLayout
       mobileTitle={
         <span className='min-w-0 whitespace-nowrap bg-gradient-to-br from-foreground to-muted-foreground/30 bg-clip-text text-[32px] font-light tracking-[3px] text-transparent'>
+          {/* jsx-text-ok: brand wordmark, verbatim in every locale */}
           mochi
         </span>
       }

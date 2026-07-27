@@ -113,6 +113,7 @@ export function Home() {
         <h1
           className='bg-gradient-to-br from-foreground to-muted-foreground/30 bg-clip-text text-[36px] font-light tracking-[3px] text-transparent'
         >
+          {/* jsx-text-ok: brand wordmark, verbatim in every locale */}
           mochi
         </h1>
       </div>
