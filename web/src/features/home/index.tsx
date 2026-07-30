@@ -125,7 +125,7 @@ export function Home() {
             const highlight = icon.highlight
             return (
               <a
-                key={icon.path}
+                key={`${icon.id}:${icon.path}:${icon.file}`}
                 href={`/${icon.link}/`}
                 className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-hover ${
                   highlight
@@ -194,7 +194,7 @@ export function Home() {
               const highlight = icon.highlight
               return (
                 <a
-                  key={icon.path}
+                  key={`${icon.id}:${icon.path}:${icon.file}`}
                   href={`/${icon.link}/`}
                   className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card/50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:bg-hover ${
                     highlight
