@@ -127,7 +127,7 @@ export function Home() {
   const { t } = useLingui()
   const { data, isLoading, ErrorComponent } = useQueryWithError<IconsResponse, Error>({
     queryKey: ['app-icons'],
-    queryFn: () => requestHelpers.get<IconsResponse>('/-/icons'),
+    queryFn: () => requestHelpers.get<IconsResponse>('-/icons'),
   })
 
   if (isLoading) {
