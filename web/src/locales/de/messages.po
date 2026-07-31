@@ -472,7 +472,7 @@ msgstr "Standard"
 msgid "Default AI account"
 msgstr "Standard-KI-Konto"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Konto auf dem alten Server löschen"
 
@@ -503,7 +503,7 @@ msgstr "Detailbereich"
 msgid "Detect from web browser"
 msgstr "Aus Webbrowser ermitteln"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Entwicklung"
 
@@ -528,8 +528,8 @@ msgstr "Entwurf verwerfen?"
 msgid "Disconnected"
 msgstr "Getrennt"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Schließen"
 
@@ -630,7 +630,7 @@ msgstr "Kategorie konnte nicht aktualisiert werden"
 msgid "Filter..."
 msgstr "Filtern …"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Kontoumzug abschließen"
 
@@ -889,7 +889,7 @@ msgstr "Nächstes Bild"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Keine Zugriffsregeln konfiguriert. Fügen Sie Regeln hinzu, um den Zugriff auf diese Ressource zu steuern."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Keine Apps gefunden"
 
@@ -1029,7 +1029,7 @@ msgstr "Passkey"
 msgid "Passkey verification failed. Please try again."
 msgstr "Die Passkey-Überprüfung ist fehlgeschlagen. Bitte versuchen Sie es erneut."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Passkeys"
 
@@ -1086,11 +1086,11 @@ msgstr "Push-Benachrichtigung"
 msgid "Raised"
 msgstr "Erhöht"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Konten auf diesem Server erneut verknüpfen"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Registrieren Sie Ihre Passkeys auf diesem Server erneut"
 
@@ -1615,7 +1615,7 @@ msgstr "Alle Benachrichtigungen anzeigen"
 msgid "Watched"
 msgstr "Beobachtet"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Wir konnten keine Apps für Sie finden. Das ist unerwartet."
 
@@ -1656,7 +1656,7 @@ msgstr "Sie haben die folgenden Werte gesendet:"
 msgid "You're all caught up!"
 msgstr "Sie sind auf dem neuesten Stand!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ihr Konto wurde von {source} hierher verschoben. Bis Sie es dort löschen, können Nachrichten und Benachrichtigungen beide Server erreichen, ein Teil Ihrer Inhalte wird weiterhin vom alten Server bereitgestellt, und Follower benötigen möglicherweise ein paar Minuten, um Sie hier zu finden."
 

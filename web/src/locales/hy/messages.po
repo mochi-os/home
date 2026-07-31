@@ -472,7 +472,7 @@ msgstr "Լռելյայն"
 msgid "Default AI account"
 msgstr "Լռելյայն AI հաշիվ"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Ջնջեք ձեր հաշիվը հին սերվերում"
 
@@ -503,7 +503,7 @@ msgstr "Մանրամասների վահանակ"
 msgid "Detect from web browser"
 msgstr "Հայտնաբերել վեբ բրաուզերից"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Մշակում"
 
@@ -528,8 +528,8 @@ msgstr "Հրաժարվե՞լ սևագրից։"
 msgid "Disconnected"
 msgstr "Անջատված"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Հեռացնել"
 
@@ -630,7 +630,7 @@ msgstr "Չհաջողվեց թարմացնել կատեգորիան"
 msgid "Filter..."
 msgstr "Զտել..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Ավարտեք ձեր հաշվի տեղափոխությունը"
 
@@ -889,7 +889,7 @@ msgstr "Հաջորդ նկարը"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Մուտքի կանոններ կարգավորված չեն։ Ավելացրեք կանոններ՝ կառավարելու, թե ով կարող է մուտք գործել այս ռեսուրսը։"
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Հավելվածներ չեն գտնվել"
 
@@ -1029,7 +1029,7 @@ msgstr "Անցաբանալի"
 msgid "Passkey verification failed. Please try again."
 msgstr "Անցաբանալու ստուգումը ձախողվեց։ Խնդրում ենք նորից փորձել։"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Անցաբանալիներ"
 
@@ -1086,11 +1086,11 @@ msgstr "Push ծանուցում"
 msgid "Raised"
 msgstr "Բարձրացված"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Նորից կապեք ձեր հաշիվները այս սերվերում"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Կրկին գրանցեք ձեր անցաբառերը այս սերվերում"
 
@@ -1615,7 +1615,7 @@ msgstr "Դիտել բոլոր ծանուցումները"
 msgid "Watched"
 msgstr "Հետևված"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Մենք չկարողացանք գտնել ձեզ համար որևէ հավելված: Սա անսպասելի է:"
 
@@ -1656,7 +1656,7 @@ msgstr "Դուք ուղարկեցիք հետևյալ արժեքները՝"
 msgid "You're all caught up!"
 msgstr "Դուք ամեն ինչ տեսել եք։"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ձեր հաշիվը տեղափոխվել է այստեղ {source}-ից: Մինչ այն ջնջեք այնտեղ, հաղորդագրություններն ու ծանուցումները կարող են հասնել երկու սերվերներին, ձեր որոշ բովանդակություն դեռ մատուցվում է հին սերվերից, և հետևորդները կարող են մի քանի րոպե պահանջել ձեզ գտնելու համար:"
 

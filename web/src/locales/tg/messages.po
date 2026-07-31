@@ -472,7 +472,7 @@ msgstr "Пешфарз"
 msgid "Default AI account"
 msgstr "Ҳисоби пешфарз AI"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Ҳисоби худро дар сервери кӯҳна нест кунед"
 
@@ -503,7 +503,7 @@ msgstr "Панели тафсилот"
 msgid "Detect from web browser"
 msgstr "Аз браузери веб муайян кардан"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Таҳия"
 
@@ -528,8 +528,8 @@ msgstr "Сиёҳнависро партофта мешавад?"
 msgid "Disconnected"
 msgstr "Ҷудо шуда"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Рад кардан"
 
@@ -630,7 +630,7 @@ msgstr "Навсозии категория ба анҷом нарасид"
 msgid "Filter..."
 msgstr "Филтр..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Интиқоли ҳисобро анҷом диҳед"
 
@@ -889,7 +889,7 @@ msgstr "Тасвири навбатӣ"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Ягон қоидаи дастрасӣ танзим нашудааст. Барои назорати касе ки ба ин манбаъ дастрасӣ дорад қоидаҳо илова кунед."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Ягон барнома ёфт нашуд"
 
@@ -1029,7 +1029,7 @@ msgstr "Калиди дастрасӣ"
 msgid "Passkey verification failed. Please try again."
 msgstr "Тасдиқи калиди дастрасӣ ноком шуд. Лутфан, аз нав кӯшиш кунед."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Калидҳои дастрасӣ"
 
@@ -1086,11 +1086,11 @@ msgstr "Огоҳиномаи push"
 msgid "Raised"
 msgstr "Бардошта"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Ҳисобҳоятонро дар ин сервер аз нав пайванд кунед"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Калидҳои дастрасии худро дар ин сервер аз нав сабт кунед"
 
@@ -1615,7 +1615,7 @@ msgstr "Ҳама огоҳиҳоро дидан"
 msgid "Watched"
 msgstr "Назорат шуда"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Мо ягон барномаро барои шумо ёфта натавонистем. Ин ғайричашмдошт аст."
 
@@ -1656,7 +1656,7 @@ msgstr "Шумо қиматҳои зеринро фиристодед:"
 msgid "You're all caught up!"
 msgstr "Шумо ҳамаро дидед!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ҳисоби шумо аз {source} ба ин ҷо интиқол дода шуд. То он гоҳ, ки онро дар он ҷо нест накунед, паёмҳо ва огоҳиҳо метавонанд ба ҳарду сервер расанд, қисмати муайяни мазмуни шумо аз сервери кӯҳна хизмат медиҳад ва пайравон метавонанд чанд дақиқа вақт барои ёфтани шумо дар ин ҷо сарф кунанд."
 

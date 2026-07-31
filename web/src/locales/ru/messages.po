@@ -472,7 +472,7 @@ msgstr "По умолчанию"
 msgid "Default AI account"
 msgstr "Аккаунт ИИ по умолчанию"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Удалите свой аккаунт на старом сервере"
 
@@ -503,7 +503,7 @@ msgstr "Панель подробностей"
 msgid "Detect from web browser"
 msgstr "Определить из веб-браузера"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Разработка"
 
@@ -528,8 +528,8 @@ msgstr "Отменить черновик?"
 msgid "Disconnected"
 msgstr "Отключено"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Закрыть"
 
@@ -630,7 +630,7 @@ msgstr "Не удалось обновить категорию"
 msgid "Filter..."
 msgstr "Фильтр..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Завершите перенос аккаунта"
 
@@ -889,7 +889,7 @@ msgstr "Следующее изображение"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Правила доступа не настроены. Добавьте правила, чтобы контролировать доступ к этому ресурсу."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Приложения не найдены"
 
@@ -1029,7 +1029,7 @@ msgstr "Ключ доступа"
 msgid "Passkey verification failed. Please try again."
 msgstr "Не удалось проверить ключ доступа. Попробуйте ещё раз."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Ключи доступа"
 
@@ -1086,11 +1086,11 @@ msgstr "Push-уведомление"
 msgid "Raised"
 msgstr "Приподнятый"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Повторно привяжите свои аккаунты на этом сервере"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Зарегистрируйте ключи доступа на этом сервере заново"
 
@@ -1615,7 +1615,7 @@ msgstr "Просмотреть все уведомления"
 msgid "Watched"
 msgstr "Отслеживается"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Мы не смогли найти приложения для вас. Это неожиданно."
 
@@ -1656,7 +1656,7 @@ msgstr "Вы отправили следующие значения:"
 msgid "You're all caught up!"
 msgstr "Вы всё просмотрели!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ваш аккаунт был перенесён сюда с {source}. Пока вы не удалите его там, сообщения и уведомления могут поступать на оба сервера, часть вашего контента по-прежнему обслуживается со старого сервера, а подписчикам может потребоваться несколько минут, чтобы найти вас здесь."
 

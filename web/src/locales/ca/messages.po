@@ -472,7 +472,7 @@ msgstr "Per defecte"
 msgid "Default AI account"
 msgstr "Compte d'IA per defecte"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Suprimiu el compte a l'antic servidor"
 
@@ -503,7 +503,7 @@ msgstr "Panell de detalls"
 msgid "Detect from web browser"
 msgstr "Detecta des del navegador"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Desenvolupament"
 
@@ -528,8 +528,8 @@ msgstr "Vols descartar l'esborrany?"
 msgid "Disconnected"
 msgstr "Desconnectat"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Descarta"
 
@@ -630,7 +630,7 @@ msgstr "No s'ha pogut actualitzar la categoria"
 msgid "Filter..."
 msgstr "Filtra..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Acabeu de moure el compte"
 
@@ -889,7 +889,7 @@ msgstr "Imatge següent"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "No s'han configurat regles d'accés. Afegeix regles per controlar qui pot accedir a aquest recurs."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "No s'ha trobat cap aplicació"
 
@@ -1029,7 +1029,7 @@ msgstr "Clau d'accés"
 msgid "Passkey verification failed. Please try again."
 msgstr "Ha fallat la verificació de la clau d'accés. Torneu-ho a provar."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Claus d'accés"
 
@@ -1086,11 +1086,11 @@ msgstr "Notificació push"
 msgid "Raised"
 msgstr "Elevat"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Torneu a vincular els comptes en aquest servidor"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Torna a registrar les teves claus d'accés en aquest servidor"
 
@@ -1615,7 +1615,7 @@ msgstr "Mostra totes les notificacions"
 msgid "Watched"
 msgstr "Seguit"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "No hem pogut trobar cap aplicació per a tu. Això és inesperat."
 
@@ -1656,7 +1656,7 @@ msgstr "Heu enviat els valors següents:"
 msgid "You're all caught up!"
 msgstr "Ja estàs al dia!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "El vostre compte s'ha mogut aquí des de {source}. Fins que no l'elimineu d'allà, els missatges i les notificacions poden arribar als dos servidors, part del vostre contingut es continuarà servint des de l'antic servidor i els seguidors poden trigar uns minuts a trobar-vos aquí."
 

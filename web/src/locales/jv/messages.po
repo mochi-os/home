@@ -472,7 +472,7 @@ msgstr "Standar"
 msgid "Default AI account"
 msgstr "Akun AI standar"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Busak akun sampeyan ing server lawas"
 
@@ -503,7 +503,7 @@ msgstr "Panel Rincian"
 msgid "Detect from web browser"
 msgstr "Deteksi saka browser web"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Pengembangan"
 
@@ -528,8 +528,8 @@ msgstr "Buwang konsep?"
 msgid "Disconnected"
 msgstr "Pedhot"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Singkiraké"
 
@@ -630,7 +630,7 @@ msgstr "Gagal nganyari kategori"
 msgid "Filter..."
 msgstr "Saring..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Rampungna mindah akun sampeyan"
 
@@ -889,7 +889,7 @@ msgstr "Gambar sabanjure"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Ora ana aturan akses disetel. Tambahaké aturan kanggo ngatur sapa sing bisa ngakses sumber iki."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Ora ana app ditemokaké"
 
@@ -1029,7 +1029,7 @@ msgstr "Passkey"
 msgid "Passkey verification failed. Please try again."
 msgstr "Verifikasi passkey gagal. Coba maneh."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Passkey"
 
@@ -1086,11 +1086,11 @@ msgstr "Notifikasi push"
 msgid "Raised"
 msgstr "Munggah"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Sambungke maneh akun sampeyan ing server iki"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Daftarake maneh passkey sampeyan ing server iki"
 
@@ -1615,7 +1615,7 @@ msgstr "Deleng kabeh notifikasi"
 msgid "Watched"
 msgstr "Wis ditonton"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Awaké dhéwé ora bisa nemokaké app kanggo sampéyan. Iki ora dikarepake."
 
@@ -1656,7 +1656,7 @@ msgstr "Sampeyan ngirim nilai iki:"
 msgid "You're all caught up!"
 msgstr "Sampeyan wis maca kabeh!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Akun sampeyan dipindah mrene saka {source}. Nganti sampeyan mbusak ana, pesen lan notifikasi bisa tekan loro-lorone server, sawetara konten sampeyan tetep dilayani saka server lawas, lan pengikut bisa butuh sawetara menit kanggo nemokake sampeyan ing kene."
 

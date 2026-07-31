@@ -472,7 +472,7 @@ msgstr "افتراضي"
 msgid "Default AI account"
 msgstr "حساب الذكاء الاصطناعي الافتراضي"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "احذف حسابك من الخادم القديم"
 
@@ -503,7 +503,7 @@ msgstr "لوحة التفاصيل"
 msgid "Detect from web browser"
 msgstr "اكتشاف من متصفح الويب"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "تطوير"
 
@@ -528,8 +528,8 @@ msgstr "تجاهل المسودة؟"
 msgid "Disconnected"
 msgstr "غير متصل"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "تجاهل"
 
@@ -630,7 +630,7 @@ msgstr "فشل تحديث الفئة"
 msgid "Filter..."
 msgstr "تصفية..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "أتمم نقل حسابك"
 
@@ -889,7 +889,7 @@ msgstr "الصورة التالية"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "لم يتم تكوين قواعد وصول. أضف قواعد للتحكم في من يمكنه الوصول إلى هذا المورد."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "لم يتم العثور على تطبيقات"
 
@@ -1029,7 +1029,7 @@ msgstr "مفتاح المرور"
 msgid "Passkey verification failed. Please try again."
 msgstr "فشل التحقق من مفتاح المرور. يرجى المحاولة مرة أخرى."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "مفاتيح المرور"
 
@@ -1086,11 +1086,11 @@ msgstr "إشعار فوري"
 msgid "Raised"
 msgstr "بارز"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "أعد ربط حساباتك بهذا الخادم"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "أعد تسجيل مفاتيح المرور على هذا الخادم"
 
@@ -1615,7 +1615,7 @@ msgstr "عرض جميع الإشعارات"
 msgid "Watched"
 msgstr "مراقَب"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "لم نتمكن من العثور على أي تطبيقات لك. هذا غير متوقع."
 
@@ -1656,7 +1656,7 @@ msgstr "لقد أرسلت القيم التالية:"
 msgid "You're all caught up!"
 msgstr "لقد اطّلعت على كل شيء!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "تم نقل حسابك إلى هنا من {source}. حتى تحذفه من هناك، قد تصل الرسائل والإشعارات إلى كلا الخادمين، وقد يظل بعض محتواك يُقدَّم من الخادم القديم، وقد يستغرق المتابعون بضع دقائق للعثور عليك هنا."
 

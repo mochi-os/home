@@ -472,7 +472,7 @@ msgstr "Mặc định"
 msgid "Default AI account"
 msgstr "Tài khoản AI mặc định"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Xóa tài khoản của bạn trên máy chủ cũ"
 
@@ -503,7 +503,7 @@ msgstr "Bảng chi tiết"
 msgid "Detect from web browser"
 msgstr "Phát hiện từ trình duyệt web"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Phát triển"
 
@@ -528,8 +528,8 @@ msgstr "Hủy bản nháp?"
 msgid "Disconnected"
 msgstr "Đã ngắt kết nối"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Bỏ qua"
 
@@ -630,7 +630,7 @@ msgstr "Không cập nhật danh mục được"
 msgid "Filter..."
 msgstr "Lọc..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Hoàn tất việc chuyển tài khoản của bạn"
 
@@ -889,7 +889,7 @@ msgstr "Hình tiếp theo"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Chưa cấu hình quy tắc truy cập. Thêm quy tắc để kiểm soát ai có thể truy cập tài nguyên này."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Không tìm thấy ứng dụng nào"
 
@@ -1029,7 +1029,7 @@ msgstr "Mã khóa"
 msgid "Passkey verification failed. Please try again."
 msgstr "Xác minh mã khóa không thành công. Vui lòng thử lại."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Passkey"
 
@@ -1086,11 +1086,11 @@ msgstr "Thông báo đẩy"
 msgid "Raised"
 msgstr "Nổi lên"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Liên kết lại các tài khoản của bạn trên máy chủ này"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Đăng ký lại mã khóa của bạn trên máy chủ này"
 
@@ -1615,7 +1615,7 @@ msgstr "Xem tất cả thông báo"
 msgid "Watched"
 msgstr "Đã theo dõi"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Chúng tôi không tìm thấy ứng dụng nào cho bạn. Điều này không như mong đợi."
 
@@ -1656,7 +1656,7 @@ msgstr "Bạn đã gửi các giá trị sau:"
 msgid "You're all caught up!"
 msgstr "Bạn đã xem hết!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Tài khoản của bạn đã được chuyển đến đây từ {source}. Cho đến khi bạn xóa nó ở đó, tin nhắn và thông báo có thể đến cả hai máy chủ, một số nội dung của bạn vẫn được phục vụ từ máy chủ cũ và người theo dõi có thể mất vài phút để tìm thấy bạn ở đây."
 

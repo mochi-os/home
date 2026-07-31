@@ -472,7 +472,7 @@ msgstr "Predvolené"
 msgid "Default AI account"
 msgstr "Predvolený AI účet"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Odstráňte svoj účet na starom serveri"
 
@@ -503,7 +503,7 @@ msgstr "Panel podrobností"
 msgid "Detect from web browser"
 msgstr "Zistiť z webového prehliadača"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Vývoj"
 
@@ -528,8 +528,8 @@ msgstr "Zahodiť koncept?"
 msgid "Disconnected"
 msgstr "Odpojené"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Zatvoriť"
 
@@ -630,7 +630,7 @@ msgstr "Nepodarilo sa aktualizovať kategóriu"
 msgid "Filter..."
 msgstr "Filtrovať..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Dokončite presun účtu"
 
@@ -889,7 +889,7 @@ msgstr "Ďalší obrázok"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Nie sú nakonfigurované žiadne pravidlá prístupu. Pridajte pravidlá na riadenie prístupu k tomuto zdroju."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Nenašli sa žiadne aplikácie"
 
@@ -1029,7 +1029,7 @@ msgstr "Prístupový kľúč"
 msgid "Passkey verification failed. Please try again."
 msgstr "Overenie prístupového kľúča zlyhalo. Skúste to znova."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Prístupové kľúče"
 
@@ -1086,11 +1086,11 @@ msgstr "Push oznámenie"
 msgid "Raised"
 msgstr "Vyvýšené"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Znovu prepojte svoje účty na tomto serveri"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Znova zaregistrujte svoje prístupové kľúče na tomto serveri"
 
@@ -1615,7 +1615,7 @@ msgstr "Zobraziť všetky oznámenia"
 msgid "Watched"
 msgstr "Sledované"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Nenašli sme pre vás žiadne aplikácie. Toto je neočakávané."
 
@@ -1656,7 +1656,7 @@ msgstr "Odoslali ste nasledujúce hodnoty:"
 msgid "You're all caught up!"
 msgstr "Máte všetko prečítané!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Váš účet bol presunutý sem z {source}. Kým ho tam neodstránite, správy a upozornenia môžu dosiahnuť oba servery, časť vášho obsahu naďalej pochádza zo starého servera a sledovateľom môže chvíľu trvať, kým vás tu nájdu."
 

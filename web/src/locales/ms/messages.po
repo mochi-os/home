@@ -472,7 +472,7 @@ msgstr "Lalai"
 msgid "Default AI account"
 msgstr "Akaun AI lalai"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Padamkan akaun anda di pelayan lama"
 
@@ -503,7 +503,7 @@ msgstr "Panel Butiran"
 msgid "Detect from web browser"
 msgstr "Kesan daripada pelayar web"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Pembangunan"
 
@@ -528,8 +528,8 @@ msgstr "Buang draf?"
 msgid "Disconnected"
 msgstr "Terputus"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Tutup"
 
@@ -630,7 +630,7 @@ msgstr "Gagal mengemas kini kategori"
 msgid "Filter..."
 msgstr "Tapis..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Selesaikan pemindahan akaun anda"
 
@@ -889,7 +889,7 @@ msgstr "Imej seterusnya"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Tiada peraturan akses dikonfigurasikan. Tambah peraturan untuk mengawal siapa yang boleh mengakses sumber ini."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Tiada apl dijumpai"
 
@@ -1029,7 +1029,7 @@ msgstr "Kunci laluan"
 msgid "Passkey verification failed. Please try again."
 msgstr "Pengesahan kunci laluan gagal. Sila cuba lagi."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Passkey"
 
@@ -1086,11 +1086,11 @@ msgstr "Pemberitahuan push"
 msgid "Raised"
 msgstr "Timbul"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Pautkan semula akaun anda di pelayan ini"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Daftar semula kunci laluan anda di pelayan ini"
 
@@ -1615,7 +1615,7 @@ msgstr "Lihat semua pemberitahuan"
 msgid "Watched"
 msgstr "Dipantau"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Kami tidak menemui sebarang aplikasi untuk anda. Ini tidak dijangka."
 
@@ -1656,7 +1656,7 @@ msgstr "Anda menghantar nilai berikut:"
 msgid "You're all caught up!"
 msgstr "Anda sudah membaca semua!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Akaun anda telah dipindahkan ke sini dari {source}. Sehingga anda memadamnya di sana, mesej dan pemberitahuan mungkin sampai ke kedua-dua pelayan, sebahagian kandungan anda terus dihidangkan dari pelayan lama, dan pengikut mungkin mengambil masa beberapa minit untuk mencari anda di sini."
 

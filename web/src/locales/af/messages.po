@@ -472,7 +472,7 @@ msgstr "Verstek"
 msgid "Default AI account"
 msgstr "Verstek KI-rekening"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Vee jou rekening op die ou bediener uit"
 
@@ -503,7 +503,7 @@ msgstr "Besonderhede-paneel"
 msgid "Detect from web browser"
 msgstr "Spoor op vanaf webblaaier"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Ontwikkeling"
 
@@ -528,8 +528,8 @@ msgstr "Konsep weggooi?"
 msgid "Disconnected"
 msgstr "Ontkoppel"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Sluit"
 
@@ -630,7 +630,7 @@ msgstr "Kon nie kategorie opdateer nie"
 msgid "Filter..."
 msgstr "Filtreer..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Voltooi die skuif van jou rekening"
 
@@ -889,7 +889,7 @@ msgstr "Volgende prent"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Geen toegangsreëls gekonfigureer nie. Voeg reëls by om te beheer wie toegang tot hierdie hulpbron het."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Geen programme gevind nie"
 
@@ -1029,7 +1029,7 @@ msgstr "Toegangsleutel"
 msgid "Passkey verification failed. Please try again."
 msgstr "Wagsleutel-verifikasie het misluk. Probeer asseblief weer."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Wagwoordsleutels"
 
@@ -1086,11 +1086,11 @@ msgstr "Stootkennisgewing"
 msgid "Raised"
 msgstr "Verhoog"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Koppel jou rekeninge op hierdie bediener weer"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Herregistreer jou wagwoordsleutels op hierdie bediener"
 
@@ -1615,7 +1615,7 @@ msgstr "Bekyk alle kennisgewings"
 msgid "Watched"
 msgstr "Dopgehou"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Ons kon geen programme vir jou vind nie. Dit is onverwags."
 
@@ -1656,7 +1656,7 @@ msgstr "Jy het die volgende waardes ingedien:"
 msgid "You're all caught up!"
 msgstr "Jy is heeltemal op hoogte!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Jou rekening is hierheen geskuif vanaf {source}. Totdat jy dit daar uitvee, kan boodskappe en kennisgewings albei bedieners bereik, word sommige van jou inhoud steeds vanaf die ou bediener bedien, en kan volgelinge 'n paar minute neem om jou hier te vind."
 

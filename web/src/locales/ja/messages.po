@@ -472,7 +472,7 @@ msgstr "デフォルト"
 msgid "Default AI account"
 msgstr "デフォルト AI アカウント"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "旧サーバーのアカウントを削除する"
 
@@ -503,7 +503,7 @@ msgstr "詳細パネル"
 msgid "Detect from web browser"
 msgstr "ウェブブラウザから検出"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "開発"
 
@@ -528,8 +528,8 @@ msgstr "下書きを破棄しますか？"
 msgid "Disconnected"
 msgstr "切断済み"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "閉じる"
 
@@ -630,7 +630,7 @@ msgstr "カテゴリの更新に失敗しました"
 msgid "Filter..."
 msgstr "絞り込み..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "アカウントの移行を完了する"
 
@@ -889,7 +889,7 @@ msgstr "次の画像"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "アクセスルールが設定されていません。このリソースへのアクセスを制御するルールを追加してください。"
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "アプリが見つかりません"
 
@@ -1029,7 +1029,7 @@ msgstr "パスキー"
 msgid "Passkey verification failed. Please try again."
 msgstr "パスキーの認証に失敗しました。もう一度お試しください。"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "パスキー"
 
@@ -1086,11 +1086,11 @@ msgstr "プッシュ通知"
 msgid "Raised"
 msgstr "浮き出し"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "このサーバーでアカウントを再リンクする"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "このサーバーでパスキーを再登録してください"
 
@@ -1615,7 +1615,7 @@ msgstr "すべての通知を表示"
 msgid "Watched"
 msgstr "ウォッチ中"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "アプリが見つかりませんでした。これは想定外の状態です。"
 
@@ -1656,7 +1656,7 @@ msgstr "次の値を送信しました:"
 msgid "You're all caught up!"
 msgstr "すべて確認済みです。"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "アカウントが{source}からここに移行されました。そちらで削除するまで、メッセージや通知が両方のサーバーに届く場合があり、一部のコンテンツは旧サーバーから引き続き提供され、フォロワーがここであなたを見つけるまで数分かかる場合があります。"
 

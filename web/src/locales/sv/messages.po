@@ -472,7 +472,7 @@ msgstr "Standard"
 msgid "Default AI account"
 msgstr "Standard AI-konto"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Ta bort ditt konto på den gamla servern"
 
@@ -503,7 +503,7 @@ msgstr "Detaljpanel"
 msgid "Detect from web browser"
 msgstr "Identifiera från webbläsare"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Utveckling"
 
@@ -528,8 +528,8 @@ msgstr "Kasta utkastet?"
 msgid "Disconnected"
 msgstr "Frånkopplad"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Avfärda"
 
@@ -630,7 +630,7 @@ msgstr "Kunde inte uppdatera kategori"
 msgid "Filter..."
 msgstr "Filtrera..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Slutför flytten av ditt konto"
 
@@ -889,7 +889,7 @@ msgstr "Nästa bild"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Inga åtkomstregler konfigurerade. Lägg till regler för att styra vem som kan komma åt denna resurs."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Inga appar hittades"
 
@@ -1029,7 +1029,7 @@ msgstr "Nyckel"
 msgid "Passkey verification failed. Please try again."
 msgstr "Verifieringen med nyckel misslyckades. Försök igen."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Nycklar"
 
@@ -1086,11 +1086,11 @@ msgstr "Push-avisering"
 msgid "Raised"
 msgstr "Upphöjd"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Återlänka dina konton på den här servern"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Registrera dina nycklar på nytt på den här servern"
 
@@ -1615,7 +1615,7 @@ msgstr "Visa alla aviseringar"
 msgid "Watched"
 msgstr "Bevakad"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Vi kunde inte hitta några appar åt dig. Detta är oväntat."
 
@@ -1656,7 +1656,7 @@ msgstr "Du skickade följande värden:"
 msgid "You're all caught up!"
 msgstr "Du är ikapp!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ditt konto flyttades hit från {source}. Tills du tar bort det där kan meddelanden och notiser nå båda servrarna, en del av ditt innehåll fortsätter att levereras från den gamla servern och följare kan behöva några minuter för att hitta dig här."
 

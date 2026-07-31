@@ -472,7 +472,7 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Kont AI default"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Ħassar il-kont tiegħek fuq is-server il-qadim"
 
@@ -503,7 +503,7 @@ msgstr "Pannell tad-Dettalji"
 msgid "Detect from web browser"
 msgstr "Iskopri mill-browser"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Żvilupp"
 
@@ -528,8 +528,8 @@ msgstr "Tarmi l-abbozz?"
 msgid "Disconnected"
 msgstr "Skonness"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Warrab"
 
@@ -630,7 +630,7 @@ msgstr "Ma rnexxiex tiġi aġġornata l-kategorija"
 msgid "Filter..."
 msgstr "Iffiltra..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Lesti t-trasferiment tal-kont tiegħek"
 
@@ -889,7 +889,7 @@ msgstr "Stampa li jmiss"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "L-ebda regoli ta' aċċess ikkonfigurati. Żid regoli biex tikkontrolla min jista' jaċċessa din ir-riżorsa."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Ma nstabu l-ebda apps"
 
@@ -1029,7 +1029,7 @@ msgstr "Passkey"
 msgid "Passkey verification failed. Please try again."
 msgstr "Il-verifika tal-passkey falliet. Jekk jogħġbok erġa' pprova."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Ċwievet tal-aċċess"
 
@@ -1086,11 +1086,11 @@ msgstr "Notifika push"
 msgid "Raised"
 msgstr "Imqajjem"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Erġa' għaqqad il-kontijiet tiegħek fuq dan is-server"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Erġa' rreġistra ċ-ċwievet tal-aċċess tiegħek fuq dan is-server"
 
@@ -1615,7 +1615,7 @@ msgstr "Ara n-notifiki kollha"
 msgid "Watched"
 msgstr "Segwit"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Ma sibna l-ebda app għalik. Dan mhux mistenni."
 
@@ -1656,7 +1656,7 @@ msgstr "Bgħatt il-valuri li ġejjin:"
 msgid "You're all caught up!"
 msgstr "Rajt kollox!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Il-kont tiegħek ġie miċċaqqlaq hawn minn {source}. Sakemm tħassru hemm, il-messaġġi u n-notifiki jistgħu jaslu fuq iż-żewġ servers, xi kontenut tiegħek jibqa' jingħata mis-server il-qadim, u s-segwaċi jistgħu jieħdu ftit minuti biex isibuk hawn."
 

@@ -472,7 +472,7 @@ msgstr ""
 msgid "Default AI account"
 msgstr ""
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Supprimez votre compte sur l'ancien serveur"
 
@@ -503,7 +503,7 @@ msgstr ""
 msgid "Detect from web browser"
 msgstr ""
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr ""
 
@@ -528,8 +528,8 @@ msgstr ""
 msgid "Disconnected"
 msgstr ""
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr ""
 
@@ -630,7 +630,7 @@ msgstr ""
 msgid "Filter..."
 msgstr ""
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Terminez le déplacement de votre compte"
 
@@ -889,7 +889,7 @@ msgstr ""
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr ""
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr ""
 
@@ -1029,7 +1029,7 @@ msgstr ""
 msgid "Passkey verification failed. Please try again."
 msgstr ""
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Clés d'accès"
 
@@ -1086,11 +1086,11 @@ msgstr ""
 msgid "Raised"
 msgstr ""
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Reliez à nouveau vos comptes sur ce serveur"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Réenregistrez vos clés d'accès sur ce serveur"
 
@@ -1615,7 +1615,7 @@ msgstr ""
 msgid "Watched"
 msgstr ""
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr ""
 
@@ -1656,7 +1656,7 @@ msgstr ""
 msgid "You're all caught up!"
 msgstr ""
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Votre compte a été déplacé ici depuis {source}. Jusqu'à ce que vous le supprimiez là-bas, les messages et les notifications peuvent atteindre les deux serveurs, une partie de votre contenu continue d'être servi depuis l'ancien serveur et vos abonnés peuvent prendre quelques minutes pour vous trouver ici."
 

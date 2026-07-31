@@ -472,7 +472,7 @@ msgstr "پیش‌فرض"
 msgid "Default AI account"
 msgstr "حساب پیش‌فرض هوش مصنوعی"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "حساب کاربری خود را در سرور قدیمی حذف کنید"
 
@@ -503,7 +503,7 @@ msgstr "پنل جزئیات"
 msgid "Detect from web browser"
 msgstr "تشخیص از مرورگر وب"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "توسعه"
 
@@ -528,8 +528,8 @@ msgstr "پیش‌نویس دور انداخته شود؟"
 msgid "Disconnected"
 msgstr "قطع شده"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "بستن"
 
@@ -630,7 +630,7 @@ msgstr "به‌روزرسانی دسته ناموفق بود"
 msgid "Filter..."
 msgstr "فیلتر..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "انتقال حساب کاربری خود را تکمیل کنید"
 
@@ -889,7 +889,7 @@ msgstr "تصویر بعدی"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "هیچ قاعده دسترسی پیکربندی نشده است. برای کنترل دسترسی به این منبع، قاعده اضافه کنید."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "برنامه‌ای یافت نشد"
 
@@ -1029,7 +1029,7 @@ msgstr "پسکی"
 msgid "Passkey verification failed. Please try again."
 msgstr "تأیید با کلید عبور ناموفق بود. لطفاً دوباره تلاش کنید."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "پسکی‌ها"
 
@@ -1086,11 +1086,11 @@ msgstr "اعلان فوری"
 msgid "Raised"
 msgstr "برجسته"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "حساب‌های خود را در این سرور مجدداً پیوند دهید"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "کلیدهای عبور خود را دوباره در این سرور ثبت کنید"
 
@@ -1615,7 +1615,7 @@ msgstr "نمایش همه اعلان‌ها"
 msgid "Watched"
 msgstr "تماشا شد"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "هیچ اپی برای شما پیدا نکردیم. این غیرمنتظره است."
 
@@ -1656,7 +1656,7 @@ msgstr "مقادیر زیر را ارسال کردید:"
 msgid "You're all caught up!"
 msgstr "همه چیز را دیده‌اید!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "حساب کاربری شما از {source} به اینجا منتقل شده است. تا زمانی که آن را آنجا حذف نکنید، پیام‌ها و اعلان‌ها ممکن است به هر دو سرور برسند، بخشی از محتوای شما همچنان از سرور قدیمی ارائه می‌شود، و دنبال‌کنندگان ممکن است چند دقیقه‌ای طول بکشد تا شما را اینجا پیدا کنند."
 

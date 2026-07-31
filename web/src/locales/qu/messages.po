@@ -472,7 +472,7 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Default AI cuenta"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Ñawpaq serverpi cuenta-ykita qichuy"
 
@@ -503,7 +503,7 @@ msgstr "Willariykuna Panel"
 msgid "Detect from web browser"
 msgstr "Web browser-manta tariy"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Wiñasqa"
 
@@ -528,8 +528,8 @@ msgstr "¿Qillqa qallariyta wikch'unkichu?"
 msgid "Disconnected"
 msgstr "Mana tinkichisqa"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Wischuy"
 
@@ -630,7 +630,7 @@ msgstr "Mana categoríata musuqyachiyta atinchu"
 msgid "Filter..."
 msgstr "Suysuy..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Cuenta-ykita apaykachay tukuchiy"
 
@@ -889,7 +889,7 @@ msgstr "Qatiqnin imagen"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Mana yaykuy kamachiy churasqa. Kamachiykunata yapay pichus kay recursoman yaykuyta atinanpaq."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Mana appkuna tarisqachu"
 
@@ -1029,7 +1029,7 @@ msgstr "Yaykuna llave"
 msgid "Passkey verification failed. Please try again."
 msgstr "Yaykuna llaveq takyachiynin mana atikurqanchu. Ama hina kaspa watiqmanta ruway."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Passkeykuna"
 
@@ -1086,11 +1086,11 @@ msgstr "Push willakuy"
 msgid "Raised"
 msgstr "Hoqarisqa"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Kay serverpi cuenta-ykikunata watiqmanta huñuy"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Kay servidorpi passkeyniykita musukmanta qillqachiy"
 
@@ -1615,7 +1615,7 @@ msgstr "Llapan willakuykunata qhaway"
 msgid "Watched"
 msgstr "Qhawasqa"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Qanpaq mana ima appkunatapas tariykuchu. Kayqa mana suyasqachu."
 
@@ -1656,7 +1656,7 @@ msgstr "Kay chanikunata apachirqanki:"
 msgid "You're all caught up!"
 msgstr "Llapanta qhawarqankiña!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Cuenta-yki {source} llaqtamanta kaypi churasqa karqan. Chaypeqa manaraj qichuykiptiyki, willakuykuna hinaspa sut'ichakuykuna iskay serverkunaman chayayta atinku, imaymayki wakin ñawpaq servermanta kamachikapusqanmi kachkan, hinaspa qhatiqniykim kaypi tarisunkaypaq huk minutokunata suyayta atinku."
 

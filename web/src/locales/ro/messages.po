@@ -472,7 +472,7 @@ msgstr "Implicit"
 msgid "Default AI account"
 msgstr "Cont AI implicit"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "Ștergeți contul de pe serverul vechi"
 
@@ -503,7 +503,7 @@ msgstr "Panou detalii"
 msgid "Detect from web browser"
 msgstr "Detectează din browser"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "Dezvoltare"
 
@@ -528,8 +528,8 @@ msgstr "Renunți la ciornă?"
 msgid "Disconnected"
 msgstr "Deconectat"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "Renunță"
 
@@ -630,7 +630,7 @@ msgstr "Actualizarea categoriei a eșuat"
 msgid "Filter..."
 msgstr "Filtrare..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "Finalizați mutarea contului dvs."
 
@@ -889,7 +889,7 @@ msgstr "Imaginea următoare"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Nu sunt configurate reguli de acces. Adaugă reguli pentru a controla cine poate accesa această resursă."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "Nu s-au găsit aplicații"
 
@@ -1029,7 +1029,7 @@ msgstr "Cheie de acces"
 msgid "Passkey verification failed. Please try again."
 msgstr "Verificarea cheii de acces a eșuat. Încearcă din nou."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "Chei de acces"
 
@@ -1086,11 +1086,11 @@ msgstr "Notificare push"
 msgid "Raised"
 msgstr "Ridicat"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "Reconectați conturile pe acest server"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "Reînregistrați-vă cheile de acces pe acest server"
 
@@ -1615,7 +1615,7 @@ msgstr "Vizualizează toate notificările"
 msgid "Watched"
 msgstr "Urmărit"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "Nu am putut găsi aplicații pentru tine. Acest lucru este neașteptat."
 
@@ -1656,7 +1656,7 @@ msgstr "Ați trimis următoarele valori:"
 msgid "You're all caught up!"
 msgstr "Sunteți la zi!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Contul dvs. a fost mutat aici de la {source}. Până când îl ștergeți de acolo, mesajele și notificările pot ajunge pe ambele servere, o parte din conținutul dvs. continuă să fie servit de pe serverul vechi, iar urmăritorii pot avea nevoie de câteva minute pentru a vă găsi aici."
 

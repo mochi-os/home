@@ -472,7 +472,7 @@ msgstr "డిఫాల్ట్"
 msgid "Default AI account"
 msgstr "డిఫాల్ట్ AI ఖాతా"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:99
+#: ../../../lib/web/src/components/restore-banner.tsx:115
 msgid "Delete your account on the old server"
 msgstr "పాత సర్వర్‌లో మీ ఖాతాను తొలగించండి"
 
@@ -503,7 +503,7 @@ msgstr "వివరాల ప్యానెల్"
 msgid "Detect from web browser"
 msgstr "వెబ్ బ్రౌజర్ నుండి గుర్తించండి"
 
-#: src/features/home/index.tsx:186
+#: src/features/home/index.tsx:206
 msgid "Development"
 msgstr "డెవలప్‌మెంట్"
 
@@ -528,8 +528,8 @@ msgstr "డ్రాఫ్ట్‌ను విస్మరించాలా?"
 msgid "Disconnected"
 msgstr "డిస్‌కనెక్ట్ అయింది"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:79
-#: ../../../lib/web/src/components/restore-banner.tsx:85
+#: ../../../lib/web/src/components/restore-banner.tsx:94
+#: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Dismiss"
 msgstr "విస్మరించండి"
 
@@ -630,7 +630,7 @@ msgstr "విభాగాన్ని నవీకరించడంలో వ�
 msgid "Filter..."
 msgstr "ఫిల్టర్..."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:88
+#: ../../../lib/web/src/components/restore-banner.tsx:103
 msgid "Finish moving your account"
 msgstr "మీ ఖాతా తరలింపు పూర్తి చేయండి"
 
@@ -889,7 +889,7 @@ msgstr "తదుపరి చిత్రం"
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "యాక్సెస్ నియమాలు ఏవీ కాన్ఫిగర్ చేయబడలేదు. ఈ రిసోర్స్‌ను ఎవరు యాక్సెస్ చేయగలరో నియంత్రించడానికి నియమాలను జోడించండి."
 
-#: src/features/home/index.tsx:97
+#: src/features/home/index.tsx:168
 msgid "No apps found"
 msgstr "యాప్‌లు ఏవీ కనుగొనబడలేదు"
 
@@ -1029,7 +1029,7 @@ msgstr "పాస్‌కీ"
 msgid "Passkey verification failed. Please try again."
 msgstr "పాస్‌కీ ధృవీకరణ విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి."
 
-#: ../../../lib/web/src/components/restore-banner.tsx:135
+#: ../../../lib/web/src/components/restore-banner.tsx:152
 msgid "Passkeys"
 msgstr "పాస్‌కీలు"
 
@@ -1086,11 +1086,11 @@ msgstr "పుష్ నోటిఫికేషన్"
 msgid "Raised"
 msgstr "ఎత్తైనది"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:107
+#: ../../../lib/web/src/components/restore-banner.tsx:124
 msgid "Re-link your accounts on this server"
 msgstr "ఈ సర్వర్‌లో మీ ఖాతాలను మళ్ళీ లింక్ చేయండి"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:129
+#: ../../../lib/web/src/components/restore-banner.tsx:146
 msgid "Re-register your passkeys on this server"
 msgstr "ఈ సర్వర్‌లో మీ పాస్‌కీలను మళ్లీ నమోదు చేయండి"
 
@@ -1615,7 +1615,7 @@ msgstr "అన్ని నోటిఫికేషన్‌లను వీక�
 msgid "Watched"
 msgstr "వాచ్ చేయబడింది"
 
-#: src/features/home/index.tsx:98
+#: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
 msgstr "మీ కోసం మేము ఏ యాప్‌లను కనుగొనలేకపోయాము. ఇది ఊహించనిది."
 
@@ -1656,7 +1656,7 @@ msgstr "మీరు కింది విలువలను సమర్పి
 msgid "You're all caught up!"
 msgstr "మీరు అన్నీ చూశారు!"
 
-#: ../../../lib/web/src/components/restore-banner.tsx:91
+#: ../../../lib/web/src/components/restore-banner.tsx:106
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "మీ ఖాతా {source} నుండి ఇక్కడికి తరలించబడింది. మీరు అక్కడ దాన్ని తొలగించే వరకు, సందేశాలు మరియు నోటిఫికేషన్లు రెండు సర్వర్లకు చేరవచ్చు, మీ కొంత కంటెంట్ పాత సర్వర్ నుండి అందించబడుతూ ఉంటుంది, మరియు ఫాలోవర్లు మిమ్మల్ని ఇక్కడ కనుగొనడానికి కొన్ని నిమిషాలు పట్టవచ్చు."
 
