@@ -4,10 +4,6 @@
 # This file is part of Mochi, licensed under the GNU AGPL v3 with the
 # Mochi Application Interface Exception - see license.txt and license-exception.md.
 
-# Check if an ID looks like an entity ID (50-51 chars)
-def is_entity_id(id):
-    return len(id) >= 50 and len(id) <= 51
-
 def action_restore_dismiss(a):
     """Permanently hide the post-restore banner for this user."""
     a.user.preference.set("restore.show", "false")
@@ -22,10 +18,10 @@ def action_icons(a):
     for icon in result["icons"]:
         if help_unvisited and icon.get("link") == "help":
             icon["highlight"] = True
-        if is_entity_id(icon["id"]):
-            icons.append(icon)
-        else:
+        if icon.get("development"):
             development.append(icon)
+        else:
+            icons.append(icon)
     response = {"icons": icons, "development": development}
     if "icon_mask" in result:
         response["icon_mask"] = result["icon_mask"]
