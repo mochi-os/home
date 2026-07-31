@@ -36,6 +36,10 @@ msgstr "Назва {entityLabel}"
 msgid "{entityLabel} name is required"
 msgstr "Патрабуецца назва {entityLabel}"
 
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} прапанаваў нічыю"
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
 msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
 msgstr "{selectedCount, plural, one {{entityName} выбраны} few {{manyName} выбраныя} many {{manyName} выбраных} other {{manyName} выбранага}}"
@@ -60,6 +64,11 @@ msgstr "{sentLabel} з {totalLabel}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Адкрыць меню (# непрачытанае апавяшчэнне)} few {Адкрыць меню (# непрачытаных апавяшчэнні)} many {Адкрыць меню (# непрачытаных апавяшчэнняў)} other {Адкрыць меню (# непрачытанага апавяшчэння)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr "+{0} укладзеных"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 гадзін"
@@ -71,6 +80,10 @@ msgstr "24 гадзіны"
 #: ../../../lib/web/src/lib/preference-utils.ts:51
 msgid "Absolute (date and time)"
 msgstr "Абсалютны (дата і час)"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
+msgid "Accept"
+msgstr "Прыняць"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:60
 msgid "Access denied"
@@ -100,6 +113,7 @@ msgstr "Тып уліковага запісу"
 msgid "Account verified"
 msgstr "Уліковы запіс пацверджаны"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -121,6 +135,14 @@ msgstr "Дадаць уліковы запіс"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:297
 msgid "Add an account to receive notifications and use services."
 msgstr "Дадайце ўліковы запіс, каб атрымліваць апавяшчэнні і карыстацца сэрвісамі."
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr "Дадаць пункт спіса"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr "Дадаць элемент..."
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -229,6 +251,11 @@ msgstr "На галоўную"
 msgid "Banner"
 msgstr "Банер"
 
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:156
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:166
+msgid "Blocked navigation to untrusted link"
+msgstr "Заблакаваны пераход па ненадзейнай спасылцы"
+
 #: ../../../lib/web/src/components/post-tags.tsx:180
 #: ../../../lib/web/src/components/post-tags.tsx:192
 msgid "Boost interest"
@@ -262,6 +289,10 @@ msgstr "Змяніць катэгорыю апавяшчэння"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:198
 msgid "Check \"All\" to see your past notifications."
 msgstr "Адзначце «Усе», каб убачыць мінулыя апавяшчэнні."
+
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
+msgid "Choose a game from the sidebar or start a new one."
+msgstr "Выберыце гульню з бакавой панэлі або пачніце новую."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:329
 msgid "Choose between default expanded, compact icon-only, or full layout mode"
@@ -463,6 +494,10 @@ msgstr "Цёмны рэжым"
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:240
 msgid "Data conflict"
 msgstr "Канфлікт даных"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
+msgid "Decline"
+msgstr "Адхіліць"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:311
 msgid "Default"
@@ -750,6 +785,10 @@ msgstr "Унутраны"
 msgid "Interests"
 msgstr "Інтарэсы"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr "Няправільная дата"
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Няправільны тэг: толькі літары, лічбы, прабелы, злучкі і слэшы (максімум 50 сімвалаў)"
@@ -833,8 +872,8 @@ msgstr "Выхад…"
 msgid "Manage your connected accounts for notifications and services."
 msgstr "Кіруйце падлучанымі ўліковымі запісамі для апавяшчэнняў і сэрвісаў."
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:118
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:125
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "Адзначыць усё як прачытанае"
@@ -850,6 +889,10 @@ msgstr "Сярэдні"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
 msgid "Menu"
 msgstr "Меню"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
+msgid "Message"
+msgstr "Паведамленне"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:85
 msgid "Metric"
@@ -880,6 +923,11 @@ msgstr "Памылка сеткі"
 msgid "New"
 msgstr "Новы"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
+msgid "New game"
+msgstr "Новая гульня"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
@@ -897,6 +945,10 @@ msgstr "Прыкладанні не знойдзены"
 msgid "No connected accounts"
 msgstr "Няма падключаных акаўнтаў"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
+msgid "No games yet"
+msgstr "Пакуль няма гульняў"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:241
 msgid "No groups available"
 msgstr "Групы недаступны"
@@ -905,6 +957,7 @@ msgstr "Групы недаступны"
 msgid "No notifications yet"
 msgstr "Апавяшчэнняў пакуль няма"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Людзі не знойдзены"
@@ -967,7 +1020,7 @@ msgid "Notifications"
 msgstr "Апавяшчэнні"
 
 #. placeholder {0}: unread.length
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:111
 msgid "Notifications: {0}"
 msgstr "Апавяшчэнні: {0}"
 
@@ -1151,6 +1204,10 @@ msgstr "Выдаліць доступ?"
 msgid "Remove interest"
 msgstr "Выдаліць цікавасць"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr "Выдаліць элемент"
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Адправіць ліст паўторна"
@@ -1241,6 +1298,10 @@ msgstr "Пошук..."
 msgid "Select {0}"
 msgstr "Выбраць {0}"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
+msgid "Select a game"
+msgstr "Абярыце гульню"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:150
 msgid "Select a user, group, or other rule to grant access."
 msgstr "Абярыце карыстальніка, групу або іншае правіла для прадастаўлення доступу."
@@ -1285,6 +1346,11 @@ msgstr "Выбраць напрамак сайта"
 msgid "Select theme preference"
 msgstr "Выбраць перавагу тэмы"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr "Выбраць..."
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "выбрана"
@@ -1301,6 +1367,11 @@ msgstr "Адправіць яшчэ раз"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:307
 msgid "Send email"
 msgstr "Адправіць эл. пошту"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
+msgid "Send message"
+msgstr "Адправіць паведамленне"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:145
 msgid "Serif"
@@ -1512,6 +1583,10 @@ msgstr "Аўторак"
 msgid "Type a command or search..."
 msgstr "Увядзіце каманду або пошук..."
 
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Увядзіце паведамленне…"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
 msgstr "Увядзіце для пошуку карыстальнікаў"
@@ -1606,8 +1681,8 @@ msgstr "Прагляд"
 msgid "View all"
 msgstr "Паглядзець усё"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:131
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:139
 msgid "View all notifications"
 msgstr "Паглядзець усе апавяшчэнні"
 

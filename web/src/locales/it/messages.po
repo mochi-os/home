@@ -36,6 +36,10 @@ msgstr "Nome {entityLabel}"
 msgid "{entityLabel} name is required"
 msgstr "Il nome di {entityLabel} è obbligatorio"
 
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} ha offerto la patta"
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
 msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
 msgstr "{selectedCount, plural, one {{entityName} selezionato} other {{manyName} selezionati}}"
@@ -60,6 +64,11 @@ msgstr "{sentLabel} di {totalLabel}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Apri il menu (# notifica non letta)} other {Apri il menu (# notifiche non lette)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr "+{0} annidati"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 ore"
@@ -71,6 +80,10 @@ msgstr "24 ore"
 #: ../../../lib/web/src/lib/preference-utils.ts:51
 msgid "Absolute (date and time)"
 msgstr "Assoluto (data e ora)"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
+msgid "Accept"
+msgstr "Accetta"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:60
 msgid "Access denied"
@@ -100,6 +113,7 @@ msgstr "Tipo di account"
 msgid "Account verified"
 msgstr "Account verificato"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -121,6 +135,14 @@ msgstr "Aggiungi account"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:297
 msgid "Add an account to receive notifications and use services."
 msgstr "Aggiungi un account per ricevere notifiche e usare i servizi."
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr "Aggiungi voce alla checklist"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr "Aggiungi voce..."
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -229,6 +251,11 @@ msgstr "Torna alla home"
 msgid "Banner"
 msgstr "Banner"
 
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:156
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:166
+msgid "Blocked navigation to untrusted link"
+msgstr "Navigazione verso link non attendibile bloccata"
+
 #: ../../../lib/web/src/components/post-tags.tsx:180
 #: ../../../lib/web/src/components/post-tags.tsx:192
 msgid "Boost interest"
@@ -262,6 +289,10 @@ msgstr "Cambia categoria di notifica"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:198
 msgid "Check \"All\" to see your past notifications."
 msgstr "Seleziona «Tutto» per vedere le notifiche precedenti."
+
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
+msgid "Choose a game from the sidebar or start a new one."
+msgstr "Scegli una partita dalla barra laterale o avviane una nuova."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:329
 msgid "Choose between default expanded, compact icon-only, or full layout mode"
@@ -463,6 +494,10 @@ msgstr "Modalità scura"
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:240
 msgid "Data conflict"
 msgstr "Conflitto di dati"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
+msgid "Decline"
+msgstr "Rifiuta"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:311
 msgid "Default"
@@ -750,6 +785,10 @@ msgstr "Incassato"
 msgid "Interests"
 msgstr "Interessi"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr "Data non valida"
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Etichetta non valida: solo lettere, numeri, spazi, trattini e barre (massimo 50 caratteri)"
@@ -833,8 +872,8 @@ msgstr "Disconnessione in corso…"
 msgid "Manage your connected accounts for notifications and services."
 msgstr "Gestisci i tuoi account collegati per notifiche e servizi."
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:118
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:125
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "Segna tutto come letto"
@@ -850,6 +889,10 @@ msgstr "Medio"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
 msgid "Menu"
 msgstr "Menu"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
+msgid "Message"
+msgstr "Messaggio"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:85
 msgid "Metric"
@@ -880,6 +923,11 @@ msgstr "Errore di rete"
 msgid "New"
 msgstr "Nuovo"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
+msgid "New game"
+msgstr "Nuova partita"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
@@ -897,6 +945,10 @@ msgstr "Nessuna app trovata"
 msgid "No connected accounts"
 msgstr "Nessun account connesso"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
+msgid "No games yet"
+msgstr "Ancora nessuna partita"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:241
 msgid "No groups available"
 msgstr "Nessun gruppo disponibile"
@@ -905,6 +957,7 @@ msgstr "Nessun gruppo disponibile"
 msgid "No notifications yet"
 msgstr "Ancora nessuna notifica"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Nessuna persona trovata"
@@ -967,7 +1020,7 @@ msgid "Notifications"
 msgstr "Notifiche"
 
 #. placeholder {0}: unread.length
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:111
 msgid "Notifications: {0}"
 msgstr "Notifiche: {0}"
 
@@ -1151,6 +1204,10 @@ msgstr "Rimuovere l'accesso?"
 msgid "Remove interest"
 msgstr "Rimuovi interesse"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr "Rimuovi elemento"
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Invia di nuovo l'email"
@@ -1241,6 +1298,10 @@ msgstr "Ricerca in corso..."
 msgid "Select {0}"
 msgstr "Seleziona {0}"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
+msgid "Select a game"
+msgstr "Seleziona una partita"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:150
 msgid "Select a user, group, or other rule to grant access."
 msgstr "Seleziona un utente, un gruppo o un'altra regola per concedere l'accesso."
@@ -1285,6 +1346,11 @@ msgstr "Seleziona direzione del sito"
 msgid "Select theme preference"
 msgstr "Seleziona preferenza del tema"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr "Seleziona..."
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "selezionati"
@@ -1301,6 +1367,11 @@ msgstr "Invia di nuovo"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:307
 msgid "Send email"
 msgstr "Invia email"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
+msgid "Send message"
+msgstr "Invia messaggio"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:145
 msgid "Serif"
@@ -1512,6 +1583,10 @@ msgstr "Martedì"
 msgid "Type a command or search..."
 msgstr "Digita un comando o cerca..."
 
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Scrivi un messaggio…"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
 msgstr "Digita per cercare utenti"
@@ -1606,8 +1681,8 @@ msgstr "Visualizza"
 msgid "View all"
 msgstr "Visualizza tutto"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:131
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:139
 msgid "View all notifications"
 msgstr "Visualizza tutte le notifiche"
 

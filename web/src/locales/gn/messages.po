@@ -36,6 +36,10 @@ msgstr "{entityLabel} réra"
 msgid "{entityLabel} name is required"
 msgstr "{entityLabel} réra tekotevẽ"
 
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} oikuave'ẽ empate"
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
 msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
 msgstr "{selectedCount, plural, one {{entityName} poravopyre} other {{manyName} poravopyre}}"
@@ -60,6 +64,11 @@ msgstr "{sentLabel} / {totalLabel}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Embojuruja menu (# marandu ojeleeʼỹva)} other {Embojuruja menu (# marandu ojeleeʼỹva)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr "+{0} oñemboheáva"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 aravo"
@@ -71,6 +80,10 @@ msgstr "24 aravo"
 #: ../../../lib/web/src/lib/preference-utils.ts:51
 msgid "Absolute (date and time)"
 msgstr "Sa'ipýpe (ára ha aravo)"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
+msgid "Accept"
+msgstr "Hekoite"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:60
 msgid "Access denied"
@@ -100,6 +113,7 @@ msgstr "Tetãygua peteĩchagua"
 msgid "Account verified"
 msgstr "Tetãygua oñemoneĩma"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -121,6 +135,14 @@ msgstr "Embojuaju tetãygua"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:297
 msgid "Add an account to receive notifications and use services."
 msgstr "Embojuaju peteĩ tetãygua oguerekóva ñe'ẽmondo ha eipuru hag̃ua tembiapokuéra."
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr "Embojuaju checklist mba'e"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr "Embojuaju mba'e..."
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -229,6 +251,11 @@ msgstr "Eju jey ógape"
 msgid "Banner"
 msgstr "Banner"
 
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:156
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:166
+msgid "Blocked navigation to untrusted link"
+msgstr "Tape ojejokóma jehegui'ỹva-pe"
+
 #: ../../../lib/web/src/components/post-tags.tsx:180
 #: ../../../lib/web/src/components/post-tags.tsx:192
 msgid "Boost interest"
@@ -262,6 +289,10 @@ msgstr "Embojere ñe'ẽmondo categoría"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:198
 msgid "Check \"All\" to see your past notifications."
 msgstr "Emyanyhẽ «Opavave» rehecha hag̃ua marandu ymaguare."
+
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
+msgid "Choose a game from the sidebar or start a new one."
+msgstr "Eiporavo peteĩ ñembosarái sidebar-gui térã eñepyrũ peteĩ pyahu."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:329
 msgid "Choose between default expanded, compact icon-only, or full layout mode"
@@ -463,6 +494,10 @@ msgstr "Yvotypaha mode"
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:240
 msgid "Data conflict"
 msgstr "Mba'ekuaarã joavy"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
+msgid "Decline"
+msgstr "Joha"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:311
 msgid "Default"
@@ -750,6 +785,10 @@ msgstr "Inset"
 msgid "Interests"
 msgstr "Oikotevevakuéra"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr "Arange ndoikóiva"
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Techaukaha ndoikóiva: taikuéra, papapy, pa'ũ, guion ha barra añónte (50 tai pypukuve)"
@@ -833,8 +872,8 @@ msgstr "Osẽhína…"
 msgid "Manage your connected accounts for notifications and services."
 msgstr "Eñangareko ne mba'ete ojoajúvare marandu ha mba'epytyvõrã."
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:118
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:125
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "Ehecha pyre opavave"
@@ -850,6 +889,10 @@ msgstr "Mbyte"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
 msgid "Menu"
 msgstr "Menu"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
+msgid "Message"
+msgstr "Mensaje"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:85
 msgid "Metric"
@@ -880,6 +923,11 @@ msgstr "Jejavy ñanduti rehegua"
 msgid "New"
 msgstr "Pyahu"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
+msgid "New game"
+msgstr "Ñembosarái pyahu"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
@@ -897,6 +945,10 @@ msgstr "Ndojejuhúi apps"
 msgid "No connected accounts"
 msgstr "Ndaipóri cuenta ojuajúva"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
+msgid "No games yet"
+msgstr "Ndaipóri ñembosarái gueteri"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:241
 msgid "No groups available"
 msgstr "Ndaipóri grupos oĩva"
@@ -905,6 +957,7 @@ msgstr "Ndaipóri grupos oĩva"
 msgid "No notifications yet"
 msgstr "Ndaipóri gueteri marandu"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Ndojejuhúi tapichakuéra"
@@ -967,7 +1020,7 @@ msgid "Notifications"
 msgstr "Ñehenói"
 
 #. placeholder {0}: unread.length
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:111
 msgid "Notifications: {0}"
 msgstr "Marandu: {0}"
 
@@ -1151,6 +1204,10 @@ msgstr "Embogue acceso?"
 msgid "Remove interest"
 msgstr "Embogue ñembyeko'ói"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr "Embogue mba'e"
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Embou jey ñe'ẽveve"
@@ -1241,6 +1298,10 @@ msgstr "Ohekahína..."
 msgid "Select {0}"
 msgstr "Eiporavo {0}"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
+msgid "Select a game"
+msgstr "Eporavo peteĩ ñembosarái"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:150
 msgid "Select a user, group, or other rule to grant access."
 msgstr "Eporavo peteĩ usuario, grupo, térã ambue regla eme'ẽ haguã acceso."
@@ -1285,6 +1346,11 @@ msgstr "Eiporavo táva ñemboja'o"
 msgid "Select theme preference"
 msgstr "Eiporavo theme jeporavo"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr "Eiporavo..."
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "poravopyre"
@@ -1301,6 +1367,11 @@ msgstr "Emondo jey"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:307
 msgid "Send email"
 msgstr "Emondo email"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
+msgid "Send message"
+msgstr "Emondo marandu"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:145
 msgid "Serif"
@@ -1512,6 +1583,10 @@ msgstr "Mokõiha"
 msgid "Type a command or search..."
 msgstr "Ehai comando térã eheka..."
 
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Ehai marandu…"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
 msgstr "Ehai eheka mboapurevahára"
@@ -1606,8 +1681,8 @@ msgstr "Ehecha"
 msgid "View all"
 msgstr "Ehecha opa"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:131
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:139
 msgid "View all notifications"
 msgstr "Ehecha opa marandu"
 

@@ -36,6 +36,10 @@ msgstr "{entityLabel} name"
 msgid "{entityLabel} name is required"
 msgstr "{entityLabel} name is required"
 
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} offered a draw"
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
 msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
 msgstr "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
@@ -60,6 +64,11 @@ msgstr "{sentLabel} of {totalLabel}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr "+{0} nested"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 hours"
@@ -71,6 +80,10 @@ msgstr "24 hours"
 #: ../../../lib/web/src/lib/preference-utils.ts:51
 msgid "Absolute (date and time)"
 msgstr "Absolute (date and time)"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
+msgid "Accept"
+msgstr "Accept"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:60
 msgid "Access denied"
@@ -100,6 +113,7 @@ msgstr "Account type"
 msgid "Account verified"
 msgstr "Account verified"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -121,6 +135,14 @@ msgstr "Add account"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:297
 msgid "Add an account to receive notifications and use services."
 msgstr "Add an account to receive notifications and use services."
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr "Add checklist item"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr "Add item..."
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -229,6 +251,11 @@ msgstr "Back to home"
 msgid "Banner"
 msgstr "Banner"
 
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:156
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:166
+msgid "Blocked navigation to untrusted link"
+msgstr "Blocked navigation to untrusted link"
+
 #: ../../../lib/web/src/components/post-tags.tsx:180
 #: ../../../lib/web/src/components/post-tags.tsx:192
 msgid "Boost interest"
@@ -262,6 +289,10 @@ msgstr "Change notification category"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:198
 msgid "Check \"All\" to see your past notifications."
 msgstr "Check \"All\" to see your past notifications."
+
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
+msgid "Choose a game from the sidebar or start a new one."
+msgstr "Choose a game from the sidebar or start a new one."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:329
 msgid "Choose between default expanded, compact icon-only, or full layout mode"
@@ -463,6 +494,10 @@ msgstr "Dark mode"
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:240
 msgid "Data conflict"
 msgstr "Data conflict"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
+msgid "Decline"
+msgstr "Decline"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:311
 msgid "Default"
@@ -750,6 +785,10 @@ msgstr "Inset"
 msgid "Interests"
 msgstr "Interests"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr "Invalid date"
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
@@ -833,8 +872,8 @@ msgstr "Logging out…"
 msgid "Manage your connected accounts for notifications and services."
 msgstr "Manage your connected accounts for notifications and services."
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:118
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:125
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "Mark all as read"
@@ -850,6 +889,10 @@ msgstr "Medium"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
 msgid "Menu"
 msgstr "Menu"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
+msgid "Message"
+msgstr "Message"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:85
 msgid "Metric"
@@ -880,6 +923,11 @@ msgstr "Network error"
 msgid "New"
 msgstr "New"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
+msgid "New game"
+msgstr "New game"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
@@ -897,6 +945,10 @@ msgstr "No apps found"
 msgid "No connected accounts"
 msgstr "No connected accounts"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
+msgid "No games yet"
+msgstr "No games yet"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:241
 msgid "No groups available"
 msgstr "No groups available"
@@ -905,6 +957,7 @@ msgstr "No groups available"
 msgid "No notifications yet"
 msgstr "No notifications yet"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "No people found"
@@ -967,7 +1020,7 @@ msgid "Notifications"
 msgstr "Notifications"
 
 #. placeholder {0}: unread.length
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:111
 msgid "Notifications: {0}"
 msgstr "Notifications: {0}"
 
@@ -1151,6 +1204,10 @@ msgstr "Remove access?"
 msgid "Remove interest"
 msgstr "Remove interest"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr "Remove item"
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Resend email"
@@ -1241,6 +1298,10 @@ msgstr "Searching..."
 msgid "Select {0}"
 msgstr "Select {0}"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
+msgid "Select a game"
+msgstr "Select a game"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:150
 msgid "Select a user, group, or other rule to grant access."
 msgstr "Select a user, group, or other rule to grant access."
@@ -1285,6 +1346,11 @@ msgstr "Select site direction"
 msgid "Select theme preference"
 msgstr "Select theme preference"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr "Select..."
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "selected"
@@ -1301,6 +1367,11 @@ msgstr "Send again"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:307
 msgid "Send email"
 msgstr "Send email"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
+msgid "Send message"
+msgstr "Send message"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:145
 msgid "Serif"
@@ -1512,6 +1583,10 @@ msgstr "Tuesday"
 msgid "Type a command or search..."
 msgstr "Type a command or search..."
 
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Type a message…"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
 msgstr "Type to search users"
@@ -1606,8 +1681,8 @@ msgstr "View"
 msgid "View all"
 msgstr "View all"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:131
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:139
 msgid "View all notifications"
 msgstr "View all notifications"
 

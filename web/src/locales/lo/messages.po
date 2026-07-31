@@ -36,6 +36,10 @@ msgstr "ຊື່ {entityLabel}"
 msgid "{entityLabel} name is required"
 msgstr "ຕ້ອງມີຊື່ {entityLabel}"
 
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} ສະເໜີສະເໝີ"
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
 msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
 msgstr "{selectedCount, plural, other {ເລືອກ {manyName} ແລ້ວ}}"
@@ -60,6 +64,11 @@ msgstr "{sentLabel} ຈາກ {totalLabel}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {ເປີດເມນູ (ການແຈ້ງເຕືອນທີ່ຍັງບໍ່ໄດ້ອ່ານ # ລາຍການ)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr "+{0} ຊ້ອນກັນ"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 ຊົ່ວໂມງ"
@@ -71,6 +80,10 @@ msgstr "24 ຊົ່ວໂມງ"
 #: ../../../lib/web/src/lib/preference-utils.ts:51
 msgid "Absolute (date and time)"
 msgstr "ສົມບູນ (ວັນທີ ແລະ ເວລາ)"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
+msgid "Accept"
+msgstr "ຍອມຮັບ"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:60
 msgid "Access denied"
@@ -100,6 +113,7 @@ msgstr "ປະເພດບັນຊີ"
 msgid "Account verified"
 msgstr "ບັນຊີຢືນຢັນແລ້ວ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -121,6 +135,14 @@ msgstr "ເພີ່ມບັນຊີ"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:297
 msgid "Add an account to receive notifications and use services."
 msgstr "ເພີ່ມບັນຊີເພື່ອຮັບການແຈ້ງເຕືອນ ແລະ ໃຊ້ບໍລິການ."
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr "ເພີ່ມລາຍການກວດສອບ"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr "ເພີ່ມລາຍການ..."
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -229,6 +251,11 @@ msgstr "ກັບໄປໜ້າຫຼັກ"
 msgid "Banner"
 msgstr "ປ້າຍ"
 
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:156
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:166
+msgid "Blocked navigation to untrusted link"
+msgstr "ບລັອກການນຳທາງໄປຫາລິ້ງທີ່ບໍ່ເຊື່ອຖື"
+
 #: ../../../lib/web/src/components/post-tags.tsx:180
 #: ../../../lib/web/src/components/post-tags.tsx:192
 msgid "Boost interest"
@@ -262,6 +289,10 @@ msgstr "ປ່ຽນໝວດໝູ່ການແຈ້ງເຕືອນ"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:198
 msgid "Check \"All\" to see your past notifications."
 msgstr "ເລືອກ \"ທັງໝົດ\" ເພື່ອເບິ່ງການແຈ້ງເຕືອນທີ່ຜ່ານມາ."
+
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
+msgid "Choose a game from the sidebar or start a new one."
+msgstr "ເລືອກເກມຈາກແຖບຂ້າງ ຫຼື ເລີ່ມຕົ້ນອັນໃໝ່."
 
 #: ../../../lib/web/src/components/config-drawer.tsx:329
 msgid "Choose between default expanded, compact icon-only, or full layout mode"
@@ -463,6 +494,10 @@ msgstr "ໂໝດມືດ"
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:240
 msgid "Data conflict"
 msgstr "ຂໍ້ມູນຂັດແຍ່ງກັນ"
+
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
+msgid "Decline"
+msgstr "ປະຕິເສດ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:311
 msgid "Default"
@@ -750,6 +785,10 @@ msgstr "ປະທັບໃນ"
 msgid "Interests"
 msgstr "ຄວາມສົນໃຈ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr "ວັນທີ່ບໍ່ຖືກຕ້ອງ"
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "ແທັກບໍ່ຖືກຕ້ອງ: ໄດ້ແຕ່ຕົວອັກສອນ, ຕົວເລກ, ຍະຫວ່າງ, ຂີດກາງ ແລະ ຂີດທັບ (ສູງສຸດ 50 ຕົວອັກສອນ)"
@@ -833,8 +872,8 @@ msgstr "ກຳລັງອອກຈາກລະບົບ…"
 msgid "Manage your connected accounts for notifications and services."
 msgstr "ຈັດການບັນຊີທີ່ເຊື່ອມຕໍ່ຂອງທ່ານສຳລັບການແຈ້ງເຕືອນ ແລະ ບໍລິການ."
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:118
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:125
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "ໝາຍທັງໝົດເປັນອ່ານແລ້ວ"
@@ -850,6 +889,10 @@ msgstr "ກາງ"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
 msgid "Menu"
 msgstr "ເມນູ"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
+msgid "Message"
+msgstr "ຂໍ້ຄວາມ"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:85
 msgid "Metric"
@@ -880,6 +923,11 @@ msgstr "ຂໍ້ຜິດພາດເຄືອຂ່າຍ"
 msgid "New"
 msgstr "ໃໝ່"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
+msgid "New game"
+msgstr "ເກມໃໝ່"
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
@@ -897,6 +945,10 @@ msgstr "ບໍ່ພົບແອັບ"
 msgid "No connected accounts"
 msgstr "ບໍ່ມີບັນຊີທີ່ເຊື່ອມຕໍ່"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
+msgid "No games yet"
+msgstr "ຍັງບໍ່ມີເກມ"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:241
 msgid "No groups available"
 msgstr "ບໍ່ມີກຸ່ມທີ່ມີຢູ່"
@@ -905,6 +957,7 @@ msgstr "ບໍ່ມີກຸ່ມທີ່ມີຢູ່"
 msgid "No notifications yet"
 msgstr "ຍັງບໍ່ມີການແຈ້ງເຕືອນ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "ບໍ່ພົບຄົນ"
@@ -967,7 +1020,7 @@ msgid "Notifications"
 msgstr "ການແຈ້ງເຕືອນ"
 
 #. placeholder {0}: unread.length
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:111
 msgid "Notifications: {0}"
 msgstr "ການແຈ້ງເຕືອນ: {0}"
 
@@ -1151,6 +1204,10 @@ msgstr "ລຶບການເຂົ້າເຖິງ?"
 msgid "Remove interest"
 msgstr "ລຶບຄວາມສົນໃຈ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr "ລຶບລາຍການ"
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "ສົ່ງອີເມວອີກຄັ້ງ"
@@ -1241,6 +1298,10 @@ msgstr "ກຳລັງຄົ້ນຫາ..."
 msgid "Select {0}"
 msgstr "ເລືອກ {0}"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
+msgid "Select a game"
+msgstr "ເລືອກເກມ"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:150
 msgid "Select a user, group, or other rule to grant access."
 msgstr "ເລືອກຜູ້ໃຊ້, ກຸ່ມ, ຫຼືກົດອື່ນເພື່ອໃຫ້ການເຂົ້າເຖິງ."
@@ -1285,6 +1346,11 @@ msgstr "ເລືອກທິດທາງເວັບໄຊ"
 msgid "Select theme preference"
 msgstr "ເລືອກຄວາມຕ້ອງການຮູບແບບ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr "ເລືອກ..."
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "ເລືອກແລ້ວ"
@@ -1301,6 +1367,11 @@ msgstr "ສົ່ງອີກຄັ້ງ"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:307
 msgid "Send email"
 msgstr "ສົ່ງອີເມວ"
+
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
+msgid "Send message"
+msgstr "ສົ່ງຂໍ້ຄວາມ"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:145
 msgid "Serif"
@@ -1512,6 +1583,10 @@ msgstr "ວັນອັງຄານ"
 msgid "Type a command or search..."
 msgstr "ພິມຄຳສັ່ງຫຼືຄົ້ນຫາ..."
 
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "ພິມຂໍ້ຄວາມ…"
+
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
 msgstr "ພິມເພື່ອຄົ້ນຫາຜູ້ໃຊ້"
@@ -1606,8 +1681,8 @@ msgstr "ເບິ່ງ"
 msgid "View all"
 msgstr "ເບິ່ງທັງໝົດ"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:131
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:139
 msgid "View all notifications"
 msgstr "ເບິ່ງການແຈ້ງເຕືອນທັງໝົດ"
 
