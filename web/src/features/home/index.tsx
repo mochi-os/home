@@ -5,7 +5,7 @@
 
 import type { CSSProperties } from 'react'
 import { Trans, useLingui } from '@lingui/react/macro'
-import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton, RestoreBanner, ThemeGradientBackground } from '@mochi/web'
+import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton, RestoreBanner, ThemeGradientBackground, naturalCompare } from '@mochi/web'
 import { AlertCircle } from 'lucide-react'
 
 const maskBorderRadius: Record<string, string> = {
@@ -53,6 +53,76 @@ interface IconsResponse {
   icon_background?: string
 }
 
+function IconCard({ icon, mask, background, development }: { icon: AppIcon; mask?: string; background?: string; development?: boolean }) {
+  const style = iconStyle(icon, mask, background)
+  const highlight = icon.highlight
+  const scale = development ? 'group-hover:scale-105' : 'group-hover:scale-110'
+  return (
+    <a
+      href={`/${icon.link}/`}
+      className={`group relative flex flex-col items-center gap-2 rounded-xl border p-4 transition-all duration-300 hover:bg-hover ${
+        development ? 'bg-card/50 hover:-translate-y-0.5' : 'bg-card hover:-translate-y-1'
+      } ${
+        highlight
+          ? 'border-primary hover:border-primary'
+          : development
+            ? 'border-dashed border-border hover:border-primary/30'
+            : 'border-border hover:border-primary/20'
+      }`}
+      style={{ boxShadow: 'var(--card-shadow)' }}
+    >
+      {highlight && (
+        <span
+          className='absolute -top-1 -right-1 flex h-3 w-3'
+          aria-hidden='true'
+        >
+          <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
+          <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
+        </span>
+      )}
+      {/* Icon Container */}
+      {style.className === 'adaptive' ? (
+        <div
+          className={`flex h-14 w-14 items-center justify-center overflow-hidden transition-all duration-300 ${scale}`}
+          style={style.container}
+        >
+          <div
+            className='h-8 w-8'
+            style={style.foreground}
+            role="img"
+            aria-label={icon.name}
+          />
+        </div>
+      ) : (
+        <div className={`flex h-14 w-14 items-center justify-center transition-all duration-300 ${scale}`}>
+          <div
+            className={`h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:bg-primary ${development ? '' : scale}`}
+            style={style.foreground}
+            role="img"
+            aria-label={icon.name}
+          />
+        </div>
+      )}
+
+      {/* App Name */}
+      {development ? (
+        <div className='flex flex-col items-center gap-0.5'>
+          <span className='text-center text-xs font-medium text-foreground transition-colors group-hover:text-primary'>
+            {icon.name}
+          </span>
+          <span className='text-center text-[10px] text-muted-foreground'>
+            {icon.id}
+          </span>
+        </div>
+      ) : (
+        <span className='text-center text-sm font-medium text-foreground transition-colors group-hover:text-primary'>
+          {icon.name}
+        </span>
+      )}
+    </a>
+  )
+}
+
 export function Home() {
   const { t } = useLingui()
   const { data, isLoading, ErrorComponent } = useQueryWithError<IconsResponse, Error>({
@@ -85,8 +155,9 @@ export function Home() {
     )
   }
 
-  const icons = data?.icons ?? []
-  const development = data?.development ?? []
+  // Consumer-side sort: core's ToLower ordering is accent- and numeric-blind.
+  const icons = [...(data?.icons ?? [])].sort((a, b) => naturalCompare(a.name, b.name))
+  const development = [...(data?.development ?? [])].sort((a, b) => naturalCompare(a.name, b.name))
 
   if (icons.length === 0 && development.length === 0) {
     return (
@@ -120,60 +191,9 @@ export function Home() {
       {/* Main Apps Grid */}
       {icons.length > 0 && (
         <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-          {icons.map((icon) => {
-            const style = iconStyle(icon, data?.icon_mask, data?.icon_background)
-            const highlight = icon.highlight
-            return (
-              <a
-                key={`${icon.id}:${icon.path}:${icon.file}`}
-                href={`/${icon.link}/`}
-                className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-hover ${
-                  highlight
-                    ? 'border-primary hover:border-primary'
-                    : 'border-border hover:border-primary/20'
-                }`}
-                style={{ boxShadow: 'var(--card-shadow)' }}
-              >
-                {highlight && (
-                  <span
-                    className='absolute -top-1 -right-1 flex h-3 w-3'
-                    aria-hidden='true'
-                  >
-                    <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
-                    <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
-                  </span>
-                )}
-                {/* Icon Container */}
-                {style.className === 'adaptive' ? (
-                  <div
-                    className='flex h-14 w-14 items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-110'
-                    style={style.container}
-                  >
-                    <div
-                      className='h-8 w-8'
-                      style={style.foreground}
-                      role="img"
-                      aria-label={icon.name}
-                    />
-                  </div>
-                ) : (
-                  <div className='flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-110'>
-                    <div
-                      className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary'
-                      style={style.foreground}
-                      role="img"
-                      aria-label={icon.name}
-                    />
-                  </div>
-                )}
-
-                {/* App Name */}
-                <span className='text-center text-sm font-medium text-foreground transition-colors group-hover:text-primary'>
-                  {icon.name}
-                </span>
-              </a>
-            )
-          })}
+          {icons.map((icon) => (
+            <IconCard key={`${icon.id}:${icon.path}:${icon.file}`} icon={icon} mask={data?.icon_mask} background={data?.icon_background} />
+          ))}
         </div>
       )}
 
@@ -189,65 +209,9 @@ export function Home() {
           </div>
 
           <div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-            {development.map((icon) => {
-              const style = iconStyle(icon, data?.icon_mask, data?.icon_background)
-              const highlight = icon.highlight
-              return (
-                <a
-                  key={`${icon.id}:${icon.path}:${icon.file}`}
-                  href={`/${icon.link}/`}
-                  className={`group relative flex flex-col items-center gap-2 rounded-xl border bg-card/50 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:bg-hover ${
-                    highlight
-                      ? 'border-primary hover:border-primary'
-                      : 'border-dashed border-border hover:border-primary/30'
-                  }`}
-                  style={{ boxShadow: 'var(--card-shadow)' }}
-                >
-                  {highlight && (
-                    <span
-                      className='absolute -top-1 -right-1 flex h-3 w-3'
-                      aria-hidden='true'
-                    >
-                      <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75' />
-                      <span className='relative inline-flex h-3 w-3 rounded-full bg-primary' />
-                    </span>
-                  )}
-                  {/* Icon Container */}
-                  {style.className === 'adaptive' ? (
-                    <div
-                      className='flex h-14 w-14 items-center justify-center overflow-hidden transition-all duration-300 group-hover:scale-105'
-                      style={style.container}
-                    >
-                      <div
-                        className='h-8 w-8'
-                        style={style.foreground}
-                        role="img"
-                        aria-label={icon.name}
-                      />
-                    </div>
-                  ) : (
-                    <div className='flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-105'>
-                      <div
-                        className='h-8 w-8 bg-primary/70 transition-all duration-300 group-hover:bg-primary'
-                        style={style.foreground}
-                        role="img"
-                        aria-label={icon.name}
-                      />
-                    </div>
-                  )}
-
-                  {/* App Info */}
-                  <div className='flex flex-col items-center gap-0.5'>
-                    <span className='text-center text-xs font-medium text-foreground transition-colors group-hover:text-primary'>
-                      {icon.name}
-                    </span>
-                    <span className='text-center text-[10px] text-muted-foreground'>
-                      {icon.id}
-                    </span>
-                  </div>
-                </a>
-              )
-            })}
+            {development.map((icon) => (
+              <IconCard key={`${icon.id}:${icon.path}:${icon.file}`} icon={icon} mask={data?.icon_mask} background={data?.icon_background} development />
+            ))}
           </div>
         </div>
       )}
