@@ -2338,7 +2338,7 @@ msgstr "Yenilənir..."
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:648
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:301
 msgid "Upload"
-msgstr "Yeni versiyanı yüklə"
+msgstr "Yüklə"
 
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:34
 msgid "Upload progress"
@@ -2409,7 +2409,7 @@ msgstr "İzlənilən"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:194
 msgid "Watched only"
-msgstr "Tezliklə yenidən onlayn olacağıq."
+msgstr "Yalnız izlənilənlər"
 
 #: src/features/home/index.tsx:169
 msgid "We couldn't find any apps for you. This is unexpected."
