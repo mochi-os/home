@@ -12,7 +12,7 @@ def action_restore_dismiss(a):
 def action_icons(a):
     """Return list of app icons for the home screen"""
     result = mochi.app.icons()
-    help_unvisited = bool(a.user) and a.user.preference.get("help.visited") != "true"
+    help_unvisited = a.user.preference.get("help.visited") != "true"
     icons = []
     development = []
     for icon in result["icons"]:
