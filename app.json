@@ -5,7 +5,7 @@
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
 
 {
-	"version": "1.86",
+	"version": "1.87",
 	"label": "app.name",
 	"paths": [""],
 
@@ -17,6 +17,7 @@
 		"assets": {"files": "web/dist/assets"},
 		"fonts": {"files": "web/dist/fonts"},
 		"-/icons": {"function": "action_icons"},
+		"-/restore": {"function": "action_restore"},
 		"-/restore/dismiss": {"function": "action_restore_dismiss"},
 		"images": {"files": "web/dist/images"}
 	}

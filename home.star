@@ -4,6 +4,12 @@
 # This file is part of Mochi, licensed under the GNU AGPL v3 with the
 # Mochi Application Interface Exception - see license.txt and license-exception.md.
 
+def action_restore(a):
+    """The post-restore banner's state: the source server to clean up, the
+    sign-ins to re-link and whether passkeys need re-registering. None once
+    dismissed, or for an account that did not arrive by restore."""
+    return {"data": a.user.restore()}
+
 def action_restore_dismiss(a):
     """Permanently hide the post-restore banner for this user."""
     a.user.preference.set("restore.show", "false")
