@@ -5,7 +5,7 @@
 
 import type { CSSProperties } from 'react'
 import { Trans, useLingui } from '@lingui/react/macro'
-import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton, RestoreBanner, ThemeGradientBackground, naturalCompare } from '@mochi/web'
+import { useQueryWithError, requestHelpers, EmptyState, Main, CardSkeleton, Skeleton, RestoreBanner, naturalCompare } from '@mochi/web'
 import { AlertCircle } from 'lucide-react'
 
 const maskBorderRadius: Record<string, string> = {
@@ -132,8 +132,7 @@ export function Home() {
 
   if (isLoading) {
     return (
-      <ThemeGradientBackground>
-        <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
         <div className='mb-8 text-center'>
           <Skeleton className='mx-auto h-12 w-32' />
         </div>
@@ -141,17 +140,14 @@ export function Home() {
           <CardSkeleton count={12} className="contents" />
         </div>
       </Main>
-      </ThemeGradientBackground>
     )
   }
 
   if (ErrorComponent) {
     return (
-      <ThemeGradientBackground>
-        <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
-          {ErrorComponent}
-        </Main>
-      </ThemeGradientBackground>
+      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+        {ErrorComponent}
+      </Main>
     )
   }
 
@@ -161,21 +157,18 @@ export function Home() {
 
   if (icons.length === 0 && development.length === 0) {
     return (
-      <ThemeGradientBackground>
-        <Main>
-          <EmptyState
-            icon={AlertCircle}
-            title={t`No apps found`}
-            description={t`We couldn't find any apps for you. This is unexpected.`}
-          />
-        </Main>
-      </ThemeGradientBackground>
+      <Main>
+        <EmptyState
+          icon={AlertCircle}
+          title={t`No apps found`}
+          description={t`We couldn't find any apps for you. This is unexpected.`}
+        />
+      </Main>
     )
   }
 
   return (
-    <ThemeGradientBackground>
-      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+    <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
 
       <RestoreBanner />
 
@@ -215,7 +208,6 @@ export function Home() {
           </div>
         </div>
       )}
-      </Main>
-    </ThemeGradientBackground>
+    </Main>
   )
 }
