@@ -15,7 +15,6 @@
 	"actions": {
 		"": {"file": "web/dist/index.html"},
 		"assets": {"files": "web/dist/assets"},
-		"fonts": {"files": "web/dist/fonts"},
 		"-/icons": {"function": "action_icons"},
 		"-/restore": {"function": "action_restore"},
 		"-/restore/dismiss": {"function": "action_restore_dismiss"},
