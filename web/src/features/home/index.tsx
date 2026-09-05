@@ -182,7 +182,7 @@ export function Home() {
       {/* Hero Section */}
       <div className='mb-8 text-center hidden sm:block'>
         <h1
-          className='mx-auto w-fit bg-linear-165 from-primary to-primary-light bg-clip-text text-[36px] font-nunito font-semibold tracking-[3px] text-transparent'
+          className='mx-auto w-fit bg-linear-165 from-primary to-primary-light bg-clip-text text-[36px] font-light tracking-[3px] text-transparent'
         >
           {/* jsx-text-ok: brand wordmark, verbatim in every locale */}
           mochi
