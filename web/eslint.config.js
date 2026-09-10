@@ -91,6 +91,9 @@ export default defineConfig(
   },
   {
     files: ['**/*.{ts,tsx}'],
+    // Tests are excluded, as in lib/web: their strings are fixtures and
+    // it() descriptions, never rendered.
+    ignores: ['src/**/*.test.{ts,tsx}', 'src/**/*.spec.{ts,tsx}'],
     ...i18nConfig,
     // home has no unwrapped strings — promote the rule from warn to error
     // so any new unwrapped string fails CI immediately.
