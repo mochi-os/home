@@ -197,10 +197,6 @@ msgstr "Gehitu lehendik dauden jakinarazpenei"
 msgid "Add view"
 msgstr "Gehitu ikuspegia"
 
-#: ../../../lib/web/src/features/access/access-dialog.tsx
-msgid "Adding..."
-msgstr "Gehitzen..."
-
 #: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "AI"
 msgstr "AA"
@@ -637,11 +633,6 @@ msgstr "Sortua"
 msgid "Created {field}"
 msgstr "{field} sortu da"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
-#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
-msgid "Creating..."
-msgstr "Sortzen..."
-
 #: ../../../lib/web/src/components/map-view.tsx
 msgid "Current location"
 msgstr "Uneko kokapena"
@@ -744,10 +735,6 @@ msgstr "Ezabatuta"
 #: ../../../lib/web/src/components/entity/entity-activity-list.tsx
 msgid "Deleted {field}"
 msgstr "{field} ezabatu da"
-
-#: ../../../lib/web/src/components/game/game-end-dialogs.tsx
-msgid "Deleting..."
-msgstr "Ezabatzen..."
 
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx
 msgid "Descending"
@@ -1185,7 +1172,6 @@ msgstr "Elementua kargatzen"
 msgid "Loading item details"
 msgstr "Elementuaren xehetasunak kargatzen"
 
-#: ../../../lib/web/src/components/ui/load-more.tsx
 #: ../../../lib/web/src/features/document/document-page.tsx
 msgid "Loading..."
 msgstr "Kargatzen..."
@@ -1726,10 +1712,6 @@ msgstr "Amore eman"
 msgid "Resign game?"
 msgstr "Jokoan amore eman?"
 
-#: ../../../lib/web/src/components/game/game-end-dialogs.tsx
-msgid "Resigning..."
-msgstr "Amore ematen..."
-
 #: ../../../lib/web/src/components/attachment-composer.tsx
 msgid "Retry"
 msgstr "Saiatu berriro"
@@ -1780,10 +1762,6 @@ msgstr "Larunbata"
 #: ../../../lib/web/src/components/ui/secret-field.tsx
 msgid "Save"
 msgstr "Gorde"
-
-#: ../../../lib/web/src/components/ai-prompts-editor.tsx
-msgid "Saving..."
-msgstr "Gordetzen..."
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
 #: ../../../lib/web/src/components/filter-bar.tsx
