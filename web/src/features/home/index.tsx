@@ -85,7 +85,7 @@ function Shortcut({
   return (
     <a
       href={`/${icon.link}/`}
-      className='group focus-visible:ring-ring flex w-[5rem] flex-col items-center gap-2 rounded-xl py-2 outline-none focus-visible:ring-2 sm:w-[8rem]'
+      className='group focus-visible:ring-ring flex w-[var(--cell,5rem)] flex-col items-center gap-2 rounded-xl py-2 outline-none focus-visible:ring-2 sm:w-[var(--cell,8rem)]'
     >
       <div className='relative transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-110'>
         {style.className === 'adaptive' ? (
@@ -122,8 +122,9 @@ function Shortcut({
       </div>
 
       <span
-        className='text-foreground group-hover:text-primary w-full truncate text-center text-xs font-medium transition-colors sm:text-sm'
+        className='text-foreground group-hover:text-primary max-w-full truncate text-center text-xs font-medium transition-colors sm:text-sm'
         title={icon.name}
+        data-name
       >
         {icon.name}
       </span>
@@ -131,26 +132,45 @@ function Shortcut({
   )
 }
 
-// Lays its fixed-width cells out in as few rows as fit, spread evenly across
-// them and centred: 19 apps at 1920px are rows of 10 and 9, not 9, 9 and 1.
-// CSS can wrap cells but not balance the rows, so the width is measured.
+// Lays its cells out in as few rows as fit, spread evenly across them and
+// centred: 19 apps at 1920px are rows of 10 and 9, not 9, 9 and 1. Every cell
+// is as wide as the widest name as the browser draws it, within limits, so a
+// long name, a wide font or a long translation is not cut off; on a phone the
+// limit keeps four to a row and cuts a longer name short. CSS can wrap cells
+// but can neither balance the rows nor size them by the widest name, so both
+// are measured.
 function Grid({ count, children }: { count: number; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState<number>()
 
+  // Every render: the names change with the language.
   useLayoutEffect(() => {
     const grid = ref.current
     const room = grid?.parentElement
     if (!grid || !room) return
     const measure = () => {
-      const cell = grid.firstElementChild?.getBoundingClientRect().width
-      if (!cell || count === 0) return
+      if (count === 0) return
+      const root =
+        parseFloat(getComputedStyle(document.documentElement).fontSize) || 16
       const gap = parseFloat(getComputedStyle(grid).columnGap) || 0
       const padding = getComputedStyle(room)
       const available =
         room.clientWidth -
         parseFloat(padding.paddingLeft) -
         parseFloat(padding.paddingRight)
+      // Below Tailwind's sm breakpoint, where the cells switch size.
+      const phone = window.innerWidth < 640
+      const minimum = (phone ? 5 : 8) * root
+      const maximum = phone
+        ? Math.max(minimum, (available + gap) / 4 - gap)
+        : 12 * root
+      const names = grid.querySelectorAll<HTMLElement>('[data-name]')
+      const widest = Math.max(
+        0,
+        ...Array.from(names, (name) => name.scrollWidth)
+      )
+      const cell = Math.min(maximum, Math.max(minimum, widest + root / 2))
+      grid.style.setProperty('--cell', `${cell}px`)
       const fit = Math.max(1, Math.floor((available + gap) / (cell + gap)))
       const columns = Math.ceil(count / Math.ceil(count / fit))
       setWidth(columns * (cell + gap) - gap)
@@ -158,8 +178,10 @@ function Grid({ count, children }: { count: number; children: ReactNode }) {
     measure()
     const observer = new ResizeObserver(measure)
     observer.observe(room)
+    // A font still loading, such as the dyslexia one, widens the names later.
+    void document.fonts?.ready.then(measure)
     return () => observer.disconnect()
-  }, [count])
+  })
 
   return (
     <div
@@ -192,7 +214,7 @@ export function Home() {
           {Array.from({ length: 12 }).map((_, i) => (
             <div
               key={i}
-              className='flex w-[5rem] flex-col items-center gap-2 py-2 sm:w-[8rem]'
+              className='flex w-[var(--cell,5rem)] flex-col items-center gap-2 py-2 sm:w-[var(--cell,8rem)]'
             >
               <Skeleton className='h-16 w-16 rounded-2xl' />
               <Skeleton className='h-4 w-16' />
