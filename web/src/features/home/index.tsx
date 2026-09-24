@@ -2,7 +2,13 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-import type { CSSProperties } from 'react'
+import {
+  useLayoutEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from 'react'
 import { useLingui } from '@lingui/react/macro'
 import {
   useQueryWithError,
@@ -79,7 +85,7 @@ function Shortcut({
   return (
     <a
       href={`/${icon.link}/`}
-      className='group focus-visible:ring-ring flex flex-col items-center gap-2 rounded-xl p-2 outline-none focus-visible:ring-2'
+      className='group focus-visible:ring-ring flex w-[5rem] flex-col items-center gap-2 rounded-xl py-2 outline-none focus-visible:ring-2 sm:w-[8rem]'
     >
       <div className='relative transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-110'>
         {style.className === 'adaptive' ? (
@@ -115,10 +121,54 @@ function Shortcut({
         )}
       </div>
 
-      <span className='text-foreground group-hover:text-primary text-center text-sm font-medium transition-colors'>
+      <span
+        className='text-foreground group-hover:text-primary w-full truncate text-center text-xs font-medium transition-colors sm:text-sm'
+        title={icon.name}
+      >
         {icon.name}
       </span>
     </a>
+  )
+}
+
+// Lays its fixed-width cells out in as few rows as fit, spread evenly across
+// them and centred: 19 apps at 1920px are rows of 10 and 9, not 9, 9 and 1.
+// CSS can wrap cells but not balance the rows, so the width is measured.
+function Grid({ count, children }: { count: number; children: ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [width, setWidth] = useState<number>()
+
+  useLayoutEffect(() => {
+    const grid = ref.current
+    const room = grid?.parentElement
+    if (!grid || !room) return
+    const measure = () => {
+      const cell = grid.firstElementChild?.getBoundingClientRect().width
+      if (!cell || count === 0) return
+      const gap = parseFloat(getComputedStyle(grid).columnGap) || 0
+      const padding = getComputedStyle(room)
+      const available =
+        room.clientWidth -
+        parseFloat(padding.paddingLeft) -
+        parseFloat(padding.paddingRight)
+      const fit = Math.max(1, Math.floor((available + gap) / (cell + gap)))
+      const columns = Math.ceil(count / Math.ceil(count / fit))
+      setWidth(columns * (cell + gap) - gap)
+    }
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(room)
+    return () => observer.disconnect()
+  }, [count])
+
+  return (
+    <div
+      ref={ref}
+      className='mx-auto mb-12 flex flex-wrap justify-center gap-x-2 gap-y-6'
+      style={{ maxWidth: width }}
+    >
+      {children}
+    </div>
   )
 }
 
@@ -134,25 +184,28 @@ export function Home() {
 
   if (isLoading) {
     return (
-      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+      <Main fluid className='mx-auto max-w-[96rem] px-4 py-8 sm:px-6 lg:px-8'>
         <div className='mb-8 text-center'>
           <Skeleton className='mx-auto h-12 w-32' />
         </div>
-        <div className='mb-12 grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
+        <Grid count={12}>
           {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className='flex flex-col items-center gap-2 p-2'>
+            <div
+              key={i}
+              className='flex w-[5rem] flex-col items-center gap-2 py-2 sm:w-[8rem]'
+            >
               <Skeleton className='h-16 w-16 rounded-2xl' />
               <Skeleton className='h-4 w-16' />
             </div>
           ))}
-        </div>
+        </Grid>
       </Main>
     )
   }
 
   if (ErrorComponent) {
     return (
-      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+      <Main fluid className='mx-auto max-w-[96rem] px-4 py-8 sm:px-6 lg:px-8'>
         {ErrorComponent}
       </Main>
     )
@@ -176,7 +229,7 @@ export function Home() {
   }
 
   return (
-    <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+    <Main fluid className='mx-auto max-w-[96rem] px-4 py-8 sm:px-6 lg:px-8'>
       <RestoreBanner />
 
       {/* Hero Section */}
@@ -186,19 +239,16 @@ export function Home() {
           mochi
         </h1>
       </div>
-      {/* Main Apps Grid */}
-      {icons.length > 0 && (
-        <div className='mb-12 grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-          {icons.map((icon) => (
-            <Shortcut
-              key={`${icon.id}:${icon.path}:${icon.file}`}
-              icon={icon}
-              mask={data?.icon_mask}
-              background={data?.icon_background}
-            />
-          ))}
-        </div>
-      )}
+      <Grid count={icons.length}>
+        {icons.map((icon) => (
+          <Shortcut
+            key={`${icon.id}:${icon.path}:${icon.file}`}
+            icon={icon}
+            mask={data?.icon_mask}
+            background={data?.icon_background}
+          />
+        ))}
+      </Grid>
     </Main>
   )
 }
