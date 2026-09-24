@@ -131,13 +131,13 @@ export function Shortcut({
   )
 }
 
-// Lays its cells out in as few rows as fit, spread evenly across them and
-// centred: 19 apps at 1920px are rows of 10 and 9, not 9, 9 and 1. Every cell
-// is as wide as the widest name as the browser draws it, within limits, so a
-// long name, a wide font or a long translation is not cut off; on a phone the
-// limit keeps four to a row and cuts a longer name short. CSS can wrap cells
-// but can neither balance the rows nor size them by the widest name, so both
-// are measured.
+// Lays its cells out in as few rows as fit, spread evenly across them, the
+// block centred and a short last row starting at the left: 19 apps at 1920px
+// are rows of 10 and 9, not 9, 9 and 1. Every cell is as wide as the widest
+// name as the browser draws it, within limits, so a long name, a wide font or
+// a long translation is not cut off; on a phone the limit keeps four to a row
+// and cuts a longer name short. CSS can wrap cells but can neither balance the
+// rows nor size them by the widest name, so both are measured.
 function Grid({ count, children }: { count: number; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState<number>()
@@ -185,7 +185,7 @@ function Grid({ count, children }: { count: number; children: ReactNode }) {
   return (
     <div
       ref={ref}
-      className='mx-auto mb-12 flex flex-wrap justify-center gap-x-2 gap-y-6'
+      className='mx-auto mb-12 flex flex-wrap gap-x-2 gap-y-6'
       style={{ maxWidth: width }}
     >
       {children}
@@ -205,7 +205,7 @@ export function Home() {
 
   if (isLoading) {
     return (
-      <Main fluid className='mx-auto max-w-[96rem] px-4 py-8 sm:px-6 lg:px-8'>
+      <Main fluid className='px-4 py-8 sm:px-6 lg:px-8'>
         <div className='mb-8 text-center'>
           <Skeleton className='mx-auto h-12 w-32' />
         </div>
@@ -226,7 +226,7 @@ export function Home() {
 
   if (ErrorComponent) {
     return (
-      <Main fluid className='mx-auto max-w-[96rem] px-4 py-8 sm:px-6 lg:px-8'>
+      <Main fluid className='px-4 py-8 sm:px-6 lg:px-8'>
         {ErrorComponent}
       </Main>
     )
@@ -250,7 +250,7 @@ export function Home() {
   }
 
   return (
-    <Main fluid className='mx-auto max-w-[96rem] px-4 py-8 sm:px-6 lg:px-8'>
+    <Main fluid className='px-4 py-8 sm:px-6 lg:px-8'>
       <RestoreBanner />
 
       {/* Hero Section */}
