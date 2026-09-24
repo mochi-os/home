@@ -72,7 +72,8 @@ interface IconsResponse {
   icon_background?: string
 }
 
-function Shortcut({
+// The icon is decoration: the visible name alone labels the link.
+export function Shortcut({
   icon,
   mask,
   background,
@@ -96,8 +97,7 @@ function Shortcut({
             <div
               className='h-9 w-9'
               style={style.foreground}
-              role='img'
-              aria-label={icon.name}
+              aria-hidden='true'
             />
           </div>
         ) : (
@@ -105,8 +105,7 @@ function Shortcut({
             <div
               className='bg-primary/70 group-hover:bg-primary h-11 w-11 transition-colors duration-300'
               style={style.foreground}
-              role='img'
-              aria-label={icon.name}
+              aria-hidden='true'
             />
           </div>
         )}
