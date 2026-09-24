@@ -761,7 +761,7 @@ msgstr "વેબ બ્રાઉઝરમાંથી શોધો"
 
 #: src/features/home/index.tsx
 msgid "Development"
-msgstr "Development"
+msgstr "વિકાસ"
 
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"

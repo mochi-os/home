@@ -12,6 +12,10 @@
 	"architecture": {"engine": "starlark", "version": 4},
 	"execute": ["home.star"],
 
+	"icons": [
+		{"action": "", "label": "app.name", "file": "images/icon.svg"}
+	],
+
 	"actions": {
 		"": {"file": "web/dist/index.html"},
 		"assets": {"files": "web/dist/assets"},

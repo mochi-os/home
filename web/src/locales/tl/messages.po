@@ -761,7 +761,7 @@ msgstr "Tukuyin mula sa web browser"
 
 #: src/features/home/index.tsx
 msgid "Development"
-msgstr "Development"
+msgstr "Pag-develop"
 
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"

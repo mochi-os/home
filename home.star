@@ -22,6 +22,10 @@ def action_icons(a):
     icons = []
     development = []
     for icon in result["icons"]:
+        # The app at the root path is this home screen; its icon is for the
+        # menu's grid, not its own.
+        if icon.get("link") == "":
+            continue
         if help_unvisited and icon.get("link") == "help":
             icon["highlight"] = True
         if icon.get("development"):
