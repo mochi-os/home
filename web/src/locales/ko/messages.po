@@ -759,10 +759,6 @@ msgstr "세부 정보 패널"
 msgid "Detect from web browser"
 msgstr "웹 브라우저에서 감지"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "개발"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "디렉터리"

@@ -759,10 +759,6 @@ msgstr "Detaļu panelis"
 msgid "Detect from web browser"
 msgstr "Noteikt no tīmekļa pārlūka"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "Izstrāde"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "Katalogs"

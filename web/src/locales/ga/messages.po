@@ -759,10 +759,6 @@ msgstr "Painéal Sonraí"
 msgid "Detect from web browser"
 msgstr "Brath ón mbrabhsálaí gréasáin"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "Forbairt"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "Eolaire"

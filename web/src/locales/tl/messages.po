@@ -759,10 +759,6 @@ msgstr "Details Panel"
 msgid "Detect from web browser"
 msgstr "Tukuyin mula sa web browser"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "Pag-develop"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "Direktoryo"

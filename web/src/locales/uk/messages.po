@@ -759,10 +759,6 @@ msgstr "Панель деталей"
 msgid "Detect from web browser"
 msgstr "Визначати з веббраузера"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "Розробка"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "Каталог"

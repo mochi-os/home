@@ -759,10 +759,6 @@ msgstr "Панел со детали"
 msgid "Detect from web browser"
 msgstr "Откриј од веб-прелистувач"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "Развој"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "Именик"

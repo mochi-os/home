@@ -759,10 +759,6 @@ msgstr "Üksikasjade paneel"
 msgid "Detect from web browser"
 msgstr "Tuvasta veebibrauserist"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "Arendus"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "Kataloog"

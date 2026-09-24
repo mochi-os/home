@@ -759,10 +759,6 @@ msgstr "विवरण पैनल"
 msgid "Detect from web browser"
 msgstr "Web browser से पता लगाईं"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "विकास"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "निर्देशिका"

@@ -759,10 +759,6 @@ msgstr "פּרטים פּאַנעל"
 msgid "Detect from web browser"
 msgstr "אויסקלײַבן פֿון וועב בראָוזער"
 
-#: src/features/home/index.tsx
-msgid "Development"
-msgstr "אַנטוויקלונג"
-
 #: ../../../lib/web/src/components/person-picker.tsx
 msgid "Directory"
 msgstr "פֿאַרצײכעניש"

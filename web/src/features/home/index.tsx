@@ -3,7 +3,7 @@
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
 import type { CSSProperties } from 'react'
-import { Trans, useLingui } from '@lingui/react/macro'
+import { useLingui } from '@lingui/react/macro'
 import {
   useQueryWithError,
   requestHelpers,
@@ -62,7 +62,6 @@ interface AppIcon {
 
 interface IconsResponse {
   icons: AppIcon[]
-  development: AppIcon[]
   icon_mask?: string
   icon_background?: string
 }
@@ -71,12 +70,10 @@ function Shortcut({
   icon,
   mask,
   background,
-  development,
 }: {
   icon: AppIcon
   mask?: string
   background?: string
-  development?: boolean
 }) {
   const style = iconStyle(icon, mask, background)
   return (
@@ -118,20 +115,9 @@ function Shortcut({
         )}
       </div>
 
-      {development ? (
-        <div className='flex flex-col items-center gap-0.5'>
-          <span className='text-foreground group-hover:text-primary text-center text-xs font-medium transition-colors'>
-            {icon.name}
-          </span>
-          <span className='text-muted-foreground text-center text-[10px]'>
-            {icon.id}
-          </span>
-        </div>
-      ) : (
-        <span className='text-foreground group-hover:text-primary text-center text-sm font-medium transition-colors'>
-          {icon.name}
-        </span>
-      )}
+      <span className='text-foreground group-hover:text-primary text-center text-sm font-medium transition-colors'>
+        {icon.name}
+      </span>
     </a>
   )
 }
@@ -176,11 +162,8 @@ export function Home() {
   const icons = [...(data?.icons ?? [])].sort((a, b) =>
     naturalCompare(a.name, b.name)
   )
-  const development = [...(data?.development ?? [])].sort((a, b) =>
-    naturalCompare(a.name, b.name)
-  )
 
-  if (icons.length === 0 && development.length === 0) {
+  if (icons.length === 0) {
     return (
       <Main>
         <EmptyState
@@ -214,31 +197,6 @@ export function Home() {
               background={data?.icon_background}
             />
           ))}
-        </div>
-      )}
-
-      {/* Development Apps Section */}
-      {development.length > 0 && (
-        <div>
-          <div className='mb-6 flex items-center gap-3'>
-            <div className='bg-border h-px flex-1' />
-            <h2 className='text-muted-foreground text-xs font-medium tracking-wider uppercase'>
-              <Trans>Development</Trans>
-            </h2>
-            <div className='bg-border h-px flex-1' />
-          </div>
-
-          <div className='grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-            {development.map((icon) => (
-              <Shortcut
-                key={`${icon.id}:${icon.path}:${icon.file}`}
-                icon={icon}
-                mask={data?.icon_mask}
-                background={data?.icon_background}
-                development
-              />
-            ))}
-          </div>
         </div>
       )}
     </Main>
