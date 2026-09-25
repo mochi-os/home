@@ -2,14 +2,19 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-import type { CSSProperties } from 'react'
-import { Trans, useLingui } from '@lingui/react/macro'
+import {
+  useLayoutEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from 'react'
+import { useLingui } from '@lingui/react/macro'
 import {
   useQueryWithError,
   requestHelpers,
   EmptyState,
   Main,
-  CardSkeleton,
   Skeleton,
   RestoreBanner,
   naturalCompare,
@@ -63,92 +68,128 @@ interface AppIcon {
 
 interface IconsResponse {
   icons: AppIcon[]
-  development: AppIcon[]
   icon_mask?: string
   icon_background?: string
 }
 
-function IconCard({
+// The icon is decoration: the visible name alone labels the link.
+export function Shortcut({
   icon,
   mask,
   background,
-  development,
 }: {
   icon: AppIcon
   mask?: string
   background?: string
-  development?: boolean
 }) {
   const style = iconStyle(icon, mask, background)
-  const highlight = icon.highlight
-  const scale = development ? 'group-hover:scale-105' : 'group-hover:scale-110'
   return (
     <a
       href={`/${icon.link}/`}
-      className={`group hover:bg-hover relative flex flex-col items-center gap-2 rounded-xl border p-4 transition-all duration-300 ${
-        development
-          ? 'bg-card/50 hover:-translate-y-0.5'
-          : 'bg-card hover:-translate-y-1'
-      } ${
-        highlight
-          ? 'border-primary hover:border-primary'
-          : development
-            ? 'border-border hover:border-primary/30 border-dashed'
-            : 'border-border hover:border-primary/20'
-      }`}
-      style={{ boxShadow: 'var(--card-shadow)' }}
+      className='group focus-visible:ring-ring flex w-[var(--cell,5rem)] flex-col items-center gap-2 rounded-xl py-2 outline-none focus-visible:ring-2 sm:w-[var(--cell,8rem)]'
     >
-      {highlight && (
-        <span
-          className='absolute -top-1 -right-1 flex h-3 w-3'
-          aria-hidden='true'
-        >
-          <span className='bg-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75' />
-          <span className='bg-primary relative inline-flex h-3 w-3 rounded-full' />
-        </span>
-      )}
-      {/* Icon Container */}
-      {style.className === 'adaptive' ? (
-        <div
-          className={`flex h-14 w-14 items-center justify-center overflow-hidden transition-all duration-300 ${scale}`}
-          style={style.container}
-        >
+      <div className='relative transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-110'>
+        {style.className === 'adaptive' ? (
           <div
-            className='h-8 w-8'
-            style={style.foreground}
-            role='img'
-            aria-label={icon.name}
-          />
-        </div>
-      ) : (
-        <div
-          className={`flex h-14 w-14 items-center justify-center transition-all duration-300 ${scale}`}
-        >
-          <div
-            className={`bg-primary/70 group-hover:bg-primary h-8 w-8 transition-all duration-300 ${development ? '' : scale}`}
-            style={style.foreground}
-            role='img'
-            aria-label={icon.name}
-          />
-        </div>
-      )}
+            className='flex h-16 w-16 items-center justify-center overflow-hidden'
+            style={style.container}
+          >
+            <div
+              className='h-9 w-9'
+              style={style.foreground}
+              aria-hidden='true'
+            />
+          </div>
+        ) : (
+          <div className='flex h-16 w-16 items-center justify-center'>
+            <div
+              className='bg-primary/70 group-hover:bg-primary h-11 w-11 transition-colors duration-300'
+              style={style.foreground}
+              aria-hidden='true'
+            />
+          </div>
+        )}
+        {icon.highlight && (
+          <span
+            className='absolute -top-1 -right-1 flex h-3 w-3'
+            aria-hidden='true'
+          >
+            <span className='bg-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75' />
+            <span className='bg-primary relative inline-flex h-3 w-3 rounded-full' />
+          </span>
+        )}
+      </div>
 
-      {/* App Name */}
-      {development ? (
-        <div className='flex flex-col items-center gap-0.5'>
-          <span className='text-foreground group-hover:text-primary text-center text-xs font-medium transition-colors'>
-            {icon.name}
-          </span>
-          <span className='text-muted-foreground text-center text-[10px]'>
-            {icon.id}
-          </span>
-        </div>
-      ) : (
-        <span className='text-foreground group-hover:text-primary text-center text-sm font-medium transition-colors'>
-          {icon.name}
-        </span>
-      )}
+      <span
+        className='text-foreground group-hover:text-primary max-w-full truncate text-center text-xs font-medium transition-colors sm:text-sm'
+        title={icon.name}
+        data-name
+      >
+        {icon.name}
+      </span>
     </a>
+  )
+}
+
+// Lays its cells out in as few rows as fit, spread evenly across them, the
+// block centred and a short last row starting at the left: 19 apps at 1920px
+// are rows of 10 and 9, not 9, 9 and 1. Every cell is as wide as the widest
+// name as the browser draws it, within limits, so a long name, a wide font or
+// a long translation is not cut off; on a phone the limit keeps four to a row
+// and cuts a longer name short. CSS can wrap cells but can neither balance the
+// rows nor size them by the widest name, so both are measured.
+function Grid({ count, children }: { count: number; children: ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [width, setWidth] = useState<number>()
+
+  // Every render: the names change with the language.
+  useLayoutEffect(() => {
+    const grid = ref.current
+    const room = grid?.parentElement
+    if (!grid || !room) return
+    const measure = () => {
+      if (count === 0) return
+      const root =
+        parseFloat(getComputedStyle(document.documentElement).fontSize) || 16
+      const gap = parseFloat(getComputedStyle(grid).columnGap) || 0
+      const padding = getComputedStyle(room)
+      const available =
+        room.clientWidth -
+        parseFloat(padding.paddingLeft) -
+        parseFloat(padding.paddingRight)
+      // Below Tailwind's sm breakpoint, where the cells switch size.
+      const phone = window.innerWidth < 640
+      const minimum = (phone ? 5 : 8) * root
+      const maximum = phone
+        ? Math.max(minimum, (available + gap) / 4 - gap)
+        : 12 * root
+      const names = grid.querySelectorAll<HTMLElement>('[data-name]')
+      const widest = Math.max(
+        0,
+        ...Array.from(names, (name) => name.scrollWidth)
+      )
+      const cell = Math.min(maximum, Math.max(minimum, widest + root / 2))
+      grid.style.setProperty('--cell', `${cell}px`)
+      const fit = Math.max(1, Math.floor((available + gap) / (cell + gap)))
+      const columns = Math.ceil(count / Math.ceil(count / fit))
+      setWidth(columns * (cell + gap) - gap)
+    }
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(room)
+    // A font still loading, such as the dyslexia one, widens the names later.
+    void document.fonts?.ready.then(measure)
+    return () => observer.disconnect()
+  })
+
+  return (
+    <div
+      ref={ref}
+      className='mx-auto mb-12 flex flex-wrap gap-x-2 gap-y-6'
+      style={{ maxWidth: width }}
+    >
+      {children}
+    </div>
   )
 }
 
@@ -164,20 +205,28 @@ export function Home() {
 
   if (isLoading) {
     return (
-      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+      <Main fluid className='px-4 py-8 sm:px-6 lg:px-8'>
         <div className='mb-8 text-center'>
           <Skeleton className='mx-auto h-12 w-32' />
         </div>
-        <div className='mb-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-          <CardSkeleton count={12} className='contents' />
-        </div>
+        <Grid count={12}>
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div
+              key={i}
+              className='flex w-[var(--cell,5rem)] flex-col items-center gap-2 py-2 sm:w-[var(--cell,8rem)]'
+            >
+              <Skeleton className='h-16 w-16 rounded-2xl' />
+              <Skeleton className='h-4 w-16' />
+            </div>
+          ))}
+        </Grid>
       </Main>
     )
   }
 
   if (ErrorComponent) {
     return (
-      <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+      <Main fluid className='px-4 py-8 sm:px-6 lg:px-8'>
         {ErrorComponent}
       </Main>
     )
@@ -187,11 +236,8 @@ export function Home() {
   const icons = [...(data?.icons ?? [])].sort((a, b) =>
     naturalCompare(a.name, b.name)
   )
-  const development = [...(data?.development ?? [])].sort((a, b) =>
-    naturalCompare(a.name, b.name)
-  )
 
-  if (icons.length === 0 && development.length === 0) {
+  if (icons.length === 0) {
     return (
       <Main>
         <EmptyState
@@ -204,7 +250,7 @@ export function Home() {
   }
 
   return (
-    <Main className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+    <Main fluid className='px-4 py-8 sm:px-6 lg:px-8'>
       <RestoreBanner />
 
       {/* Hero Section */}
@@ -214,44 +260,16 @@ export function Home() {
           mochi
         </h1>
       </div>
-      {/* Main Apps Grid */}
-      {icons.length > 0 && (
-        <div className='mb-12 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-          {icons.map((icon) => (
-            <IconCard
-              key={`${icon.id}:${icon.path}:${icon.file}`}
-              icon={icon}
-              mask={data?.icon_mask}
-              background={data?.icon_background}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Development Apps Section */}
-      {development.length > 0 && (
-        <div>
-          <div className='mb-6 flex items-center gap-3'>
-            <div className='bg-border h-px flex-1' />
-            <h2 className='text-muted-foreground text-xs font-medium tracking-wider uppercase'>
-              <Trans>Development</Trans>
-            </h2>
-            <div className='bg-border h-px flex-1' />
-          </div>
-
-          <div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
-            {development.map((icon) => (
-              <IconCard
-                key={`${icon.id}:${icon.path}:${icon.file}`}
-                icon={icon}
-                mask={data?.icon_mask}
-                background={data?.icon_background}
-                development
-              />
-            ))}
-          </div>
-        </div>
-      )}
+      <Grid count={icons.length}>
+        {icons.map((icon) => (
+          <Shortcut
+            key={`${icon.id}:${icon.path}:${icon.file}`}
+            icon={icon}
+            mask={data?.icon_mask}
+            background={data?.icon_background}
+          />
+        ))}
+      </Grid>
     </Main>
   )
 }

@@ -5,12 +5,16 @@
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
 
 {
-	"version": "1.93",
+	"version": "1.95",
 	"label": "app.name",
 	"paths": [""],
 
 	"architecture": {"engine": "starlark", "version": 4},
 	"execute": ["home.star"],
+
+	"icons": [
+		{"action": "", "label": "app.name", "file": "images/icon.svg"}
+	],
 
 	"actions": {
 		"": {"file": "web/dist/index.html"},

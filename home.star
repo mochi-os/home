@@ -20,15 +20,15 @@ def action_icons(a):
     result = mochi.app.icons()
     help_unvisited = a.user.preference.get("help.visited") != "true"
     icons = []
-    development = []
     for icon in result["icons"]:
+        # The app at the root path is this home screen; its icon is for the
+        # menu's grid, not its own.
+        if icon.get("link") == "":
+            continue
         if help_unvisited and icon.get("link") == "help":
             icon["highlight"] = True
-        if icon.get("development"):
-            development.append(icon)
-        else:
-            icons.append(icon)
-    response = {"icons": icons, "development": development}
+        icons.append(icon)
+    response = {"icons": icons}
     if "icon_mask" in result:
         response["icon_mask"] = result["icon_mask"]
     if "icon_background" in result:
