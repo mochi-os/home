@@ -121,7 +121,7 @@ export function Shortcut({
       </div>
 
       <span
-        className='text-foreground group-hover:text-primary max-w-full truncate text-center text-xs font-medium transition-colors sm:text-sm'
+        className='text-foreground group-hover:text-primary line-clamp-3 max-w-full text-center text-xs font-medium break-words hyphens-auto transition-colors sm:text-sm'
         title={icon.name}
         data-name
       >
@@ -131,14 +131,40 @@ export function Shortcut({
   )
 }
 
+// The widest single word among the names, as each name's font draws it: a
+// line may break between words and after a hyphen, but nowhere in a word that
+// fits. Zero where the browser cannot measure text.
+function longest(names: NodeListOf<HTMLElement>): number {
+  const context = document.createElement('canvas').getContext?.('2d')
+  if (!context) return 0
+  let widest = 0
+  for (const name of Array.from(names)) {
+    const style = getComputedStyle(name)
+    context.font = `${style.fontStyle} ${style.fontWeight} ${style.fontSize} ${style.fontFamily}`
+    for (const word of (name.textContent ?? '').split(/\s+|(?<=-)/)) {
+      widest = Math.max(widest, context.measureText(word).width)
+    }
+  }
+  return widest
+}
+
 // Lays its cells out in as few rows as fit, spread evenly across them, the
 // block centred and a short last row starting at the left: 19 apps at 1920px
 // are rows of 10 and 9, not 9, 9 and 1. Every cell is as wide as the widest
-// name as the browser draws it, within limits, so a long name, a wide font or
-// a long translation is not cut off; on a phone the limit keeps four to a row
-// and cuts a longer name short. CSS can wrap cells but can neither balance the
-// rows nor size them by the widest name, so both are measured.
-function Grid({ count, children }: { count: number; children: ReactNode }) {
+// name on one line as the browser draws it, within limits, so a wide font or a
+// long translation fits where it can. A name wider than the limit wraps onto up
+// to three lines and its row grows to hold it; its cell then also takes the
+// room left at the end of its row, and grows to hold its longest word up to a
+// third of a phone's row, so no word that could fit is split. CSS can wrap
+// cells but can neither balance the rows nor size them by the names, so all
+// of it is measured.
+export function Grid({
+  count,
+  children,
+}: {
+  count: number
+  children: ReactNode
+}) {
   const ref = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState<number>()
 
@@ -163,14 +189,30 @@ function Grid({ count, children }: { count: number; children: ReactNode }) {
       const maximum = phone
         ? Math.max(minimum, (available + gap) / 4 - gap)
         : 12 * root
+      // A name wraps once it is wider than its cell, so its drawn width says
+      // only how wide the cell already is: read each on one line instead.
       const names = grid.querySelectorAll<HTMLElement>('[data-name]')
       const widest = Math.max(
         0,
-        ...Array.from(names, (name) => name.scrollWidth)
+        ...Array.from(names, (name) => {
+          const wrap = name.style.whiteSpace
+          name.style.whiteSpace = 'nowrap'
+          const width = name.scrollWidth
+          name.style.whiteSpace = wrap
+          return width
+        })
       )
-      const cell = Math.min(maximum, Math.max(minimum, widest + root / 2))
+      const base = Math.min(maximum, Math.max(minimum, widest + root / 2))
+      // A word wider than its cell breaks mid-word, so the cell grows to hold
+      // the widest word, up to a third of the row on a phone.
+      const third = phone ? (available + gap) / 3 - gap : maximum
+      const sized = Math.max(base, Math.min(third, longest(names) + root / 2))
+      const fit = Math.max(1, Math.floor((available + gap) / (sized + gap)))
+      // The cells a row holds share out the room it has left, when a name
+      // needs it, so a long name takes fewer lines.
+      const share = (available + gap) / fit - gap
+      const cell = Math.max(sized, Math.min(share, widest + root / 2))
       grid.style.setProperty('--cell', `${cell}px`)
-      const fit = Math.max(1, Math.floor((available + gap) / (cell + gap)))
       const columns = Math.ceil(count / Math.ceil(count / fit))
       setWidth(columns * (cell + gap) - gap)
     }
