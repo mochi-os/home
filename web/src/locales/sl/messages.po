@@ -260,6 +260,10 @@ msgstr "Prišlo je do napake"
 msgid "An unexpected error occurred"
 msgstr "Prišlo je do nepričakovane napake"
 
+#: src/features/home/index.tsx
+msgid "Android Client"
+msgstr "Odjemalec za Android"
+
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"
 msgstr "Android push obvestila"

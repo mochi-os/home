@@ -2,9 +2,22 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
+import { i18n } from '@lingui/core'
+import { I18nProvider } from '@lingui/react'
 import { cleanup, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { Grid, Shortcut } from './index'
+import { AndroidClient, Grid, Home, Shortcut } from './index'
+
+// The home page as the server answers it: one app, and no restore to offer.
+vi.mock('@mochi/web', async (original) => ({
+  ...(await original<typeof import('@mochi/web')>()),
+  useQueryWithError: () => ({
+    data: { icons: [chat] },
+    isLoading: false,
+    ErrorComponent: null,
+  }),
+  RestoreBanner: () => null,
+}))
 
 const chat = {
   id: 'chat',
@@ -15,6 +28,65 @@ const chat = {
 }
 
 afterEach(cleanup)
+
+describe('AndroidClient', () => {
+  // The provider renders nothing until a locale is active.
+  beforeEach(() => i18n.loadAndActivate({ locale: 'en', messages: {} }))
+  afterEach(() => {
+    vi.restoreAllMocks()
+    vi.unstubAllGlobals()
+  })
+
+  function on(agent: string) {
+    vi.spyOn(Navigator.prototype, 'userAgent', 'get').mockReturnValue(agent)
+    render(
+      <I18nProvider i18n={i18n}>
+        <AndroidClient />
+      </I18nProvider>
+    )
+  }
+
+  it('links to the Android client on an Android device', () => {
+    on(
+      'Mozilla/5.0 (Linux; Android 16; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Mobile Safari/537.36'
+    )
+    const link = screen.getByRole('link', { name: 'Android Client' })
+    expect(link.getAttribute('href')).toBe(
+      'https://packages.mochi-os.org/android/mochi.apk'
+    )
+    expect(link.getAttribute('target')).toBe('_blank')
+  })
+
+  it('sits at the foot of the home page', () => {
+    vi.stubGlobal(
+      'ResizeObserver',
+      class {
+        observe() {}
+        disconnect() {}
+      }
+    )
+    vi.spyOn(Navigator.prototype, 'userAgent', 'get').mockReturnValue(
+      'Mozilla/5.0 (Linux; Android 16; Pixel 7) Mobile'
+    )
+    render(
+      <I18nProvider i18n={i18n}>
+        <Home />
+      </I18nProvider>
+    )
+    const links = screen.getAllByRole('link')
+    expect(links.map((link) => link.textContent)).toEqual([
+      'Chat',
+      'Android Client',
+    ])
+  })
+
+  it('offers nothing on any other device', () => {
+    on(
+      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36'
+    )
+    expect(screen.queryByRole('link')).toBeNull()
+  })
+})
 
 describe('Shortcut', () => {
   it('names its link by the app name once', () => {

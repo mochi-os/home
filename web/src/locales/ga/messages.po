@@ -260,6 +260,10 @@ msgstr "Tharla earráid"
 msgid "An unexpected error occurred"
 msgstr "Tharla earráid gan choinne"
 
+#: src/features/home/index.tsx
+msgid "Android Client"
+msgstr "Cliant Android"
+
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"
 msgstr "Brú Android"

@@ -260,6 +260,10 @@ msgstr "Ein Fehler ist aufgetreten"
 msgid "An unexpected error occurred"
 msgstr "Ein unerwarteter Fehler ist aufgetreten"
 
+#: src/features/home/index.tsx
+msgid "Android Client"
+msgstr "Android-Client"
+
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"
 msgstr "Android-Push"

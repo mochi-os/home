@@ -9,7 +9,7 @@ import {
   type CSSProperties,
   type ReactNode,
 } from 'react'
-import { useLingui } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 import {
   useQueryWithError,
   requestHelpers,
@@ -55,6 +55,33 @@ function iconStyle(
     }
   }
   return { container: {}, foreground: maskProps, className: 'default' }
+}
+
+// The Android client's latest release: a stable link the release points at
+// each new build.
+const ANDROID_CLIENT = 'https://packages.mochi-os.org/android/mochi.apk'
+
+/**
+ * A link to install the Android client at the foot of the page, on an Android
+ * device only; Settings offers it on every browser.
+ */
+export function AndroidClient() {
+  if (!/android/i.test(navigator.userAgent)) return null
+  return (
+    <p className='text-muted-foreground pt-2 pb-6 text-center text-sm'>
+      {/* In a new tab: the shell's sandbox allows popups, so a plain anchor
+        is enough, and the phone's browser offers to install what it
+        downloads. */}
+      <a
+        href={ANDROID_CLIENT}
+        target='_blank'
+        rel='noopener noreferrer'
+        className='hover:text-foreground transition-colors'
+      >
+        <Trans>Android Client</Trans>
+      </a>
+    </p>
+  )
 }
 
 interface AppIcon {
@@ -312,6 +339,7 @@ export function Home() {
           />
         ))}
       </Grid>
+      <AndroidClient />
     </Main>
   )
 }

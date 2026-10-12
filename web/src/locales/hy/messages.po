@@ -260,6 +260,10 @@ msgstr "Սխալ առաջացավ"
 msgid "An unexpected error occurred"
 msgstr "Անսպասելի սխալ առաջացավ"
 
+#: src/features/home/index.tsx
+msgid "Android Client"
+msgstr "Android հավելված"
+
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"
 msgstr "Android պուշ-ծանուցումներ"
