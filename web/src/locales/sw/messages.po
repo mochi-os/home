@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "Hitilafu isiyotarajiwa imetokea"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Programu ya Android"
 
 #: ../../../lib/web/src/features/accounts/types.ts

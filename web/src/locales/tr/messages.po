@@ -261,8 +261,8 @@ msgid "An unexpected error occurred"
 msgstr "Beklenmeyen bir hata oluştu"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
-msgstr "Android İstemcisi"
+msgid "Android client"
+msgstr "Android istemcisi"
 
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"

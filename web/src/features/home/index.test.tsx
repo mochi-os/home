@@ -50,7 +50,7 @@ describe('AndroidClient', () => {
     on(
       'Mozilla/5.0 (Linux; Android 16; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Mobile Safari/537.36'
     )
-    const link = screen.getByRole('link', { name: 'Android Client' })
+    const link = screen.getByRole('link', { name: 'Android client' })
     expect(link.getAttribute('href')).toBe(
       'https://packages.mochi-os.org/android/mochi.apk'
     )
@@ -76,7 +76,7 @@ describe('AndroidClient', () => {
     const links = screen.getAllByRole('link')
     expect(links.map((link) => link.textContent)).toEqual([
       'Chat',
-      'Android Client',
+      'Android client',
     ])
   })
 

@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "An samu kuskuren da ba a zata ba"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Manhajar Android"
 
 #: ../../../lib/web/src/features/accounts/types.ts

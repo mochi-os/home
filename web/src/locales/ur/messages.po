@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "ایک غیر متوقع خرابی پیش آئی"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Android کلائنٹ"
 
 #: ../../../lib/web/src/features/accounts/types.ts

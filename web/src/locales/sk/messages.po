@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "Vyskytla sa neočakávaná chyba"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Klient pre Android"
 
 #: ../../../lib/web/src/features/accounts/types.ts

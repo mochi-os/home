@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "May naganap na hindi inaasahang error"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Kliyente ng Android"
 
 #: ../../../lib/web/src/features/accounts/types.ts

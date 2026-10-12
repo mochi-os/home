@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "Yon erè inatandi te rive"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Kliyan Android"
 
 #: ../../../lib/web/src/features/accounts/types.ts

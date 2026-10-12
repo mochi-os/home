@@ -78,7 +78,7 @@ export function AndroidClient() {
         rel='noopener noreferrer'
         className='hover:text-foreground transition-colors'
       >
-        <Trans>Android Client</Trans>
+        <Trans>Android client</Trans>
       </a>
     </p>
   )

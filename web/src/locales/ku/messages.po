@@ -261,7 +261,7 @@ msgid "An unexpected error occurred"
 msgstr "Çewtiyeke neçaverêkirî çêbû"
 
 #: src/features/home/index.tsx
-msgid "Android Client"
+msgid "Android client"
 msgstr "Sepana Android"
 
 #: ../../../lib/web/src/features/accounts/types.ts
