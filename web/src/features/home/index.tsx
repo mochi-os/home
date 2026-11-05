@@ -246,9 +246,15 @@ export function Grid({
     measure()
     const observer = new ResizeObserver(measure)
     observer.observe(room)
-    // A font still loading, such as the dyslexia one, widens the names later.
+    // A font still loading, such as the dyslexia one, widens the names later:
+    // ready settles once the faces asked for so far are in, and each face that
+    // arrives after it, as one the shell carries does, is announced on its own.
     void document.fonts?.ready.then(measure)
-    return () => observer.disconnect()
+    document.fonts?.addEventListener('loadingdone', measure)
+    return () => {
+      observer.disconnect()
+      document.fonts?.removeEventListener('loadingdone', measure)
+    }
   })
 
   return (

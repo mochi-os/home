@@ -4,7 +4,7 @@
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
 import { i18n } from '@lingui/core'
 import { I18nProvider } from '@lingui/react'
-import { cleanup, render, screen } from '@testing-library/react'
+import { act, cleanup, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { AndroidClient, Grid, Home, Shortcut } from './index'
 
@@ -210,6 +210,30 @@ describe('Grid', () => {
     expect(cell([['Pubblikatur tal-Applikazzjonijiet', 330]], 390)).toBeCloseTo(
       343 / 3
     )
+  })
+
+  // In the shell a face arrives after ready has settled on its placeholder,
+  // and is announced when it does.
+  it('measures again when a font arrives late', () => {
+    const fonts = Object.assign(new EventTarget(), {
+      ready: new Promise(() => {}),
+    })
+    Object.defineProperty(document, 'fonts', {
+      configurable: true,
+      value: fonts,
+    })
+    try {
+      // 100px plus half a rem is under the 8rem a cell starts from.
+      expect(cell([['Long', 100]])).toBe(128)
+      screen.getByText('Long').dataset.width = '150'
+      act(() => {
+        fonts.dispatchEvent(new Event('loadingdone'))
+      })
+      const grid = screen.getByText('Long').parentElement
+      expect(parseFloat(grid?.style.getPropertyValue('--cell') ?? '')).toBe(158)
+    } finally {
+      delete (document as { fonts?: unknown }).fonts
+    }
   })
 
   it('shares the room a phone row leaves among cells whose names wrap', () => {
