@@ -6,7 +6,7 @@ import { i18n } from '@lingui/core'
 import { I18nProvider } from '@lingui/react'
 import { act, cleanup, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { AndroidClient, Grid, Home, Shortcut } from './index'
+import { AndroidClient, Grid, Home, Shortcut, iconStyle } from './index'
 
 // The home page as the server answers it: one app, and no restore to offer.
 vi.mock('@mochi/web', async (original) => ({
@@ -97,6 +97,26 @@ describe('Shortcut', () => {
   it('names its link once when the theme draws the icon on a tile', () => {
     render(<Shortcut icon={chat} mask='rounded' background='#3366cc' />)
     expect(screen.getByRole('link', { name: 'Chat' })).toBeTruthy()
+  })
+})
+
+describe('iconStyle', () => {
+  const data = 'data:image/svg+xml;base64,PHN2Zz48L3N2Zz4='
+
+  it('draws an icon from the SVG the answer carries, asking for no file', () => {
+    for (const style of [
+      iconStyle({ ...chat, data }),
+      iconStyle({ ...chat, data }, 'rounded', '#3366cc'),
+    ]) {
+      expect(style.foreground.maskImage).toBe(`url("${data}")`)
+      expect(style.foreground.WebkitMaskImage).toBe(`url("${data}")`)
+    }
+  })
+
+  it("loads the icon from its path when the answer carries no SVG, as an older server's does", () => {
+    expect(iconStyle(chat).foreground.maskImage).toBe(
+      'url(/chat/images/icon.svg)'
+    )
   })
 })
 

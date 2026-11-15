@@ -28,12 +28,16 @@ const maskBorderRadius: Record<string, string> = {
   squircle: '28%',
 }
 
-function iconStyle(
+// An icon is drawn from the SVG the answer carries, so the page asks for none
+// of them; a server from before that sends only the path, loaded from there.
+export function iconStyle(
   icon: AppIcon,
   mask?: string,
   background?: string
 ): { container: CSSProperties; foreground: CSSProperties; className: string } {
-  const url = `url(/${icon.path}/${icon.file})`
+  const url = icon.data
+    ? `url("${icon.data}")`
+    : `url(/${icon.path}/${icon.file})`
   const maskProps = {
     maskImage: url,
     maskSize: 'contain',
@@ -91,6 +95,8 @@ interface AppIcon {
   file: string
   link: string
   highlight?: boolean
+  // The icon as a data: URL, from a server that sends it.
+  data?: string
 }
 
 interface IconsResponse {
