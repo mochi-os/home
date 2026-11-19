@@ -19,8 +19,8 @@
 	"actions": {
 		"": {"file": "web/dist/index.html"},
 		"assets": {"files": "web/dist/assets"},
-		"-/icons": {"function": "action_icons"},
-		"-/restore": {"function": "action_restore"},
+		"-/icons": {"function": "action_icons", "read": true},
+		"-/restore": {"function": "action_restore", "read": true},
 		"-/restore/dismiss": {"function": "action_restore_dismiss"},
 		"images": {"files": "web/dist/images"}
 	}
