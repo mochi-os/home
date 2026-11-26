@@ -18,8 +18,10 @@ def action_restore_dismiss(a):
 def action_icons(a):
     """Return list of app icons for the home screen, each with its SVG, so the
     page draws them all from this one answer. A core from before data takes no
-    arguments and ignores it, and the page then loads each icon by its path."""
-    result = mochi.app.icons(data=True)
+    arguments and ignores it, and the page then loads each icon by its path.
+    Input data "false" leaves the SVGs out, for a client that draws its own
+    glyphs."""
+    result = mochi.app.icons(data=a.input("data", "") != "false")
     help_unvisited = a.user.preference.get("help.visited") != "true"
     icons = []
     for icon in result["icons"]:
